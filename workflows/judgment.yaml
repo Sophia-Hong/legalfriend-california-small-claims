@@ -1,0 +1,13 @@
+# Phase E — After Judgment Basics (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
+# Every item must resolve to a manifest source_id or a practice note before release.
+id: ca-sc-judgment
+stage: judgment
+items:
+  - id: judgment-orientation
+    sources: []   # TODO: manifest ids
+  - id: collection-resources
+    sources: []   # TODO: manifest ids
+  - id: satisfaction-payment
+    sources: []   # TODO: manifest ids
+  - id: next-steps
+    sources: []   # TODO: manifest ids

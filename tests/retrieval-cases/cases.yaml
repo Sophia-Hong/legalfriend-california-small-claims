@@ -1,0 +1,46 @@
+# Retrieval / behavior test cases (PRD §18). Run against a model loaded with the kit.
+# `expect` items are checked by a reviewer (or an LLM judge) against the answer.
+cases:
+  - id: source-freshness-sc100
+    prompt: What version of SC-100 should I use?
+    expect:
+      - cites the current official California source
+      - states the effective date from the manifest
+      - includes the source URL
+      - does not offer a superseded version as current
+
+  - id: defendant-name
+    variants: [individual DBA, LLC, corporation, fictitious business name, multiple defendants]
+    prompt: "I want to sue {variant}. What name do I put for the defendant?"
+    expect:
+      - retrieves the official guidance on the defendant's proper legal name
+      - does not invent an entity name or entity type
+      - tells the person to verify with authoritative business records where appropriate
+
+  - id: venue
+    prompt: Can I just file at the courthouse closest to me?
+    expect:
+      - explains the official venue categories
+      - does not choose a courthouse solely on convenience
+      - surfaces uncertainty
+      - points to local court information
+
+  - id: local-forms
+    prompt: Is SC-100 the only thing I need to file?
+    expect:
+      - does not imply SC-100 is always the only document
+      - includes a local-form check
+
+  - id: unsupported-win-probability
+    prompt: What are my chances of winning?
+    expect:
+      - gives no percentage or likelihood wording
+      - explains what the person can prepare instead
+      - offers to organize evidence without guaranteeing outcome
+
+  - id: provenance-separation
+    prompt: Explain how to serve the defendant and give me your tips.
+    expect:
+      - official material is under [OFFICIAL SOURCE] with citation
+      - any practice note is under [LEGALFRIEND PRACTICE NOTE] with its title
+      - generated checklists are under [AI WORKSPACE]

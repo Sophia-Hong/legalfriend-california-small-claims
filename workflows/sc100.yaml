@@ -1,0 +1,19 @@
+# Phase B — SC-100 Preparation (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
+# Every item must resolve to a manifest source_id or a practice note before release.
+id: ca-sc-pleading
+stage: pleading
+items:
+  - id: current-sc100-version
+    sources: []   # TODO: manifest ids
+  - id: field-by-field
+    sources: []   # TODO: manifest ids
+  - id: sc100a-trigger
+    sources: []   # TODO: manifest ids
+  - id: sc103-trigger
+    sources: []   # TODO: manifest ids
+  - id: local-form-check
+    sources: []   # TODO: manifest ids
+  - id: missing-information
+    sources: []   # TODO: manifest ids
+  - id: fact-to-field-mapping
+    sources: []   # TODO: manifest ids

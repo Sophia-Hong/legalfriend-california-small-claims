@@ -1,0 +1,20 @@
+# Plaintiff master workflow (PRD §16). DRAFT v0.1.
+# Each step names the stage workflow and prompt it uses. Step content lives in the
+# stage files; this file only fixes order and hand-offs.
+id: ca-sc-plaintiff
+version: 0.1.0
+jurisdiction: CA
+proceeding: small_claims
+side: plaintiff
+steps:
+  - { n: 1,  id: describe-dispute,   stage: prefiling, workflow: prefiling.yaml, prompt: source-research.md }
+  - { n: 2,  id: build-timeline,     stage: prefiling, workflow: prefiling.yaml, prompt: timeline-builder.md }
+  - { n: 3,  id: identify-parties,   stage: prefiling, workflow: prefiling.yaml, practice_note: defendant-name.md }
+  - { n: 4,  id: venue-checklist,    stage: prefiling, workflow: prefiling.yaml, practice_note: venue.md }
+  - { n: 5,  id: prefiling-checklist, stage: prefiling, workflow: prefiling.yaml }
+  - { n: 6,  id: sc100-workspace,    stage: pleading,  workflow: sc100.yaml,     prompt: sc100-workspace.md }
+  - { n: 7,  id: local-forms-check,  stage: pleading,  workflow: sc100.yaml }
+  - { n: 8,  id: filing-and-service, stage: service,   workflow: service.yaml }
+  - { n: 9,  id: evidence-organizer, stage: hearing,   workflow: hearing.yaml,   prompt: evidence-organizer.md, practice_note: evidence-story.md }
+  - { n: 10, id: hearing-prep,       stage: hearing,   workflow: hearing.yaml,   prompt: hearing-prep.md }
+  - { n: 11, id: judgment-resources, stage: judgment,  workflow: judgment.yaml,  practice_note: collection.md }

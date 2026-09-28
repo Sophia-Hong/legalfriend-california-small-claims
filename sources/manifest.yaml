@@ -1,0 +1,139 @@
+# Source manifest — every source the kit relies on.
+#
+# Rules (PRD §10):
+# - Retrieval priority is set by `priority` (1 = highest), per PRD §10.1.
+# - A form is keyed by form_number + effective_date + source_url + version_hash,
+#   never by form number alone.
+# - New effective versions are ADDED; the old record gets `superseded_by` and stays.
+# - `last_verified` is only set by scripts/fetch_sources after a successful fetch.
+#   Seeded entries below are `status: pending_fetch` and have not been fetched.
+# - Facts noted in `notes_from_prd` were observed by the PRD author on 2026-09-28
+#   and must be re-confirmed against the fetched source before use.
+
+schema_version: 1
+jurisdiction: CA
+proceeding: small_claims
+
+priority_order:
+  1: California Courts / Judicial Branch official self-help
+  2: Judicial Council forms and official instructions
+  3: California statutes
+  4: California Rules of Court
+  5: Superior Court local resources
+  6: LegalFriend practice notes
+  7: Secondary explanatory sources (only when necessary, clearly labeled)
+
+sources:
+  - id: cc-selfhelp-small-claims
+    source_title: California Small Claims Process
+    source_url: https://selfhelp.courts.ca.gov/small-claims
+    publisher: California Courts
+    official: true
+    priority: 1
+    document_type: self_help
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling, pleading, filing, service, hearing, judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - Official process is organized as Before you start -> Start a case -> Go to your court date -> After the trial.
+
+  - id: cc-selfhelp-fill-out-forms
+    source_title: Fill out forms to start a small claims case
+    source_url: https://selfhelp.courts.ca.gov/small-claims/start-case/forms/fill-out-forms
+    publisher: California Courts
+    official: true
+    priority: 1
+    document_type: self_help
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - Emphasizes the defendant's proper legal name, correct county, possible additional local forms, and supplemental forms such as SC-100A and SC-103.
+
+  - id: jcc-form-sc-100
+    source_title: SC-100 — Plaintiff's Claim and ORDER to Go to Small Claims Court
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-100
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading, filing]
+    form_number: SC-100
+    effective_date: null   # PRD observed "Effective January 1, 2026" — set only after fetch confirms
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - Form page showed Effective January 1, 2026 on 2026-09-28.
+
+  - id: cc-small-claims-forms
+    source_title: Small Claims Forms
+    source_url: https://selfhelp.courts.ca.gov/small-claims-forms
+    publisher: California Courts
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading, filing, service, hearing, judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - Index page; each form listed here should get its own manifest entry once fetched.
+
+  - id: cc-find-forms-small-claims
+    source_title: California Court Forms search (small claims)
+    source_url: https://selfhelp.courts.ca.gov/find-forms?query=small+claims
+    publisher: California Courts
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading, filing, service, hearing, judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+
+# Reference material used for product/ethics design only. Not loaded into the
+# purchaser-facing corpus.
+design_references:
+  - id: calbar-ethics-technology
+    source_title: State Bar of California — Ethics & Technology Resources
+    source_url: https://www.calbar.ca.gov/legal-professionals/ethics-compliance-practice-resources/ethics/ethics-technology-resources
+  - id: calbar-genai-guidance-2026
+    source_title: Practical Guidance for the Use of Generative AI in the Practice of Law (2026)
+    source_url: https://www.calbar.ca.gov/sites/default/files/portals/0/documents/ethics/Generative-AI-Practical-Guidance.pdf

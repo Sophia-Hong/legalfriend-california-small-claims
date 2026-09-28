@@ -1,0 +1,21 @@
+# Phase A — Before Filing (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
+# Every item must resolve to a manifest source_id or a practice note before release.
+id: ca-sc-prefiling
+stage: prefiling
+items:
+  - id: small-claims-fit
+    sources: []   # TODO: manifest ids
+  - id: claim-limit-source
+    sources: []   # TODO: manifest ids
+  - id: plaintiff-eligibility
+    sources: []   # TODO: manifest ids
+  - id: defendant-identification
+    sources: []   # TODO: manifest ids
+  - id: entity-naming
+    sources: []   # TODO: manifest ids
+  - id: venue
+    sources: []   # TODO: manifest ids
+  - id: demand-prefiling
+    sources: []   # TODO: manifest ids
+  - id: limitations-issue-flag
+    sources: []   # TODO: manifest ids

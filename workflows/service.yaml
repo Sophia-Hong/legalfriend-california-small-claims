@@ -1,0 +1,19 @@
+# Phase C — Filing / Service (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
+# Every item must resolve to a manifest source_id or a practice note before release.
+id: ca-sc-service
+stage: service
+items:
+  - id: filing-methods
+    sources: []   # TODO: manifest ids
+  - id: fees-and-fee-waiver
+    sources: []   # TODO: manifest ids
+  - id: service-overview
+    sources: []   # TODO: manifest ids
+  - id: who-may-serve
+    sources: []   # TODO: manifest ids
+  - id: proof-of-service
+    sources: []   # TODO: manifest ids
+  - id: deadline-issue-spotting
+    sources: []   # TODO: manifest ids
+  - id: local-court-cross-check
+    sources: []   # TODO: manifest ids
