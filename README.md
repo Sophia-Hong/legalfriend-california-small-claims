@@ -89,7 +89,9 @@ Static Astro site deployed to Cloudflare Pages.
 | Env `PUBLIC_SITE_LIVE` | unset until launch (every page is `noindex`, robots disallows all, preview banner shown) |
 | Env `PUBLIC_KIT_CHECKOUT_URL` | checkout link once it exists (button is disabled until then) |
 
-Landing copy comes verbatim from PRD §14. The "Before you buy" notice mirrors
+Landing copy comes verbatim from PRD §14. `/design-preview` renders the same copy in the
+candidate "command deck" style (always `noindex`). `public/_redirects` sends old lease-app
+paths to `lease.legalfriend.ai`. The "Before you buy" notice mirrors
 `DISCLAIMER.md`; change both together.
 
 ## Distribution

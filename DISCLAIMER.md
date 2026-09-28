@@ -1,8 +1,7 @@
 # Disclaimer and Relationship Notice
 
-> **DRAFT — requires attorney review before any publication, checkout page, or release.**
-> Points below come from PRD §6.2. Final wording must be approved by the LegalFriend
-> attorney. Do not ship a bare "not legal advice" line in place of this notice.
+> **Approved for publication by the LegalFriend attorney (Sophia), 2026-09-28.**
+> Points follow PRD §6.2. Do not replace this with a bare "not legal advice" line.
 
 This notice must appear, in consistent wording, on the product page, at checkout, in
 this README, and at the start of the ebook.
