@@ -6,7 +6,8 @@
 
 | | |
 |---|---|
-| Registrar / DNS | Namecheap (`dns1/dns2.registrar-servers.com`) |
+| Registrar | Namecheap |
+| DNS | **Cloudflare** (Free, account `info@legalfriend.ai`) — nameservers `bjorn.ns.cloudflare.com`, `mallory.ns.cloudflare.com`, switched 2026-09-28. Previous: `dns1/dns2.registrar-servers.com` (Namecheap records left intact for rollback) |
 | `legalfriend.ai`, `www` | Vercel project `legalfriend-v1-1-frontend` (lease-review app, repo `legalfriend_v1.1`) |
 | `api.legalfriend.ai` | Vercel project `legalfriend-v1-1-backend` |
 | Other LegalFriend repos | `legalfriendv1.0`, `legalfriend_eval` — inactive since 2025-07 |
@@ -29,7 +30,9 @@ on Pages Functions; kit downloads from R2 via signed URLs; Cloudflare Web Analyt
 
 ## Migration steps
 
-1. **DNS move only (no visible change).** Add `legalfriend.ai` to Cloudflare (Free),
+1. ✅ *Done 2026-09-28 (awaiting Active).* 10 records copied 1:1, all DNS only;
+   SSL/TLS Full (strict); no DNSSEC, forwarding, or URL redirects existed.
+   **DNS move only (no visible change).** Add `legalfriend.ai` to Cloudflare (Free),
    copy every Namecheap record, set all to DNS only, disable DNSSEC at Namecheap if
    on, switch nameservers. Replace any Namecheap-hosted email forwarding / URL
    redirects with Cloudflare Email Routing / Redirect Rules.
@@ -47,3 +50,9 @@ v1.1 already has attorney-reviewed `/deposit-dispute` pages (deadline calculator
 deposit kit). Security deposit is a PRD §15.3 dispute type
 (`/california-small-claims/security-deposit`). Decide whether those pages move to
 the new site or stay with the lease app.
+
+## Known gap (pre-existing, not caused by the move)
+
+The apex has no Google Workspace SPF (`v=spf1 include:_spf.google.com ~all`) and no
+Google DKIM record, so mail sent from `@legalfriend.ai` via Gmail may land in spam.
+Add both in Cloudflare after the zone is Active.
