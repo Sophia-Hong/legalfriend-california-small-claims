@@ -43,3 +43,4 @@
 /en    https://lease.legalfriend.ai/    301
 /en/*  https://lease.legalfriend.ai/:splat  301
 /og-home-20260715.png  https://lease.legalfriend.ai/og-home-20260715.png  301
+/design-preview  /california-small-claims  301

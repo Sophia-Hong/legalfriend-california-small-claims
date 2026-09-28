@@ -1,16 +1,35 @@
 ---
 import Base from "../layouts/Base.astro"
+// Lease Review description is the lease app's existing Organization JSON-LD copy.
 ---
 <Base
-  title="LegalFriend"
+  title="LegalFriend — Lawyer-designed self-help for the AI you choose"
   description="Lawyer-designed self-help toolkits built around official California court materials, for use with the AI you choose."
 >
-  <h1>LegalFriend</h1>
-  <p class="lead">Lawyer-designed self-help toolkits built around official California court materials, for use with the AI you choose.</p>
-  <ul class="grid">
-    <li class="card">
-      <h3><a href="/california-small-claims">California Small Claims Kit</a></h3>
-      <p>California gives you the forms. LegalFriend helps you understand how the pieces fit together.</p>
-    </li>
-  </ul>
+  <section class="home-hero">
+    <div class="wrap">
+      <span class="eyebrow">Built for your AI — not ours</span>
+      <h1>Lawyer-designed self-help toolkits for the AI you choose.</h1>
+      <p>Built around official California court materials.</p>
+
+      <div class="products">
+        <a class="product product--dark" href="/california-small-claims">
+          <div>
+            <span class="eyebrow eyebrow--dark">California · Small claims</span>
+            <h2>California Small Claims Kit</h2>
+            <p>California gives you the forms. LegalFriend helps you understand how the pieces fit together.</p>
+          </div>
+          <span class="go">See the kit <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="product product--light" href="https://lease.legalfriend.ai">
+          <div>
+            <span class="eyebrow">California · Renters</span>
+            <h2>Lease Review</h2>
+            <p>AI-powered lease review assistant helping California renters understand their lease agreements.</p>
+          </div>
+          <span class="go">Open lease review <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
 </Base>

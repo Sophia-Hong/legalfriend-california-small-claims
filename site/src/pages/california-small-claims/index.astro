@@ -1,16 +1,22 @@
 ---
-// Copy: PRD §14 (docs/PRD.md). Do not add claims beyond PRD §6.4 guardrails.
+// Copy: PRD §1, §5.3–5.4, §9.1, §14 (docs/PRD.md); notice mirrors DISCLAIMER.md.
+// Stay within PRD §6.4 marketing guardrails.
 import Base from "../../layouts/Base.astro"
 import RelationshipNotice from "../../components/RelationshipNotice.astro"
 import { KIT_CHECKOUT_URL } from "../../site"
 
 const stages = [
-  "Before filing",
-  "Build your claim",
-  "Prepare forms",
-  "Serve defendant",
-  "Hearing prep",
-  "After judgment",
+  ["Before filing", "Small claims fit, the right defendant, venue, and pre-filing checklists."],
+  ["Build your claim", "Describe the dispute and build a dated timeline of what happened."],
+  ["Prepare forms", "The current SC-100, field by field, with SC-100A / SC-103 triggers and a local-form check."],
+  ["Serve defendant", "Filing and service overview, proof-of-service resources, and deadline issue-spotting."],
+  ["Hearing prep", "Evidence inventory, exhibit checklist, and questions you should be ready to answer."],
+  ["After judgment", "Judgment orientation and official collection resources."],
+]
+const layers = [
+  ["Official source", "California Courts, Judicial Council forms and instructions, statutes, rules, Superior Court resources."],
+  ["LegalFriend practice note", "General educational commentary, common pitfalls, and issue-spotting from a California attorney."],
+  ["AI workspace", "Summaries, checklists, drafts, and organization produced by the AI you choose."],
 ]
 const steps = [
   "Purchase and download the kit",
@@ -18,36 +24,92 @@ const steps = [
   "Work through your case",
   "Verify against the official source",
 ]
+const never = [
+  "No case intake",
+  "No upload of your case files to LegalFriend",
+  "No access to your AI prompts",
+  "No access to your AI's answers",
+]
 ---
 <Base
   title="California Small Claims Help 2026 | AI Self-Help Kit | LegalFriend"
   description="Navigate California small claims court with a lawyer-designed AI self-help kit built around official California court materials. Understand SC-100, venue, service, evidence, hearing preparation, and judgment collection."
 >
-  <h1>California Small Claims, Made Understandable</h1>
-  <p class="lead">Handle your California small claims case with a lawyer-designed AI self-help kit.</p>
-  <p class="tagline">California gives you the forms.<br />LegalFriend helps you understand how the pieces fit together.</p>
+    <header class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div>
+            <span class="eyebrow">California Small Claims · Plaintiff</span>
+            <h1>California Small Claims, Made Understandable</h1>
+            <p class="sub">Handle your California small claims case with a lawyer-designed AI self-help kit.</p>
+            <p class="tag">California gives you the forms.<br />LegalFriend helps you understand how the pieces fit together.</p>
+            {KIT_CHECKOUT_URL ? (
+              <a class="btn btn--primary" href={KIT_CHECKOUT_URL}>Get the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
+            ) : (
+              <>
+                <a class="btn btn--primary" aria-disabled="true" role="link">Get the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
+                <span class="cta-note">Not yet available.</span>
+              </>
+            )}
+          </div>
 
-  {KIT_CHECKOUT_URL ? (
-    <a class="cta" href={KIT_CHECKOUT_URL}>Get the California Small Claims Kit</a>
-  ) : (
-    <span>
-      <a class="cta" aria-disabled="true" role="link">Get the California Small Claims Kit</a>
-      <span class="cta-note">Not yet available.</span>
-    </span>
-  )}
+          <figure class="deck" aria-label="How the kit keeps sources separate">
+            <div class="deck-head">
+              <span class="eyebrow eyebrow--dark">Three-layer provenance</span>
+            </div>
+            <ol class="layers">
+              {layers.map(([label, text]) => (
+                <li class="layer"><span class="label">[{label}]</span><p>{text}</p></li>
+              ))}
+            </ol>
+            <figcaption class="deck-foot">Built around official California court materials — organized so you and your own AI can actually use them.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </header>
 
-  <p>Built around official California court materials — organized so you and your own AI can actually use them.</p>
+    <section class="section section--paper" id="inside">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">What's inside</span>
+          <h2>More Than an SC-100 Form Filler</h2>
+          <p>Don't just fill out a form. Understand your small claims case.</p>
+        </div>
+        <ol class="grid3">
+          {stages.map(([name, text], i) => (
+            <li class="card">
+              <span class="num">{String(i + 1).padStart(2, "0")}</span>
+              <h3>{name}</h3>
+              <p>{text}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
 
-  <h2>More Than an SC-100 Form Filler</h2>
-  <ul class="grid">
-    {stages.map((s) => <li class="card"><h3>{s}</h3></li>)}
-  </ul>
+    <section class="section" id="your-ai">
+      <div class="wrap">
+        <div class="band">
+          <div>
+            <span class="eyebrow eyebrow--dark">Bring your own AI</span>
+            <h2>Built for Your AI — Not Ours</h2>
+            <ol class="steps">
+              {steps.map((s) => <li>{s}</li>)}
+            </ol>
+          </div>
+          <ul class="never" aria-label="What LegalFriend does not receive">
+            {never.map((n) => <li>{n}</li>)}
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <h2>Built for Your AI — Not Ours</h2>
-  <ol class="steps">
-    {steps.map((s) => <li>{s}</li>)}
-  </ol>
-
-  <h2>What this kit is — and isn't</h2>
-  <RelationshipNotice />
+    <section class="section" id="notice">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What this kit is — and isn't</h2>
+        </div>
+        <RelationshipNotice />
+      </div>
+    </section>
 </Base>
