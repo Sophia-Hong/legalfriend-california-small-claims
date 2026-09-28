@@ -58,6 +58,7 @@ practice-notes/     Attorney-authored commentary (stubs until written)
 scripts/            Source fetch / normalize / validate / diff / build tooling
 tests/              Freshness, citation-integrity, form-version, retrieval cases
 docs/               PRD, distribution plan, legalfriend.ai integration
+site/               legalfriend.ai public site (Astro → Cloudflare Pages)
 ```
 
 ## Source versioning
@@ -74,6 +75,22 @@ traceable (PRD §10.3). Facts such as claim limits or form effective dates live 
 python3 scripts/validate_manifest.py     # schema + provenance rules on sources/manifest.yaml
 python3 scripts/validate_links.py        # HEAD-checks every source_url (network)
 ```
+
+## Website (`site/`)
+
+Static Astro site deployed to Cloudflare Pages.
+
+| Pages setting | Value |
+|---|---|
+| Root directory | `site` |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Env `NODE_VERSION` | `22` |
+| Env `PUBLIC_SITE_LIVE` | unset until launch (every page is `noindex`, robots disallows all, preview banner shown) |
+| Env `PUBLIC_KIT_CHECKOUT_URL` | checkout link once it exists (button is disabled until then) |
+
+Landing copy comes verbatim from PRD §14. The "Before you buy" notice mirrors
+`DISCLAIMER.md`; change both together.
 
 ## Distribution
 

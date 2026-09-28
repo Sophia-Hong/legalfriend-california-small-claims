@@ -1,0 +1,44 @@
+---
+import "../styles/global.css"
+import { SITE_LIVE } from "../site"
+
+interface Props {
+  title: string
+  description: string
+}
+const { title, description } = Astro.props
+const canonical = new URL(Astro.url.pathname.replace(/\/+$/, "") || "/", Astro.site)
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {!SITE_LIVE && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LegalFriend" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <slot name="head" />
+  </head>
+  <body>
+    {!SITE_LIVE && (
+      <div class="preview-banner"><div class="wrap">Preview build — not yet published. Content is pending review.</div></div>
+    )}
+    <header class="site">
+      <div class="wrap">
+        <a href="/"><img src="/logo.svg" alt="" width="28" height="28" />LegalFriend</a>
+      </div>
+    </header>
+    <main><div class="wrap"><slot /></div></main>
+    <footer class="site">
+      <div class="wrap">© {new Date().getFullYear()} LegalFriend</div>
+    </footer>
+  </body>
+</html>

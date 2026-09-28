@@ -41,7 +41,16 @@ on Pages Functions; kit downloads from R2 via signed URLs; Cloudflare Web Analyt
    success/cancel URLs, emails, sitemap/robots, JSON-LD). Move to one env var, add the
    subdomain to the Vercel project, update the Stripe webhook endpoint and Supabase
    auth redirect URLs.
-3. **Launch the new site** on the apex/`www`. 301-redirect old lease-app paths
+   *2026-09-28:* code change prepared on `legalfriend_v1.1` branch
+   `claude/amazing-cori-9r2bxk` (not yet committed — the repo's interactive
+   `codex` pre-commit hook can't run in the cloud session). All origin references now
+   read `NEXT_PUBLIC_SITE_ORIGIN` (default `https://legalfriend.ai`, so merging alone
+   changes nothing). Cutover = add `lease.legalfriend.ai` to the Vercel project + a
+   DNS-only CNAME in Cloudflare, set `NEXT_PUBLIC_SITE_ORIGIN=https://lease.legalfriend.ai`,
+   redeploy, then update the Stripe webhook endpoint and Supabase auth redirect URLs.
+   The lease app's static `public/llms.txt` still lists apex URLs; update it then.
+3. **Launch the new site** on the apex/`www` (`site/`, preview mode by default).
+   Apex is primary (PRD URLs are `https://legalfriend.ai/...`); `www` 301s to apex. 301-redirect old lease-app paths
    (`/upload`, `/pricing`, `/blog/*`, …) to the subdomain to keep search equity.
 
 ## Open decision

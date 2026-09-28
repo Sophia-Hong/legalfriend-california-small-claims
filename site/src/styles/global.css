@@ -1,0 +1,61 @@
+:root {
+  /* Matches the lease-review app's palette (frontend/app/globals.css). */
+  --bg: hsl(210 40% 98%);
+  --surface: #fff;
+  --text: hsl(222 47% 11%);
+  --muted: hsl(215 16% 42%);
+  --primary: hsl(221 39% 11%);
+  --accent: hsl(221 83% 53%);
+  --border: hsl(214 32% 91%);
+  --notice-bg: hsl(45 100% 96%);
+  --notice-border: hsl(45 90% 70%);
+  --radius: 0.75rem;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(222 47% 7%);
+    --surface: hsl(222 40% 11%);
+    --text: hsl(210 40% 96%);
+    --muted: hsl(215 20% 70%);
+    --primary: hsl(210 40% 96%);
+    --accent: hsl(217 91% 65%);
+    --border: hsl(217 25% 22%);
+    --notice-bg: hsl(45 40% 14%);
+    --notice-border: hsl(45 60% 35%);
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); }
+.wrap { max-width: 64rem; margin: 0 auto; padding: 0 1rem; }
+header.site { border-bottom: 1px solid var(--border); background: var(--surface); }
+header.site .wrap { display: flex; align-items: center; gap: .5rem; height: 3.5rem; }
+header.site a { display: flex; align-items: center; gap: .5rem; color: var(--text); text-decoration: none; font-weight: 700; }
+header.site img { width: 28px; height: 28px; }
+@media (prefers-color-scheme: dark) { header.site img { filter: invert(1); } }
+.preview-banner { background: var(--notice-bg); border-bottom: 1px solid var(--notice-border); font-size: .875rem; padding: .5rem 0; }
+main { padding: 3rem 0 4rem; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 1rem; letter-spacing: -.02em; }
+h2 { font-size: 1.5rem; margin: 3rem 0 1rem; }
+.lead { font-size: 1.125rem; color: var(--muted); max-width: 40rem; }
+.tagline { font-size: 1.125rem; margin: 1.5rem 0; }
+.cta { display: inline-block; margin-top: .5rem; padding: .875rem 1.5rem; border-radius: var(--radius); background: var(--primary); color: var(--bg); font-weight: 600; text-decoration: none; }
+.cta[aria-disabled="true"] { opacity: .55; cursor: not-allowed; }
+.cta-note { display: block; margin-top: .5rem; font-size: .875rem; color: var(--muted); }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); padding: 0; list-style: none; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+.card h3 { margin: 0 0 .25rem; font-size: 1rem; }
+.card p { margin: 0; color: var(--muted); font-size: .9375rem; }
+ol.steps { padding-left: 1.25rem; }
+ol.steps li { margin: .5rem 0; }
+.notice { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; font-size: .9375rem; }
+.notice ol { padding-left: 1.25rem; margin: .5rem 0 0; }
+footer.site { border-top: 1px solid var(--border); padding: 2rem 0; font-size: .875rem; color: var(--muted); }

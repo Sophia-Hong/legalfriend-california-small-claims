@@ -1,0 +1,53 @@
+---
+// Copy: PRD §14 (docs/PRD.md). Do not add claims beyond PRD §6.4 guardrails.
+import Base from "../../layouts/Base.astro"
+import RelationshipNotice from "../../components/RelationshipNotice.astro"
+import { KIT_CHECKOUT_URL } from "../../site"
+
+const stages = [
+  "Before filing",
+  "Build your claim",
+  "Prepare forms",
+  "Serve defendant",
+  "Hearing prep",
+  "After judgment",
+]
+const steps = [
+  "Purchase and download the kit",
+  "Choose your preferred AI",
+  "Work through your case",
+  "Verify against the official source",
+]
+---
+<Base
+  title="California Small Claims Help 2026 | AI Self-Help Kit | LegalFriend"
+  description="Navigate California small claims court with a lawyer-designed AI self-help kit built around official California court materials. Understand SC-100, venue, service, evidence, hearing preparation, and judgment collection."
+>
+  <h1>California Small Claims, Made Understandable</h1>
+  <p class="lead">Handle your California small claims case with a lawyer-designed AI self-help kit.</p>
+  <p class="tagline">California gives you the forms.<br />LegalFriend helps you understand how the pieces fit together.</p>
+
+  {KIT_CHECKOUT_URL ? (
+    <a class="cta" href={KIT_CHECKOUT_URL}>Get the California Small Claims Kit</a>
+  ) : (
+    <span>
+      <a class="cta" aria-disabled="true" role="link">Get the California Small Claims Kit</a>
+      <span class="cta-note">Not yet available.</span>
+    </span>
+  )}
+
+  <p>Built around official California court materials — organized so you and your own AI can actually use them.</p>
+
+  <h2>More Than an SC-100 Form Filler</h2>
+  <ul class="grid">
+    {stages.map((s) => <li class="card"><h3>{s}</h3></li>)}
+  </ul>
+
+  <h2>Built for Your AI — Not Ours</h2>
+  <ol class="steps">
+    {steps.map((s) => <li>{s}</li>)}
+  </ol>
+
+  <h2>What this kit is — and isn't</h2>
+  <RelationshipNotice />
+</Base>
