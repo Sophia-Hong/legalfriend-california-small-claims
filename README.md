@@ -86,7 +86,7 @@ Static Astro site deployed to Cloudflare Pages.
 | Build command | `npm run build` |
 | Output directory | `dist` |
 | Env `NODE_VERSION` | `22` |
-| Env `PUBLIC_SITE_LIVE` | unset until launch (every page is `noindex`, robots disallows all, preview banner shown) |
+| Env `PUBLIC_SITE_LIVE` | `true` in production since 2026-09-28 (when unset: every page `noindex`, robots disallows all, preview banner) |
 | Env `PUBLIC_KIT_CHECKOUT_URL` | checkout link once it exists (button is disabled until then) |
 
 Landing copy comes verbatim from PRD §14. `/design-preview` renders the same copy in the
