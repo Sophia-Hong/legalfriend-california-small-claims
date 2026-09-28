@@ -3,6 +3,9 @@ import { defineConfig } from "astro/config"
 // Static site for legalfriend.ai, deployed to Cloudflare Pages (build: `npm run build`, output: `dist`).
 export default defineConfig({
   site: "https://legalfriend.ai",
-  trailingSlash: "ignore",
-  build: { format: "directory" },
+  // "file" output (california-small-claims.html) lets Pages serve /california-small-claims
+  // directly; "directory" output made Pages 308 it to a trailing-slash URL that
+  // didn't match the canonical.
+  trailingSlash: "never",
+  build: { format: "file" },
 })

@@ -5,9 +5,10 @@ import { SITE_LIVE } from "../site"
 interface Props {
   title: string
   description: string
+  noindex?: boolean
 }
-const { title, description } = Astro.props
-const canonical = new URL(Astro.url.pathname.replace(/\/+$/, "") || "/", Astro.site)
+const { title, description, noindex = false } = Astro.props
+const canonical = new URL(Astro.url.pathname.replace(/(\/index)?\.html$/, "").replace(/\/+$/, "") || "/", Astro.site)
 ---
 <!doctype html>
 <html lang="en">
@@ -17,7 +18,7 @@ const canonical = new URL(Astro.url.pathname.replace(/\/+$/, "") || "/", Astro.s
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {!SITE_LIVE && <meta name="robots" content="noindex, nofollow" />}
+    {(!SITE_LIVE || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="LegalFriend" />
     <meta property="og:title" content={title} />
