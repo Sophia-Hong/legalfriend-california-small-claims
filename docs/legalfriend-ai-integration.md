@@ -1,41 +1,49 @@
 # Serving the kit on legalfriend.ai
 
-*Created: 2026-09-28 | Status: AI-GENERATED proposal | Requires Review: YES*
+*Created: 2026-09-28 | Status: AI-GENERATED plan | Requires Review: YES*
 
 ## Current state (checked 2026-09-28)
 
 | | |
 |---|---|
-| Live repo | `Sophia-Hong/legalfriend_v1.1` (monorepo, `frontend/` + `backend/`) |
-| Vercel project serving the domain | `legalfriend-v1-1-frontend` |
-| Domains on that project | `www.legalfriend.ai` (primary), `legalfriend.ai` → redirects to `www` |
-| Other LegalFriend repos | `legalfriendv1.0` (last push 2025-07), `legalfriend_eval` (2025-07) — inactive |
+| Registrar / DNS | Namecheap (`dns1/dns2.registrar-servers.com`) |
+| `legalfriend.ai`, `www` | Vercel project `legalfriend-v1-1-frontend` (lease-review app, repo `legalfriend_v1.1`) |
+| `api.legalfriend.ai` | Vercel project `legalfriend-v1-1-backend` |
+| Other LegalFriend repos | `legalfriendv1.0`, `legalfriend_eval` — inactive since 2025-07 |
 
-So any URL under `legalfriend.ai` is answered by the v1.1 frontend today.
+## Target (decided 2026-09-28: move to Cloudflare)
 
-## Options for `legalfriend.ai/california-small-claims`
+| Hostname | Served by | Cloudflare proxy |
+|---|---|---|
+| `legalfriend.ai`, `www` | **Cloudflare Pages** — brand home + `/california-small-claims/*` (this repo, `site/`) | Proxied |
+| `lease.legalfriend.ai` (name TBD) | Vercel `legalfriend-v1-1-frontend` — lease-review app stays as is | **DNS only** |
+| `api.legalfriend.ai` | Vercel `legalfriend-v1-1-backend` | **DNS only** |
 
-**A. Separate Vercel project + path rewrite (recommended)**
-- Add a `site/` Next.js app to this repo; deploy it as its own Vercel project.
-- In `legalfriend_v1.1/frontend/next.config.mjs`, add one rewrite:
-  `/california-small-claims/:path*` → `https://<new-project>.vercel.app/california-small-claims/:path*`.
-- Pros: keeps the PRD's SEO paths on the main domain; the kit ships independently of
-  the lease product; the lease product can be wound down later without touching this.
-- Cons: one small change to the production repo (needs sign-off), two deploys to watch.
+Vercel hostnames stay "DNS only" so Cloudflare never proxies in front of Vercel.
+The lease-review app is not ported; if it later becomes a bring-your-own-AI prompt
+kit it turns static and can move to Pages then.
 
-**B. Build the pages inside the v1.1 frontend**
-- Least infra. But ties the new product to a codebase you plan to retire, and
-  mixes the lease-review legal copy with the small-claims copy.
+Stack for this repo's site: static site (Astro) on Cloudflare Pages; Stripe webhook
+on Pages Functions; kit downloads from R2 via signed URLs; Cloudflare Web Analytics
+(cookieless, fits PRD §19).
 
-**C. Subdomain (`smallclaims.legalfriend.ai`)**
-- Cleanest separation, but the PRD's URL plan (§14–15) is path-based under the main
-  domain, which is better for building one domain's search authority.
+## Migration steps
 
-When the lease product is retired, option A lets the new project take over the apex
-domain directly and the rewrite goes away.
+1. **DNS move only (no visible change).** Add `legalfriend.ai` to Cloudflare (Free),
+   copy every Namecheap record, set all to DNS only, disable DNSSEC at Namecheap if
+   on, switch nameservers. Replace any Namecheap-hosted email forwarding / URL
+   redirects with Cloudflare Email Routing / Redirect Rules.
+2. **Lease app to subdomain** (change in `legalfriend_v1.1`, needs sign-off):
+   `https://legalfriend.ai` is hard-coded in ~20 files (canonical URLs, Stripe
+   success/cancel URLs, emails, sitemap/robots, JSON-LD). Move to one env var, add the
+   subdomain to the Vercel project, update the Stripe webhook endpoint and Supabase
+   auth redirect URLs.
+3. **Launch the new site** on the apex/`www`. 301-redirect old lease-app paths
+   (`/upload`, `/pricing`, `/blog/*`, …) to the subdomain to keep search equity.
 
-## Checkout
+## Open decision
 
-PRD open question #8. The v1.1 stack already has Stripe live. For the kit, a Stripe
-Payment Link or Checkout Session that delivers a download / repo-invite is enough;
-no case data is involved, so none of the v1.1 upload/session machinery is needed.
+v1.1 already has attorney-reviewed `/deposit-dispute` pages (deadline calculator,
+deposit kit). Security deposit is a PRD §15.3 dispute type
+(`/california-small-claims/security-deposit`). Decide whether those pages move to
+the new site or stay with the lease app.
