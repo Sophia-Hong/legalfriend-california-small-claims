@@ -77,12 +77,25 @@ Add both in Cloudflare after the zone is Active.
 - Cloudflare DNS: apex + `www` CNAME → `legalfriend-site.pages.dev` (proxied); `lease`, `api`
   DNS only; MX/TXT unchanged.
 
+## Post-cutover cleanup (2026-09-29, done)
+
+- Vercel `legalfriend-v1-1-frontend` domains are now `lease.legalfriend.ai` and
+  `legalfriend-v1-1-frontend.vercel.app`; apex/`www` removed from the project (team-level
+  domain entry kept for `lease`/`api`).
+- Supabase Site URL `http://localhost:3000` → `https://lease.legalfriend.ai`; redirect URLs
+  unchanged (`https://lease.legalfriend.ai/**`).
+- Search Console (Domain property `legalfriend.ai`): apex sitemap Success (1 URL), lease
+  sitemap Success (21 URLs), legacy `www` sitemap left in place. Indexing requested for `/` and
+  `/california-small-claims`.
+- Cloudflare Web Analytics enabled on the Pages project (cookieless, auto-injected).
+- Google Workspace mail auth: apex SPF `v=spf1 include:_spf.google.com ~all` and DKIM selector
+  `google` (2048-bit) added; Workspace shows "Authenticating email with DKIM". Resend records
+  (`send`, `resend._domainkey`) and `_dmarc` untouched.
+
 ## Follow-ups
 
-- Remove `legalfriend.ai` and `www.legalfriend.ai` from the Vercel `legalfriend-v1-1-frontend`
-  project (they no longer point there; Vercel will warn about certificate renewal).
-- Supabase Site URL → `https://lease.legalfriend.ai`.
-- Google Search Console: submit `https://legalfriend.ai/sitemap.xml`; add `lease.legalfriend.ai`.
 - Kit-specific privacy policy and terms before checkout (`/privacy`, `/terms` currently
   redirect to the lease app's pages).
 - Lease app `public/llms.txt` still lists apex URLs.
+- The legacy `www` sitemap in Search Console can be removed once it starts erroring.
+- Consider tightening DMARC from `p=none` once SPF/DKIM reports look clean.
