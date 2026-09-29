@@ -1,19 +1,45 @@
-# Phase C — Filing / Service (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
-# Every item must resolve to a manifest source_id or a practice note before release.
+# Phase C — Filing / Service (PRD §9.1). DRAFT v0.1 — items cite sources/facts.yaml; pending attorney review.
 id: ca-sc-service
 stage: service
 items:
-  - id: filing-methods
-    sources: []   # TODO: manifest ids
-  - id: fees-and-fee-waiver
-    sources: []   # TODO: manifest ids
-  - id: service-overview
-    sources: []   # TODO: manifest ids
-  - id: who-may-serve
-    sources: []   # TODO: manifest ids
-  - id: proof-of-service
-    sources: []   # TODO: manifest ids
-  - id: deadline-issue-spotting
-    sources: []   # TODO: manifest ids
-  - id: local-court-cross-check
-    sources: []   # TODO: manifest ids
+- id: filing-methods
+  sources:
+  - cc-selfhelp-fill-out-forms
+  facts:
+  - local-forms
+- id: fees-and-fee-waiver
+  sources:
+  - cc-selfhelp-small-claims
+  - jcc-form-fw-001
+  facts:
+  - fees-vary
+  - fee-waiver
+- id: service-overview
+  sources:
+  - ccp-116-340
+  - ccp-415-20
+  facts:
+  - service-methods
+- id: who-may-serve
+  sources:
+  - ccp-116-340
+  facts:
+  - service-who
+- id: proof-of-service
+  sources:
+  - ccp-116-340
+  - jcc-form-sc-104
+  facts:
+  - proof-of-service
+- id: deadline-issue-spotting
+  sources:
+  - ccp-116-340
+  - ccp-415-20
+  facts:
+  - service-deadline
+  - substituted-service-timing
+- id: local-court-cross-check
+  sources:
+  - cc-selfhelp-fill-out-forms
+  facts:
+  - local-forms

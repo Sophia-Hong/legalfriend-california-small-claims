@@ -13,9 +13,10 @@ facts, prompts, or AI answers.
 Served at: `https://legalfriend.ai/california-small-claims`
 (see [`docs/legalfriend-ai-integration.md`](docs/legalfriend-ai-integration.md)).
 
-> **Status: Draft v0.1 scaffold.** No substantive legal content has been written yet.
-> Every practice note, ebook chapter, and prompt is a stub pending attorney authoring
-> and review. See [`DISCLAIMER.md`](DISCLAIMER.md).
+> **Status: v0.1 drafts.** All chapters, practice notes, and prompts are AI-drafted from
+> `sources/facts.yaml` and await attorney review — see
+> [`docs/attorney-review.md`](docs/attorney-review.md). The release build refuses to package
+> unapproved content.
 
 ## What's in the kit
 
@@ -72,9 +73,22 @@ traceable (PRD §10.3). Facts such as claim limits or form effective dates live 
 ## Quick checks
 
 ```bash
-python3 scripts/validate_manifest.py     # schema + provenance rules on sources/manifest.yaml
-python3 scripts/validate_links.py        # HEAD-checks every source_url (network)
+python3 scripts/validate_manifest.py     # manifest rules + every fact cites a known source
+python3 scripts/check_content.py         # [F:]/[S:] tags resolve, guardrail wording, review status
+python3 scripts/validate_links.py        # checks every source_url (network)
+python3 scripts/build_kit.py --draft     # review copy of the buyer zip (dist-kit/)
+python3 scripts/build_kit.py             # release zip — only when everything is approved
+(cd site && npm test)                    # download functions against fake Stripe/R2
 ```
+
+## Selling the kit
+
+Stripe Payment Link → `https://legalfriend.ai/kit/download?session_id={CHECKOUT_SESSION_ID}`.
+The download page asks `/api/kit/status`; the file comes from `/api/kit/file`, which verifies
+the Checkout Session with Stripe (paid, not refunded, right price), stamps the first download
+on the PaymentIntent (`metadata.kit_first_downloaded_at`, used for the refund policy), and
+streams the zip from R2. No database. Configuration is described in
+`site/functions/_lib/kit.ts`.
 
 ## Website (`site/`)
 

@@ -1,0 +1,84 @@
+---
+// Post-checkout download page. Stripe Payment Link redirects here with ?session_id=...
+// All state comes from /api/kit/status; the file comes from /api/kit/file.
+import Base from "../../layouts/Base.astro"
+import { SUPPORT_EMAIL } from "../../site"
+---
+<Base title="Your download | LegalFriend" description="Download your LegalFriend kit." noindex>
+  <section class="legal">
+    <div class="wrap">
+      <article id="kit" data-support={SUPPORT_EMAIL}>
+        <span class="eyebrow">Your purchase</span>
+        <h1>California Small Claims Kit</h1>
+        <p class="meta" id="kit-status">Checking your purchase…</p>
+
+        <div id="kit-ready" hidden>
+          <div class="summary">
+            <strong>Before you download</strong>
+            <ul>
+              <li id="kit-refund-note">You can get a full refund any time <strong>before your first download</strong>. Downloading ends the refund window (<a href="/terms#refunds">Terms, section 7</a>).</li>
+              <li>Bookmark this page. You can come back to download again with the same link.</li>
+              <li>Start with <code>README.md</code> inside the zip — it explains how to load the kit into the AI you choose.</li>
+            </ul>
+          </div>
+          <p style="margin-top:24px">
+            <label style="display:flex;gap:8px;align-items:flex-start">
+              <input type="checkbox" id="kit-ack" />
+              <span>I understand this kit is a self-help publication, not legal advice, and that downloading ends my refund window.</span>
+            </label>
+          </p>
+          <p><a class="btn btn--primary" id="kit-download" aria-disabled="true" role="link">Download the kit <span class="arrow" aria-hidden="true">↓</span></a></p>
+        </div>
+
+        <div id="kit-problem" hidden>
+          <p id="kit-problem-text"></p>
+          <p>Questions? Email <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> with your receipt.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <script>
+    const params = new URLSearchParams(location.search)
+    const sid = params.get("session_id") || ""
+    const $ = (id: string) => document.getElementById(id)!
+    const MESSAGES: Record<string, string> = {
+      bad_session: "This link is missing its purchase reference. Please use the link from the page you were sent to after checkout.",
+      not_found: "We couldn't find that purchase.",
+      unpaid: "This payment hasn't completed yet. If you just paid, wait a minute and refresh.",
+      wrong_product: "This purchase isn't for this kit.",
+      refunded: "This purchase was refunded, so the download is no longer available.",
+      not_configured: "Downloads are temporarily unavailable. Please try again later.",
+      stripe_error: "We couldn't reach our payment provider. Please refresh in a minute.",
+      file_missing: "The kit file is temporarily unavailable. Please try again later.",
+    }
+    function problem(reason: string) {
+      $("kit-status").textContent = "We couldn't open this download."
+      $("kit-problem-text").textContent = MESSAGES[reason] || "Something went wrong. Please refresh."
+      $("kit-problem").hidden = false
+    }
+    async function load() {
+      let data: any
+      try {
+        const res = await fetch(`/api/kit/status?session_id=${encodeURIComponent(sid)}`, { cache: "no-store" })
+        data = await res.json()
+      } catch {
+        return problem("stripe_error")
+      }
+      if (!data.ok) return problem(data.reason)
+      $("kit-status").textContent = data.email ? `Purchase confirmed for ${data.email}.` : "Purchase confirmed."
+      if (data.downloaded) {
+        $("kit-refund-note").textContent = `First downloaded ${new Date(data.firstDownloadedAt).toLocaleString()}. You can download again any time from this page.`
+      }
+      $("kit-ready").hidden = false
+      const btn = $("kit-download") as HTMLAnchorElement
+      const ack = $("kit-ack") as HTMLInputElement
+      if (data.downloaded) { ack.checked = true; ack.closest("p")!.hidden = true }
+      const sync = () => {
+        if (ack.checked) { btn.href = `/api/kit/file?session_id=${encodeURIComponent(sid)}`; btn.removeAttribute("aria-disabled") }
+        else { btn.removeAttribute("href"); btn.setAttribute("aria-disabled", "true") }
+      }
+      ack.addEventListener("change", sync); sync()
+    }
+    load()
+  </script>
+</Base>

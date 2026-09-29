@@ -128,6 +128,711 @@ sources:
     status: pending_fetch
     notes_from_prd: []
 
+  # --- Added 2026-09-29: forms and statutes cited by sources/facts.yaml ---
+  - id: ccp-116-220
+    source_title: Cal. Code of Civil Procedure § 116.220
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.220
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-221
+    source_title: Cal. Code of Civil Procedure § 116.221
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.221
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-231
+    source_title: Cal. Code of Civil Procedure § 116.231
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.231
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-260
+    source_title: Cal. Code of Civil Procedure § 116.260
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.260
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling, pleading, filing, service, hearing, judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-320
+    source_title: Cal. Code of Civil Procedure § 116.320
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.320
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-340
+    source_title: Cal. Code of Civil Procedure § 116.340
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.340
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [service]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-360
+    source_title: Cal. Code of Civil Procedure § 116.360
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.360
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [hearing]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-370
+    source_title: Cal. Code of Civil Procedure § 116.370
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.370
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling, filing]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-430
+    source_title: Cal. Code of Civil Procedure § 116.430
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.430
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-530
+    source_title: Cal. Code of Civil Procedure § 116.530
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.530
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [hearing]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-540
+    source_title: Cal. Code of Civil Procedure § 116.540
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.540
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [hearing]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-710
+    source_title: Cal. Code of Civil Procedure § 116.710
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.710
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-750
+    source_title: Cal. Code of Civil Procedure § 116.750
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.750
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-810
+    source_title: Cal. Code of Civil Procedure § 116.810
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.810
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-830
+    source_title: Cal. Code of Civil Procedure § 116.830
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.830
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-116-850
+    source_title: Cal. Code of Civil Procedure § 116.850
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.850
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-335-1
+    source_title: Cal. Code of Civil Procedure § 335.1
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=335.1
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-337
+    source_title: Cal. Code of Civil Procedure § 337
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=337
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-338
+    source_title: Cal. Code of Civil Procedure § 338
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=338
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-339
+    source_title: Cal. Code of Civil Procedure § 339
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=339
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-415-20
+    source_title: Cal. Code of Civil Procedure § 415.20
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=415.20
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [service]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-683-020
+    source_title: Cal. Code of Civil Procedure § 683.020
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=683.020
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: civ-1950-5
+    source_title: Cal. Civil Code § 1950.5
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: gov-911-2
+    source_title: Cal. Government Code § 911.2
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=911.2
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: gov-945-4
+    source_title: Cal. Government Code § 945.4
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=945.4
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-ej-001
+    source_title: EJ-001 — Abstract of Judgment—Civil and Small Claims
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/EJ-001
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: EJ-001
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-ej-130
+    source_title: EJ-130 — Writ of Execution
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/EJ-130
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: EJ-130
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-fw-001
+    source_title: FW-001 — Request to Waive Court Fees
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/FW-001
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [filing]
+    form_number: FW-001
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-100a
+    source_title: SC-100A — Other Plaintiffs or Defendants (Attachment to SC-100)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-100A
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: SC-100A
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-103
+    source_title: SC-103 — Fictitious Business Name (Small Claims)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-103
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: SC-103
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-104
+    source_title: SC-104 — Proof of Service (Small Claims)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-104
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [service]
+    form_number: SC-104
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-120
+    source_title: SC-120 — Defendant's Claim and ORDER to Go to Small Claims Court
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-120
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [hearing]
+    form_number: SC-120
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-130
+    source_title: SC-130 — Notice of Entry of Judgment (Small Claims)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-130
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: SC-130
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-133
+    source_title: SC-133 — Judgment Debtor's Statement of Assets
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-133
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: SC-133
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-140
+    source_title: SC-140 — Notice of Appeal (Small Claims)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-140
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: SC-140
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-150
+    source_title: SC-150 — Request to Postpone Trial (Small Claims)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-150
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [hearing]
+    form_number: SC-150
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: jcc-form-sc-290
+    source_title: SC-290 — Acknowledgment of Satisfaction of Judgment (Small Claims)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-290
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: SC-290
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+
 # Reference material used for product/ethics design only. Not loaded into the
 # purchaser-facing corpus.
 design_references:

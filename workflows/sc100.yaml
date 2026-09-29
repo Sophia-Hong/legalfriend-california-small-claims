@@ -1,19 +1,51 @@
-# Phase B — SC-100 Preparation (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
-# Every item must resolve to a manifest source_id or a practice note before release.
+# Phase B — SC-100 Preparation (PRD §9.1). DRAFT v0.1 — items cite sources/facts.yaml; pending attorney review.
 id: ca-sc-pleading
 stage: pleading
 items:
-  - id: current-sc100-version
-    sources: []   # TODO: manifest ids
-  - id: field-by-field
-    sources: []   # TODO: manifest ids
-  - id: sc100a-trigger
-    sources: []   # TODO: manifest ids
-  - id: sc103-trigger
-    sources: []   # TODO: manifest ids
-  - id: local-form-check
-    sources: []   # TODO: manifest ids
-  - id: missing-information
-    sources: []   # TODO: manifest ids
-  - id: fact-to-field-mapping
-    sources: []   # TODO: manifest ids
+- id: current-sc100-version
+  sources:
+  - cc-selfhelp-fill-out-forms
+  - jcc-form-sc-100
+  facts:
+  - sc100-starts-case
+  - sc100-effective
+- id: field-by-field
+  sources:
+  - cc-selfhelp-fill-out-forms
+  - cc-selfhelp-small-claims
+  - jcc-form-sc-100
+  facts:
+  - sc100-starts-case
+  - guide-and-file
+- id: sc100a-trigger
+  sources:
+  - jcc-form-sc-100a
+  facts:
+  - sc100a
+- id: sc103-trigger
+  sources:
+  - ccp-116-430
+  - jcc-form-sc-103
+  facts:
+  - fbn-declaration
+- id: local-form-check
+  sources:
+  - cc-selfhelp-fill-out-forms
+  facts:
+  - local-forms
+- id: missing-information
+  sources:
+  - cc-selfhelp-fill-out-forms
+  - jcc-form-sc-100
+  facts:
+  - sc100-starts-case
+- id: fact-to-field-mapping
+  sources:
+  - cc-selfhelp-fill-out-forms
+  - ccp-116-320
+  - ccp-116-370
+  - jcc-form-sc-100
+  facts:
+  - sc100-starts-case
+  - demand-first
+  - venue-basics

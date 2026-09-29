@@ -1,4 +1,8 @@
 ---
+import "@fontsource/inter/300.css"
+import "@fontsource/inter/400.css"
+import "@fontsource/inter/500.css"
+import "@fontsource/inter/600.css"
 import "../styles/site.css"
 import { SITE_LIVE, KIT_CHECKOUT_URL } from "../site"
 
@@ -26,9 +30,6 @@ const canonical = new URL(Astro.url.pathname.replace(/(\/index)?\.html$/, "").re
     <meta property="og:url" content={canonical} />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     {!SITE_LIVE && (
@@ -49,8 +50,12 @@ const canonical = new URL(Astro.url.pathname.replace(/(\/index)?\.html$/, "").re
     <slot />
     <footer class="ref">
       <div class="wrap">
-        <span>© {new Date().getFullYear()} LegalFriend</span>
-        <a href="/california-small-claims#notice">Before you buy</a>
+        <span>© {new Date().getFullYear()} PeopleShine Inc., dba LegalFriend</span>
+        <span class="footer-links">
+          <a href="/california-small-claims#notice">Before you buy</a>
+          <a href="/terms">Terms</a>
+          <a href="/privacy">Privacy</a>
+        </span>
       </div>
     </footer>
   </body>

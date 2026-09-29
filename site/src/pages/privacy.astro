@@ -1,0 +1,96 @@
+---
+// Unified privacy policy for legalfriend.ai and every LegalFriend self-help kit.
+// Written for the bring-your-own-AI model: we never receive case information.
+import Base from "../layouts/Base.astro"
+import { COMPANY, SUPPORT_EMAIL, LEGAL_EFFECTIVE_DATE } from "../site"
+const mail = `mailto:${SUPPORT_EMAIL}`
+---
+<Base title="Privacy Policy | LegalFriend" description="How LegalFriend handles personal information for legalfriend.ai and its self-help kits.">
+  <section class="legal">
+    <div class="wrap">
+      <article>
+        <span class="eyebrow">Legal</span>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective {LEGAL_EFFECTIVE_DATE}</p>
+
+        <div class="summary">
+          <strong>The short version</strong>
+          <ul>
+            <li>LegalFriend kits are built to run in the AI you choose. <strong>We do not receive your case facts, documents, prompts, or AI answers.</strong></li>
+            <li>We collect only what we need to sell and deliver a kit: your email and payment details (handled by Stripe), and a record of when you download.</li>
+            <li>We do not sell or share personal information for advertising, and we do not use advertising or tracking cookies.</li>
+          </ul>
+        </div>
+
+        <h2>1. Who we are and what this policy covers</h2>
+        <p>This policy is issued by {COMPANY}, doing business as LegalFriend ("LegalFriend," "we," "us"). It covers the website at legalfriend.ai and every LegalFriend self-help kit and publication we sell there (together, the "Products"). A service that we operate on a different website and that posts its own privacy policy is covered by that policy instead.</p>
+
+        <h2>2. Information we do not collect</h2>
+        <p>Our Products are downloadable publications and toolkits. You use them with an AI service or other tools that you select and control. By design:</p>
+        <ul>
+          <li>we do not ask for, receive, or store information about your dispute or case;</li>
+          <li>we do not receive the prompts you send to your AI or the answers it gives you;</li>
+          <li>we do not review your documents or drafts.</li>
+        </ul>
+        <p>Whatever you share with an AI provider or other third-party tool is governed by that provider's own terms and privacy policy, not this one. Please review them before sharing sensitive information.</p>
+        <p>If you choose to email us about your case anyway, we will not use that information to give legal advice. We keep it only as part of the support correspondence described below.</p>
+
+        <h2>3. Information we collect</h2>
+        <table>
+          <thead><tr><th>Category</th><th>What</th><th>Source</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Purchase information</td><td>Name, email address, billing country and postal code, the product bought, amount, date, and the Stripe checkout and payment identifiers. We never see your full card number.</td><td>You, through Stripe Checkout</td><td>To complete the sale, deliver the Product, send receipts, handle refunds, and keep accounting and tax records</td></tr>
+            <tr><td>Download records</td><td>Whether and when a purchase was first downloaded, stored with the purchase record at Stripe</td><td>Our download service</td><td>To deliver the Product and apply the refund policy</td></tr>
+            <tr><td>Technical data</td><td>IP address, browser type, and request details in standard server and security logs</td><td>Your browser, through our hosting provider</td><td>To operate, secure, and troubleshoot the website</td></tr>
+            <tr><td>Aggregate website statistics</td><td>Page views, referrers, and device types, counted without cookies or cross-site identifiers</td><td>Cloudflare Web Analytics</td><td>To understand which pages are useful</td></tr>
+            <tr><td>Support correspondence</td><td>Whatever you include in emails to us</td><td>You</td><td>To answer questions and process requests</td></tr>
+          </tbody>
+        </table>
+
+        <h2>4. How we share information</h2>
+        <p>We share personal information only with service providers that help us run the Products, under contracts that limit their use of it:</p>
+        <ul>
+          <li><strong>Stripe</strong> — payment processing, receipts, and purchase records.</li>
+          <li><strong>Cloudflare</strong> — website hosting, content delivery, file storage for downloads, security, and cookieless analytics.</li>
+          <li><strong>Google Workspace</strong> — our email.</li>
+        </ul>
+        <p>We may also disclose information when the law requires it, to protect rights and safety, or as part of a merger or sale of the business (in which case this policy continues to apply to the information transferred).</p>
+        <p><strong>We do not sell personal information, and we do not share it for cross-context behavioral advertising.</strong> We have not done so in the past 12 months.</p>
+
+        <h2>5. Cookies and tracking</h2>
+        <p>legalfriend.ai does not use advertising or analytics cookies. Our website statistics are collected without cookies. When you check out, Stripe's payment pages may use cookies that Stripe needs for payment and fraud prevention, under Stripe's privacy policy. Because we do not track you across other websites, we do not respond differently to Do Not Track signals. We treat a Global Privacy Control signal as a request to opt out of sale or sharing — which we already do not do.</p>
+
+        <h2>6. How long we keep information</h2>
+        <ul>
+          <li>Purchase and download records: as long as needed for accounting, tax, and legal purposes — generally seven years after the purchase.</li>
+          <li>Support correspondence: up to three years after the conversation ends, unless we need it longer to resolve a dispute.</li>
+          <li>Technical logs: for the short periods our hosting provider keeps them.</li>
+        </ul>
+
+        <h2>7. Your California privacy rights</h2>
+        <p>If you are a California resident, you may ask us to:</p>
+        <ul>
+          <li><strong>Know and access</strong> the personal information we have about you, the categories of sources, the purposes, and the categories of recipients;</li>
+          <li><strong>Delete</strong> personal information, subject to legal exceptions such as records we must keep for tax purposes;</li>
+          <li><strong>Correct</strong> inaccurate personal information;</li>
+          <li><strong>Opt out</strong> of the sale or sharing of personal information (we do not sell or share it);</li>
+          <li><strong>Limit</strong> the use of sensitive personal information (we do not use it to infer characteristics about you).</li>
+        </ul>
+        <p>To make a request, email <a href={mail}>{SUPPORT_EMAIL}</a> from the email address you used to buy, or tell us which address that was. We may ask for information to verify your identity, such as your order date. An authorized agent may make a request for you with your signed permission. We will not discriminate against you for exercising these rights. California residents may also ask whether we disclosed personal information to third parties for their direct marketing; we do not.</p>
+        <p>We honor these requests for all customers, wherever they live, as far as we reasonably can.</p>
+
+        <h2>8. Children</h2>
+        <p>The Products are intended for adults. We do not knowingly collect personal information from children under 16. If you believe a child has given us personal information, contact us and we will delete it.</p>
+
+        <h2>9. Security</h2>
+        <p>We use reputable providers and reasonable safeguards to protect personal information. No method of transmission or storage is completely secure. Downloads are delivered through links tied to a completed purchase.</p>
+
+        <h2>10. Changes to this policy</h2>
+        <p>We may update this policy. We will post the new version here with a new effective date. If a change materially affects how we use personal information we already have, we will tell you before it applies to that information.</p>
+
+        <h2>11. Contact</h2>
+        <p>{COMPANY}, doing business as LegalFriend — <a href={mail}>{SUPPORT_EMAIL}</a></p>
+      </article>
+    </div>
+  </section>
+</Base>

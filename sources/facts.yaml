@@ -1,0 +1,284 @@
+# Facts sheet — the ONLY substantive legal statements the kit may make.
+#
+# Every ebook chapter, practice note, and prompt cites facts by id (e.g. [F:limit-natural]).
+# Anything not listed here must not be stated as fact; tell the reader to check the
+# official source instead.
+#
+# confidence:
+#   high   — well-established rule, cited to statute; still verify wording before release
+#   medium — believed correct; subsection, number, or detail must be confirmed
+# verified: false until an attorney confirms against the fetched official source
+#           (sources/manifest.yaml). Release gate: every fact used in the kit is verified.
+#
+# Drafted 2026-09-29 from general knowledge, without network access to court sites.
+
+schema_version: 1
+as_of: 2026-09-29
+facts:
+
+  # ---------- Scope and limits ----------
+  - id: limit-natural
+    statement: A natural person (an individual) may generally sue for up to $12,500 in small claims court.
+    cite: Cal. Code Civ. Proc. § 116.221
+    sources: [ccp-116-221, cc-selfhelp-small-claims]
+    confidence: high
+    verified: false
+  - id: limit-entity
+    statement: The general limit for plaintiffs that are not natural persons (for example corporations, LLCs, partnerships) is $6,250.
+    cite: Cal. Code Civ. Proc. § 116.220(a)(1)
+    sources: [ccp-116-220]
+    confidence: high
+    verified: false
+  - id: two-claims-rule
+    statement: A person may not file more than two small claims cases demanding more than $2,500 anywhere in California in the same calendar year.
+    cite: Cal. Code Civ. Proc. § 116.231
+    sources: [ccp-116-231]
+    confidence: high
+    verified: false
+  - id: waive-excess
+    statement: A claim may not be split into several cases to fit under the limit; a plaintiff who sues in small claims for less than the full amount generally gives up the rest.
+    cite: Cal. Code Civ. Proc. § 116.220 (subsection to confirm)
+    sources: [ccp-116-220, cc-selfhelp-small-claims]
+    confidence: medium
+    verified: false
+
+  # ---------- Who appears ----------
+  - id: no-attorneys
+    statement: Parties generally may not be represented by an attorney at the small claims hearing, though they may consult one before or after.
+    cite: Cal. Code Civ. Proc. § 116.530
+    sources: [ccp-116-530]
+    confidence: high
+    verified: false
+  - id: entity-appearance
+    statement: A corporation or other entity appears through an authorized employee, officer, or director rather than an attorney.
+    cite: Cal. Code Civ. Proc. § 116.540
+    sources: [ccp-116-540]
+    confidence: medium
+    verified: false
+  - id: advisors
+    statement: Each county provides free small claims advisor assistance.
+    cite: Cal. Code Civ. Proc. § 116.260
+    sources: [ccp-116-260, cc-selfhelp-small-claims]
+    confidence: high
+    verified: false
+
+  # ---------- Before filing ----------
+  - id: demand-first
+    statement: The plaintiff's claim must state whether the plaintiff asked the defendant to pay before filing (or why not); SC-100 asks this question.
+    cite: Cal. Code Civ. Proc. § 116.320 (subsection to confirm); SC-100
+    sources: [ccp-116-320, jcc-form-sc-100]
+    confidence: medium
+    verified: false
+  - id: sol-written-contract
+    statement: The general limitations period for breach of a written contract is four years.
+    cite: Cal. Code Civ. Proc. § 337
+    sources: [ccp-337]
+    confidence: high
+    verified: false
+  - id: sol-oral-contract
+    statement: The general limitations period for breach of an oral contract is two years.
+    cite: Cal. Code Civ. Proc. § 339
+    sources: [ccp-339]
+    confidence: high
+    verified: false
+  - id: sol-property-damage
+    statement: The general limitations period for damage to property is three years.
+    cite: Cal. Code Civ. Proc. § 338
+    sources: [ccp-338]
+    confidence: high
+    verified: false
+  - id: sol-personal-injury
+    statement: The general limitations period for personal injury is two years.
+    cite: Cal. Code Civ. Proc. § 335.1
+    sources: [ccp-335-1]
+    confidence: high
+    verified: false
+  - id: government-claim
+    statement: Before suing a public entity (a city, county, state agency, school district, etc.), a claimant usually must first present a government claim — generally within six months for injury or property damage and one year for other claims — and may sue only after it is denied or deemed denied.
+    cite: Cal. Gov. Code §§ 911.2, 945.4
+    sources: [gov-911-2, gov-945-4]
+    confidence: high
+    verified: false
+
+  # ---------- Defendant name ----------
+  - id: defendant-name-collection
+    statement: California Courts warns that naming the defendant incorrectly can prevent the plaintiff from collecting after winning.
+    cite: California Courts, small claims forms guidance
+    sources: [cc-selfhelp-fill-out-forms]
+    confidence: high
+    verified: false
+  - id: fbn-declaration
+    statement: A plaintiff doing business under a fictitious business name must file a declaration (form SC-103) showing compliance with the fictitious business name laws.
+    cite: Cal. Code Civ. Proc. § 116.430; SC-103
+    sources: [ccp-116-430, jcc-form-sc-103]
+    confidence: high
+    verified: false
+
+  # ---------- Venue ----------
+  - id: venue-basics
+    statement: Small claims venue follows specific rules — commonly where a defendant lives or does business, where a contract was made or was to be performed, or where the injury or property damage happened — with special rules for certain consumer contracts.
+    cite: Cal. Code Civ. Proc. § 116.370 (and the venue statutes it references)
+    sources: [ccp-116-370]
+    confidence: medium
+    verified: false
+
+  # ---------- Forms ----------
+  - id: sc100-starts-case
+    statement: A small claims case starts with form SC-100, Plaintiff's Claim and ORDER to Go to Small Claims Court.
+    cite: Judicial Council form SC-100
+    sources: [jcc-form-sc-100, cc-selfhelp-fill-out-forms]
+    confidence: high
+    verified: false
+  - id: sc100-effective
+    statement: As observed on 2026-09-28, the California Courts SC-100 page listed the form as effective January 1, 2026.
+    cite: SC-100 form page
+    sources: [jcc-form-sc-100]
+    confidence: high
+    verified: false
+  - id: sc100a
+    statement: Form SC-100A lists additional plaintiffs or defendants when SC-100 does not have room for all of them.
+    cite: Judicial Council form SC-100A
+    sources: [jcc-form-sc-100a]
+    confidence: high
+    verified: false
+  - id: local-forms
+    statement: Some courts require additional local forms, so the plaintiff should check the specific court's website or clerk.
+    cite: California Courts, small claims forms guidance
+    sources: [cc-selfhelp-fill-out-forms]
+    confidence: high
+    verified: false
+  - id: fee-waiver
+    statement: A person who cannot afford court fees can ask for a fee waiver using form FW-001.
+    cite: Cal. Gov. Code § 68631 et seq.; form FW-001
+    sources: [jcc-form-fw-001]
+    confidence: high
+    verified: false
+  - id: fees-vary
+    statement: Filing fees depend on the amount claimed and how many small claims the plaintiff has filed in the past 12 months; check the court's current fee schedule rather than relying on a number in this kit.
+    cite: California Courts small claims guidance
+    sources: [cc-selfhelp-small-claims]
+    confidence: medium
+    verified: false
+  - id: guide-and-file
+    statement: California Courts offers free form-filling help, including Guide & File, and free small claims advisors.
+    cite: California Courts self-help
+    sources: [cc-selfhelp-small-claims]
+    confidence: high
+    verified: false
+
+  # ---------- Service ----------
+  - id: service-who
+    statement: The plaintiff may not serve the papers personally; service must be done by an adult (18 or older) who is not a party, a registered process server, a sheriff or marshal, or by certified mail sent by the court clerk.
+    cite: Cal. Code Civ. Proc. § 116.340
+    sources: [ccp-116-340]
+    confidence: high
+    verified: false
+  - id: service-methods
+    statement: Common service methods are personal service, substituted service (leaving papers with a competent adult at the home or business and then mailing a copy), and certified mail by the clerk.
+    cite: Cal. Code Civ. Proc. §§ 116.340, 415.20
+    sources: [ccp-116-340, ccp-415-20]
+    confidence: high
+    verified: false
+  - id: service-deadline
+    statement: Service must be completed at least 15 days before the hearing if the defendant is in the county where the case was filed, or at least 20 days before if the defendant is outside that county.
+    cite: Cal. Code Civ. Proc. § 116.340(b)
+    sources: [ccp-116-340]
+    confidence: high
+    verified: false
+  - id: substituted-service-timing
+    statement: Substituted service is not complete until 10 days after the mailing, which must be counted toward the service deadline.
+    cite: Cal. Code Civ. Proc. § 415.20
+    sources: [ccp-415-20]
+    confidence: medium
+    verified: false
+  - id: proof-of-service
+    statement: After service, the server completes a proof of service (form SC-104), which is filed with the court before the hearing by the deadline the court specifies.
+    cite: Cal. Code Civ. Proc. § 116.340; SC-104
+    sources: [ccp-116-340, jcc-form-sc-104]
+    confidence: medium
+    verified: false
+
+  # ---------- Hearing ----------
+  - id: defendant-claim
+    statement: The defendant may file a claim against the plaintiff (form SC-120) to be heard in the same case.
+    cite: Cal. Code Civ. Proc. § 116.360; SC-120
+    sources: [ccp-116-360, jcc-form-sc-120]
+    confidence: high
+    verified: false
+  - id: postpone
+    statement: A party can ask to postpone the hearing using form SC-150; whether it is granted is up to the court.
+    cite: Judicial Council form SC-150
+    sources: [jcc-form-sc-150]
+    confidence: medium
+    verified: false
+
+  # ---------- After judgment ----------
+  - id: plaintiff-no-appeal
+    statement: A plaintiff cannot appeal a judgment on the plaintiff's own claim; a defendant can appeal (which leads to a new hearing in superior court), and a plaintiff can appeal a judgment on a defendant's claim.
+    cite: Cal. Code Civ. Proc. § 116.710
+    sources: [ccp-116-710]
+    confidence: high
+    verified: false
+  - id: appeal-deadline
+    statement: A notice of appeal (form SC-140) generally must be filed within 30 days after the clerk mails or delivers the notice of entry of judgment.
+    cite: Cal. Code Civ. Proc. § 116.750; SC-140
+    sources: [ccp-116-750, jcc-form-sc-140]
+    confidence: high
+    verified: false
+  - id: notice-of-entry
+    statement: The clerk sends the parties a Notice of Entry of Judgment (form SC-130).
+    cite: Judicial Council form SC-130
+    sources: [jcc-form-sc-130]
+    confidence: high
+    verified: false
+  - id: statement-of-assets
+    statement: Unless the judgment is paid or appealed, the losing party generally must complete a Judgment Debtor's Statement of Assets (form SC-133) and send it to the winning party within the time the law sets.
+    cite: Cal. Code Civ. Proc. § 116.830; SC-133
+    sources: [ccp-116-830, jcc-form-sc-133]
+    confidence: medium
+    verified: false
+  - id: enforcement-wait
+    statement: The winning party generally must wait until the time to appeal or to ask the court to vacate the judgment has passed before starting collection.
+    cite: Cal. Code Civ. Proc. § 116.810
+    sources: [ccp-116-810]
+    confidence: medium
+    verified: false
+  - id: enforcement-tools
+    statement: Common collection tools include a writ of execution (EJ-130) used for bank levies and wage garnishment, an abstract of judgment (EJ-001) that creates a lien on real property, and an order for the debtor to appear for examination.
+    cite: Cal. Code Civ. Proc. §§ 699.510, 674; forms EJ-130, EJ-001
+    sources: [jcc-form-ej-130, jcc-form-ej-001]
+    confidence: medium
+    verified: false
+  - id: judgment-ten-years
+    statement: A California money judgment is generally enforceable for 10 years and can be renewed.
+    cite: Cal. Code Civ. Proc. §§ 683.020, 683.110
+    sources: [ccp-683-020]
+    confidence: high
+    verified: false
+  - id: satisfaction
+    statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment (form SC-290).
+    cite: Cal. Code Civ. Proc. § 116.850; SC-290
+    sources: [ccp-116-850, jcc-form-sc-290]
+    confidence: medium
+    verified: false
+
+  # ---------- Common dispute: security deposit ----------
+  - id: deposit-21-days
+    statement: A residential landlord must return the security deposit, or an itemized statement of deductions with any remaining balance, within 21 days after the tenant moves out.
+    cite: Cal. Civ. Code § 1950.5(g)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+  - id: deposit-bad-faith
+    statement: If a landlord keeps a deposit in bad faith, a court may award statutory damages of up to twice the amount of the deposit in addition to actual damages.
+    cite: Cal. Civ. Code § 1950.5(l)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+
+# Things the kit must NOT state as fact (always send the reader to the source):
+do_not_state:
+  - Exact filing fee amounts
+  - Effective dates of any form other than as recorded in sources/manifest.yaml
+  - Local court rules or local forms for any specific county
+  - How a particular judge will decide, or likelihood of winning

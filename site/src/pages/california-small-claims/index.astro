@@ -3,7 +3,7 @@
 // Stay within PRD §6.4 marketing guardrails.
 import Base from "../../layouts/Base.astro"
 import RelationshipNotice from "../../components/RelationshipNotice.astro"
-import { KIT_CHECKOUT_URL } from "../../site"
+import { KIT_CHECKOUT_URL, KIT_PRICE_LABEL } from "../../site"
 
 const stages = [
   ["Before filing", "Small claims fit, the right defendant, venue, and pre-filing checklists."],
@@ -44,7 +44,10 @@ const never = [
             <p class="sub">Handle your California small claims case with a lawyer-designed AI self-help kit.</p>
             <p class="tag">California gives you the forms.<br />LegalFriend helps you understand how the pieces fit together.</p>
             {KIT_CHECKOUT_URL ? (
-              <a class="btn btn--primary" href={KIT_CHECKOUT_URL}>Get the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
+              <>
+                <a class="btn btn--primary" href={KIT_CHECKOUT_URL}>Get the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
+                <span class="cta-note">{KIT_PRICE_LABEL} one-time purchase · Full refund until you download · <a href="/terms">Terms</a></span>
+              </>
             ) : (
               <>
                 <a class="btn btn--primary" aria-disabled="true" role="link">Get the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
@@ -110,6 +113,7 @@ const never = [
           <h2>What this kit is — and isn't</h2>
         </div>
         <RelationshipNotice />
+        <p class="cta-note" style="text-align:center">Purchases are subject to our <a href="/terms">Terms of Sale and Use</a> and <a href="/privacy">Privacy Policy</a>.</p>
       </div>
     </section>
 </Base>

@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro"
 
 // Keep in sync with src/pages. Only list pages meant for search.
-const PATHS = ["/california-small-claims"]
+const PATHS = ["/", "/california-small-claims", "/terms", "/privacy"]
 
 export const GET: APIRoute = ({ site }) =>
   new Response(

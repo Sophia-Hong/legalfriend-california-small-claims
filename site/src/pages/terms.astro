@@ -1,0 +1,91 @@
+---
+// Unified terms for legalfriend.ai and every LegalFriend self-help kit.
+// Decisions (2026-09-29, Sophia): one-time purchase; refund until first download;
+// California law and courts, no arbitration; seller PeopleShine Inc. dba LegalFriend.
+// Sections 3–4 mirror DISCLAIMER.md.
+import Base from "../layouts/Base.astro"
+import { COMPANY, SUPPORT_EMAIL, LEGAL_EFFECTIVE_DATE } from "../site"
+const mail = `mailto:${SUPPORT_EMAIL}`
+---
+<Base title="Terms of Sale and Use | LegalFriend" description="The terms that apply to legalfriend.ai and LegalFriend self-help kits.">
+  <section class="legal">
+    <div class="wrap">
+      <article>
+        <span class="eyebrow">Legal</span>
+        <h1>Terms of Sale and Use</h1>
+        <p class="meta">Effective {LEGAL_EFFECTIVE_DATE}</p>
+
+        <div class="summary">
+          <strong>The short version</strong>
+          <ul>
+            <li>LegalFriend kits are self-help publications you use with the AI you choose. They are not legal services, and buying one does not make us your lawyer.</li>
+            <li>You get a personal license to use the kit for your own matters. Please don't resell or repost it.</li>
+            <li>You can get a full refund any time <strong>before you first download</strong> the kit. After you download it, the sale is final unless the law requires otherwise.</li>
+            <li>California law applies. Disputes go to California courts, including small claims court. There is no arbitration clause.</li>
+          </ul>
+        </div>
+
+        <h2>1. Agreement</h2>
+        <p>These terms are an agreement between you and {COMPANY}, doing business as LegalFriend ("LegalFriend," "we," "us"). They apply to the website at legalfriend.ai and to every LegalFriend self-help kit and publication sold there (the "Products"). A product page may add terms for a specific Product. A service we operate on a different website under its own posted terms is governed by those terms. By buying or using a Product, you agree to these terms.</p>
+
+        <h2>2. What the Products are</h2>
+        <p>The Products are self-help publications and toolkits: guides, organized copies of and links to official public sources, checklists, workflows, and prompts that you can load into an AI service or other tools you choose. They provide general information about legal procedures. They are not legal advice about your situation, and they are not a substitute for advice from a lawyer. {COMPANY} is not a law firm.</p>
+
+        <h2>3. No attorney-client relationship</h2>
+        <ul>
+          <li>Buying or using a Product does not, by itself, create an attorney-client relationship with LegalFriend or any lawyer associated with it.</li>
+          <li>We do not receive or review your case information through the Products.</li>
+          <li>Individualized legal advice would require a separate written engagement, if one is ever offered.</li>
+        </ul>
+
+        <h2>4. Your AI and other third-party services</h2>
+        <p>You choose and operate the AI service or other tools you use with a Product. They are not our agents, and they do not speak for LegalFriend or any lawyer associated with it. Their terms and privacy policies govern what you share with them. AI output can be incomplete or wrong. You are responsible for checking every procedural statement against the current official source the Product points to, and for your own decisions and filings.</p>
+
+        <h2>5. Official materials</h2>
+        <p>The Products refer to and may include copies of official materials published by courts, the Judicial Council of California, and the Legislature. Those materials belong to their publishers. Official forms, rules, fees, and limits change, and a Product may not reflect the latest change. Always confirm against the current official source and your local court before you rely on anything.</p>
+
+        <h2>6. Purchases and delivery</h2>
+        <ul>
+          <li>Prices are shown in U.S. dollars on the product page and at checkout. Each Product is a one-time purchase unless the product page says otherwise.</li>
+          <li>Payments are processed by Stripe. Applicable taxes, if any, are shown at checkout.</li>
+          <li>After payment, you receive access to a download page for your purchase. Keep your receipt email; you will need it if you contact us.</li>
+          <li>Whether later updates to a Product are included is stated on the product page at the time of purchase.</li>
+        </ul>
+
+        <h2 id="refunds">7. Refunds</h2>
+        <p>You may request a full refund for any reason <strong>before you first download</strong> the Product. Our download service records when a purchase is first downloaded. Once a Product has been downloaded, the sale is final, except where the law requires a refund or where the file was defective and we cannot provide a working copy. To request a refund, email <a href={mail}>{SUPPORT_EMAIL}</a> from the address you used to buy, or include your receipt. Refunds go back to the original payment method.</p>
+
+        <h2>8. Your license</h2>
+        <p>When you buy a Product, we grant you a personal, non-exclusive, non-transferable license to use it for your own matters — or, if you buy for a business, for that business's own matters. You may:</p>
+        <ul>
+          <li>load it into AI services and tools that you (or your business) control;</li>
+          <li>print it and keep backup copies for your own use.</li>
+        </ul>
+        <p>You may not resell, sublicense, share, or publicly post the Product or substantial parts of it, or use it to provide services to others (for example, as a document preparer), without our written permission. Official materials included in a Product remain subject to their publishers' terms. We keep all rights not expressly granted.</p>
+
+        <h2>9. Acceptable use of the website</h2>
+        <p>Don't interfere with the website or download service, try to access purchases that aren't yours, or use the website to break the law.</p>
+
+        <h2>10. Disclaimers</h2>
+        <p class="caps">The Products and website are provided "as is" and "as available." To the extent the law allows, we disclaim all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy, and non-infringement.</p>
+        <p>We do not promise any result in any legal matter. Nothing in a Product predicts or guarantees an outcome.</p>
+
+        <h2>11. Limitation of liability</h2>
+        <p class="caps">To the extent the law allows, LegalFriend will not be liable for indirect, incidental, special, consequential, or punitive damages, or for lost profits, arising from the Products or website. Our total liability for any claim relating to a Product is limited to the amount you paid for that Product.</p>
+        <p>Some laws do not allow these limits. Where they do not, the limits apply only as far as the law permits.</p>
+
+        <h2>12. Governing law and disputes</h2>
+        <p>California law governs these terms, without regard to its conflict-of-law rules. Please contact us first — most problems can be solved by email. Any dispute that we cannot resolve informally will be decided by the state or federal courts located in California, and you and we consent to their jurisdiction. Either party may instead bring an individual claim in small claims court if it qualifies. These terms do not include an arbitration agreement or a class action waiver.</p>
+
+        <h2>13. Changes</h2>
+        <p>We may update these terms. The version in effect when you buy a Product applies to that purchase. Changes to website-use terms apply from the date we post them.</p>
+
+        <h2>14. Notice for California consumers</h2>
+        <p>Under California Civil Code section 1789.3, California users are entitled to the following notice: the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 North Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at (916) 445-1254 or (800) 952-5210.</p>
+
+        <h2>15. Contact</h2>
+        <p>{COMPANY}, doing business as LegalFriend — <a href={mail}>{SUPPORT_EMAIL}</a></p>
+      </article>
+    </div>
+  </section>
+</Base>

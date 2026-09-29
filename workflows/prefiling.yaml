@@ -1,21 +1,73 @@
-# Phase A — Before Filing (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
-# Every item must resolve to a manifest source_id or a practice note before release.
+# Phase A — Before Filing (PRD §9.1). DRAFT v0.1 — items cite sources/facts.yaml; pending attorney review.
 id: ca-sc-prefiling
 stage: prefiling
 items:
-  - id: small-claims-fit
-    sources: []   # TODO: manifest ids
-  - id: claim-limit-source
-    sources: []   # TODO: manifest ids
-  - id: plaintiff-eligibility
-    sources: []   # TODO: manifest ids
-  - id: defendant-identification
-    sources: []   # TODO: manifest ids
-  - id: entity-naming
-    sources: []   # TODO: manifest ids
-  - id: venue
-    sources: []   # TODO: manifest ids
-  - id: demand-prefiling
-    sources: []   # TODO: manifest ids
-  - id: limitations-issue-flag
-    sources: []   # TODO: manifest ids
+- id: small-claims-fit
+  sources:
+  - cc-selfhelp-small-claims
+  - ccp-116-220
+  - ccp-116-221
+  facts:
+  - limit-natural
+  - limit-entity
+  - waive-excess
+- id: claim-limit-source
+  sources:
+  - cc-selfhelp-small-claims
+  - ccp-116-220
+  - ccp-116-221
+  - ccp-116-231
+  facts:
+  - limit-natural
+  - limit-entity
+  - two-claims-rule
+- id: plaintiff-eligibility
+  sources:
+  - cc-selfhelp-small-claims
+  - ccp-116-220
+  - ccp-116-221
+  - ccp-116-540
+  facts:
+  - limit-natural
+  - limit-entity
+  - entity-appearance
+- id: defendant-identification
+  sources:
+  - cc-selfhelp-fill-out-forms
+  facts:
+  - defendant-name-collection
+- id: entity-naming
+  sources:
+  - cc-selfhelp-fill-out-forms
+  - ccp-116-430
+  - jcc-form-sc-103
+  facts:
+  - defendant-name-collection
+  - fbn-declaration
+- id: venue
+  sources:
+  - cc-selfhelp-fill-out-forms
+  - ccp-116-370
+  facts:
+  - venue-basics
+  - local-forms
+- id: demand-prefiling
+  sources:
+  - ccp-116-320
+  - jcc-form-sc-100
+  facts:
+  - demand-first
+- id: limitations-issue-flag
+  sources:
+  - ccp-335-1
+  - ccp-337
+  - ccp-338
+  - ccp-339
+  - gov-911-2
+  - gov-945-4
+  facts:
+  - sol-written-contract
+  - sol-oral-contract
+  - sol-property-damage
+  - sol-personal-injury
+  - government-claim

@@ -10,10 +10,6 @@
 /contact/*  https://lease.legalfriend.ai/contact/:splat  301
 /faq    https://lease.legalfriend.ai/faq    301
 /faq/*  https://lease.legalfriend.ai/faq/:splat  301
-/privacy    https://lease.legalfriend.ai/privacy    301
-/privacy/*  https://lease.legalfriend.ai/privacy/:splat  301
-/terms    https://lease.legalfriend.ai/terms    301
-/terms/*  https://lease.legalfriend.ai/terms/:splat  301
 /blog    https://lease.legalfriend.ai/blog    301
 /blog/*  https://lease.legalfriend.ai/blog/:splat  301
 /deposit-dispute    https://lease.legalfriend.ai/deposit-dispute    301

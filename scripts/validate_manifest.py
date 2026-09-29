@@ -95,11 +95,28 @@ def main():
     for s in sources:
         check(s, set(ids), errors)
 
+    # Every fact in sources/facts.yaml must cite at least one known manifest source.
+    facts_path = ROOT / "sources" / "facts.yaml"
+    fact_ids = set()
+    if facts_path.exists():
+        for f in yaml.safe_load(facts_path.read_text()).get("facts") or []:
+            fid = f.get("id", "<missing id>")
+            if fid in fact_ids:
+                errors.append(f"fact {fid}: duplicate id")
+            fact_ids.add(fid)
+            if not f.get("sources"):
+                errors.append(f"fact {fid}: no sources")
+            for sid in f.get("sources") or []:
+                if sid not in set(ids):
+                    errors.append(f"fact {fid}: unknown source '{sid}'")
+            if f.get("confidence") not in {"high", "medium"}:
+                errors.append(f"fact {fid}: confidence must be high or medium")
+
     pending = sum(1 for s in sources if s.get("status") == "pending_fetch")
     if errors:
         print("\n".join(f"ERROR {e}" for e in errors))
         sys.exit(1)
-    print(f"OK: {len(sources)} sources ({pending} pending fetch)")
+    print(f"OK: {len(sources)} sources ({pending} pending fetch), {len(fact_ids)} facts")
 
 
 if __name__ == "__main__":

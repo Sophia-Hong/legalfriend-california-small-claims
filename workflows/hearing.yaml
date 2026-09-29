@@ -1,21 +1,49 @@
-# Phase D — Hearing Preparation (PRD §9.1). DRAFT v0.1 — checklist items are placeholders pending attorney authoring.
-# Every item must resolve to a manifest source_id or a practice note before release.
+# Phase D — Hearing Preparation (PRD §9.1). DRAFT v0.1 — items cite sources/facts.yaml; pending attorney review.
 id: ca-sc-hearing
 stage: hearing
 items:
-  - id: chronology
-    sources: []   # TODO: manifest ids
-  - id: evidence-inventory
-    sources: []   # TODO: manifest ids
-  - id: exhibit-checklist
-    sources: []   # TODO: manifest ids
-  - id: damages-table
-    sources: []   # TODO: manifest ids
-  - id: witness-checklist
-    sources: []   # TODO: manifest ids
-  - id: fact-evidence-mapping
-    sources: []   # TODO: manifest ids
-  - id: hearing-checklist
-    sources: []   # TODO: manifest ids
-  - id: likely-questions
-    sources: []   # TODO: manifest ids
+- id: chronology
+  sources: []
+  facts: []
+  note: Practical organization step; no legal rule stated.
+- id: evidence-inventory
+  sources: []
+  facts: []
+  note: Practical organization step; no legal rule stated.
+- id: exhibit-checklist
+  sources: []
+  facts: []
+  note: Practical organization step; no legal rule stated.
+- id: damages-table
+  sources: []
+  facts: []
+  note: Practical organization step; no legal rule stated.
+- id: witness-checklist
+  sources: []
+  facts: []
+  note: Practical organization step; no legal rule stated.
+- id: fact-evidence-mapping
+  sources: []
+  facts: []
+  note: Practical organization step; no legal rule stated.
+- id: hearing-checklist
+  sources:
+  - ccp-116-340
+  - ccp-116-360
+  - ccp-116-530
+  - jcc-form-sc-104
+  - jcc-form-sc-120
+  - jcc-form-sc-150
+  facts:
+  - no-attorneys
+  - defendant-claim
+  - postpone
+  - proof-of-service
+- id: likely-questions
+  sources:
+  - ccp-116-320
+  - ccp-116-370
+  - jcc-form-sc-100
+  facts:
+  - demand-first
+  - venue-basics
