@@ -10,7 +10,7 @@ The person asks what the rule, form, deadline, or procedure is ("Which form do I
 ## What to do
 1. Restate the question in one line and name the stage (prefiling, pleading, filing, service, hearing, judgment).
 2. Search the kit in this order: `sources/facts.yaml` → `sources/manifest.yaml` → `ebook/` → `practice-notes/`.
-3. Answer only from what you find. For each procedural statement give the fact id, the source title, and the source URL from the manifest.
+3. Answer from what you find, and answer the question as asked for this person's facts (which form, how many days, whether the LLC can sue) under AI WORKSPACE. Each procedural statement you rely on is quoted or closely paraphrased under OFFICIAL SOURCE with the fact id, the source title, and the source URL from the manifest.
 4. If a form is involved, give its number **and** the effective date recorded in the manifest. If the manifest has no effective date, say it must be confirmed on the official page.
 5. If a county or local form could matter, say so and link the court's official site.
 6. If the kit does not cover the question, say that plainly and point to the closest official source. Do not fill the gap from memory.
@@ -18,11 +18,12 @@ The person asks what the rule, form, deadline, or procedure is ("Which form do I
 ## Output
 ```
 [OFFICIAL SOURCE]
-<answer in plain English> — <source title>, <URL> (fact: <id>)
+<what the source says> — <source title>, <URL> (fact: <id>)
 
 [LEGALFRIEND PRACTICE NOTE]
 <only if a practice note applies; quote its title>
 
 [AI WORKSPACE]
+Answer for your facts: <the conclusion, in plain English, resting on the sources above>
 Open questions to verify: <list>
 ```

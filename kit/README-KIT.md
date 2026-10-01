@@ -3,6 +3,8 @@
 Thank you for your purchase. This kit is a self-help publication built around official
 California court materials, organized so you and **the AI you choose** can use them.
 
+> The kit does not predict or promise any result and is not a substitute for a lawyer's advice about your situation. You decide what to file and what to say, and you are responsible for checking every rule, form, fee, and deadline against the current official source before you rely on it.
+>
 > Before you start, read `DISCLAIMER.md`. Buying or using this kit does not create an
 > attorney-client relationship, and LegalFriend never receives your case information.
 

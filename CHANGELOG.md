@@ -12,6 +12,15 @@ a changed claim limit, etc.) are logged here with the manifest `id` they touch.
   prediction and the rest of "What you do not do" are unchanged. Owner decision
   2026-10-01 (self-help publication; the person's own AI applies it; LegalFriend never
   sees the case).
+- Prompts: venue rule names the venue category and court(s) for the facts; timeline builder
+  states the timing conclusion (within / past / cannot tell); source research answers the
+  question for the facts under AI WORKSPACE with OFFICIAL SOURCE as citations; first reply
+  carries a one-line publication notice (red team 2026-10-01).
+- Liability wording: three sentences (what the kit is · no result promised · liability
+  capped at the price paid) added to DISCLAIMER "short version", LICENSE-KIT, the site
+  RelationshipNotice, and the kit README; product-page subtitle "Handle your … case" →
+  "Prepare your own … case" (counsel review 2026-10-01). Checkout consent checkbox and the
+  download-page acknowledgement are still to do.
 
 ### Added
 - Repository scaffold per PRD §11 (Draft v0.1, 2026-09-28).
