@@ -27,8 +27,9 @@ function fakeStripe() {
   }) as any
 }
 
+const OBJECTS: Record<string, string> = { "kits/ca.zip": "PK-zip", "kits/lease.zip": "PK-lease" }
 const bucket = {
-  get: async (key: string) => (key === "kits/ca.zip" ? { body: new Blob(["PK-zip"]).stream(), size: 6 } : null),
+  get: async (key: string) => (key in OBJECTS ? { body: new Blob([OBJECTS[key]]).stream(), size: OBJECTS[key].length } : null),
 }
 const env = () => ({ STRIPE_SECRET_KEY: "sk_test_x", KIT_PRICE_ID: PRICE, KIT_OBJECT_KEY: "kits/ca.zip", KIT_FILENAME: "kit v1.zip", KITS: bucket })
 const req = (path: string, sid = SID) => ({ request: new Request(`https://legalfriend.ai${path}?session_id=${sid}`), env: env() })
@@ -48,7 +49,9 @@ beforeEach(() => {
 test("status: paid purchase, not yet downloaded", async () => {
   const r = await status(req("/api/kit/status"))
   assert.equal(r.status, 200)
-  assert.deepEqual(await r.json(), { ok: true, downloaded: false, firstDownloadedAt: null, email: "buyer@example.com" })
+  assert.deepEqual(await r.json(), {
+    ok: true, downloaded: false, firstDownloadedAt: null, email: "buyer@example.com", product: "California Small Claims Kit",
+  })
   assert.equal(r.headers.get("Cache-Control"), "no-store")
 })
 
@@ -117,4 +120,40 @@ test("missing object → 503 and no stamp", async () => {
   const r = await file({ request: new Request(`https://x/api/kit/file?session_id=${SID}`), env: e })
   assert.equal(r.status, 503)
   assert.equal(calls.filter((c) => c.method === "POST").length, 0)
+})
+
+// ---- Multi-kit catalog -------------------------------------------------------------
+const LEASE = "price_lease49"
+const catalogEnv = () => ({
+  STRIPE_SECRET_KEY: "sk_test_x",
+  KITS: bucket,
+  KIT_CATALOG: JSON.stringify({
+    [PRICE]: { name: "California Small Claims Kit", object: "kits/ca.zip", filename: "small-claims.zip" },
+    [LEASE]: { name: "California Lease Review Kit", object: "kits/lease.zip", filename: "lease.zip" },
+  }),
+})
+const creq = (path: string) => ({ request: new Request(`https://legalfriend.ai${path}?session_id=${SID}`), env: catalogEnv() })
+
+test("catalog: each price downloads its own kit", async () => {
+  for (const [price, body, name, filename] of [
+    [PRICE, "PK-zip", "California Small Claims Kit", "small-claims.zip"],
+    [LEASE, "PK-lease", "California Lease Review Kit", "lease.zip"],
+  ]) {
+    session.line_items.data = [{ price: { id: price } }]
+    session.payment_intent.metadata = {}
+    const st = await (await status(creq("/api/kit/status"))).json()
+    assert.equal(st.product, name)
+    const r = await file(creq("/api/kit/file"))
+    assert.equal(r.status, 200)
+    assert.equal(await r.text(), body)
+    assert.equal(r.headers.get("Content-Disposition"), `attachment; filename="${filename}"`)
+  }
+})
+
+test("catalog: price not in catalog is rejected; bad JSON means not configured", async () => {
+  session.line_items.data = [{ price: { id: "price_unknown" } }]
+  assert.equal((await file(creq("/api/kit/file"))).status, 403)
+  const broken = { ...catalogEnv(), KIT_CATALOG: "{not json" }
+  const r = await status({ request: new Request(`https://x/api/kit/status?session_id=${SID}`), env: broken })
+  assert.equal(r.status, 503)
 })

@@ -1,4 +1,6 @@
 # Attorney review guide — California Small Claims Kit v0.1
+
+> Paths in this guide are relative to `kits/ca-small-claims/`.
 *Created: 2026-09-29 | Status: AI-GENERATED | Owner: Sophia (attorney) | Requires Review: YES*
 
 All kit content (12 ebook chapters, 4 practice notes, 6 prompts) was AI-drafted on

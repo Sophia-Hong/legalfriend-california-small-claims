@@ -8,29 +8,63 @@
 // Env (Pages → Settings → Variables and Secrets / Bindings):
 //   STRIPE_SECRET_KEY  secret; restricted key with Checkout Sessions: Read,
 //                      PaymentIntents: Write, Charges: Read
-//   KIT_PRICE_ID       the Stripe Price for the kit (price_...)
-//   KIT_OBJECT_KEY     object key of the kit zip in the R2 bucket
-//   KIT_FILENAME       download filename shown to the buyer
+//   KIT_CATALOG        JSON object keyed by Stripe Price ID, one entry per kit:
+//                      {"price_...": {"name": "California Small Claims Kit",
+//                                     "object": "ca-small-claims/....zip",
+//                                     "filename": "....zip"}}
+//   — or, for a single kit — KIT_PRICE_ID, KIT_OBJECT_KEY, KIT_FILENAME (KIT_NAME optional)
 //   KITS               R2 bucket binding
 
 export interface KitEnv {
   STRIPE_SECRET_KEY?: string
+  KIT_CATALOG?: string
   KIT_PRICE_ID?: string
   KIT_OBJECT_KEY?: string
   KIT_FILENAME?: string
+  KIT_NAME?: string
   KITS?: { get(key: string): Promise<{ body: ReadableStream; size: number } | null> }
 }
 
+export interface Product {
+  priceId: string
+  name: string
+  object: string
+  filename: string
+}
+
 export type Verdict =
-  | { ok: true; paymentIntentId: string; firstDownloadedAt: string | null; email: string | null }
+  | { ok: true; paymentIntentId: string; firstDownloadedAt: string | null; email: string | null; product: Product }
   | { ok: false; status: number; reason: "not_configured" | "bad_session" | "not_found" | "unpaid" | "wrong_product" | "refunded" | "stripe_error" }
 
 export const DOWNLOAD_META_KEY = "kit_first_downloaded_at"
 const SESSION_ID = /^cs_(live|test)_[A-Za-z0-9]{10,200}$/
 const STRIPE = "https://api.stripe.com/v1"
 
+export function catalog(env: KitEnv): Map<string, Product> {
+  const out = new Map<string, Product>()
+  if (env.KIT_CATALOG) {
+    let parsed: Record<string, { name?: string; object?: string; filename?: string }>
+    try {
+      parsed = JSON.parse(env.KIT_CATALOG)
+    } catch {
+      return out
+    }
+    for (const [priceId, p] of Object.entries(parsed ?? {})) {
+      if (p?.object) out.set(priceId, { priceId, name: p.name || "LegalFriend Kit", object: p.object, filename: p.filename || "legalfriend-kit.zip" })
+    }
+  } else if (env.KIT_PRICE_ID && env.KIT_OBJECT_KEY) {
+    out.set(env.KIT_PRICE_ID, {
+      priceId: env.KIT_PRICE_ID,
+      name: env.KIT_NAME || "California Small Claims Kit",
+      object: env.KIT_OBJECT_KEY,
+      filename: env.KIT_FILENAME || "legalfriend-kit.zip",
+    })
+  }
+  return out
+}
+
 export function configured(env: KitEnv): boolean {
-  return Boolean(env.STRIPE_SECRET_KEY && env.KIT_PRICE_ID && env.KIT_OBJECT_KEY && env.KITS)
+  return Boolean(env.STRIPE_SECRET_KEY && env.KITS && catalog(env).size > 0)
 }
 
 async function stripe(env: KitEnv, path: string, init: RequestInit = {}): Promise<Response> {
@@ -57,8 +91,10 @@ export async function verifyPurchase(env: KitEnv, sessionId: string | null): Pro
   const s: any = await res.json()
 
   if (s.status !== "complete" || s.payment_status !== "paid") return { ok: false, status: 402, reason: "unpaid" }
+  const products = catalog(env)
   const items: any[] = s.line_items?.data ?? []
-  if (!items.some((li) => li?.price?.id === env.KIT_PRICE_ID)) return { ok: false, status: 403, reason: "wrong_product" }
+  const product = items.map((li) => products.get(li?.price?.id)).find(Boolean)
+  if (!product) return { ok: false, status: 403, reason: "wrong_product" }
 
   const pi = s.payment_intent
   if (!pi || typeof pi !== "object") return { ok: false, status: 502, reason: "stripe_error" }
@@ -71,6 +107,7 @@ export async function verifyPurchase(env: KitEnv, sessionId: string | null): Pro
     paymentIntentId: pi.id,
     firstDownloadedAt: pi.metadata?.[DOWNLOAD_META_KEY] ?? null,
     email: s.customer_details?.email ?? null,
+    product,
   }
 }
 

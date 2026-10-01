@@ -10,8 +10,9 @@ interface Props {
   title: string
   description: string
   noindex?: boolean
+  image?: string
 }
-const { title, description, noindex = false } = Astro.props
+const { title, description, noindex = false, image } = Astro.props
 const canonical = new URL(Astro.url.pathname.replace(/(\/index)?\.html$/, "").replace(/\/+$/, "") || "/", Astro.site)
 ---
 <!doctype html>
@@ -28,6 +29,8 @@ const canonical = new URL(Astro.url.pathname.replace(/(\/index)?\.html$/, "").re
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="twitter:card" content={image ? "summary_large_image" : "summary"} />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
@@ -40,7 +43,7 @@ const canonical = new URL(Astro.url.pathname.replace(/(\/index)?\.html$/, "").re
         <a class="brand" href="/"><img src="/logo.svg" alt="" width="28" height="28" />LegalFriend</a>
         <div class="nav-links">
           <a href="/california-small-claims">Small Claims Kit</a>
-          <a href="https://lease.legalfriend.ai">Lease Review</a>
+          <a href="/california-lease-review">Lease Review Kit</a>
         </div>
         {KIT_CHECKOUT_URL
           ? <a class="btn btn--nav" href={KIT_CHECKOUT_URL}>Get the kit</a>

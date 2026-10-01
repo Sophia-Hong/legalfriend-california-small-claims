@@ -1,0 +1,82 @@
+# California Lease Review — workflow (ordered). DRAFT v0.1 — pending attorney review.
+# Each step: the lease section it concerns, the task prompt to paste (prompts/system.md means
+# "ask the assistant directly"), the practice note to read, and the facts (sources/facts.yaml)
+# and official sources (sources/manifest.yaml) behind it. `sources` = the manifest ids of
+# those facts. The person decides whether and when to sign, send, or act on anything.
+id: ca-lease-review
+steps:
+- id: extract
+  section: all
+  title: Read the lease and extract each section
+  prompt: prompts/lease-extraction.md
+  practice_note: null
+  facts: [deposit-what-counts, auto-renewal, translation]
+  sources: [civ-1950-5, civ-1945-5, civ-1632]
+- id: check-clauses
+  section: all
+  title: Compare clauses with the facts sheet
+  prompt: prompts/clause-check.md
+  practice_note: practice-notes/clauses-worth-a-question.md
+  facts: [deposit-what-counts, deposit-limit-general, deposit-limit-small-landlord, deposit-limit-servicemember,
+    deposit-no-nonrefundable, late-fee-reasonable, screening-fee, rent-cap, rent-increase-notice, entry-notice,
+    habitability, waivers-void, jury-waiver, attorney-fees-reciprocal, auto-renewal, translation, termination-notice-mtm,
+    just-cause, mitigation, dv-termination, deposit-allowed-deductions, local-rules]
+  sources: [civ-1950-5, civ-1671, case-orozco-2004, civ-1950-6, civ-1947-12, civ-827, civ-1954, civ-1941-1,
+    civ-1953, case-grafton-2005, civ-1717, civ-1945-5, civ-1632, civ-1946-1, civ-1946-2, civ-1951-2, civ-1946-7]
+- id: questions
+  section: all
+  title: Turn flagged and unclear items into written questions
+  prompt: prompts/questions-for-landlord.md
+  practice_note: practice-notes/written-communication.md
+  facts: [translation, entry-notice, deposit-pre-moveout-inspection]
+  sources: [civ-1632, civ-1954, civ-1950-5]
+- id: sign-and-keep-copies
+  section: Basics
+  title: The person decides whether to sign; keep complete signed copies of the lease, addenda, and answers
+  prompt: prompts/system.md
+  practice_note: practice-notes/written-communication.md
+  facts: [translation, auto-renewal, local-rules]
+  sources: [civ-1632, civ-1945-5, civ-1947-12]
+- id: move-in-record
+  section: Deposit
+  title: Record the unit's condition room by room, with a photo log
+  prompt: prompts/move-in-record.md
+  practice_note: practice-notes/move-in-documentation.md
+  facts: [deposit-allowed-deductions, deposit-photos, habitability, deposit-pre-moveout-inspection]
+  sources: [civ-1950-5, civ-1941-1, civ-1953]
+- id: during-tenancy-repairs
+  section: Repairs
+  title: Ask for repairs in writing and keep a log
+  prompt: prompts/system.md
+  practice_note: practice-notes/written-communication.md
+  facts: [habitability, waivers-void, repair-and-deduct, retaliation]
+  sources: [civ-1941-1, civ-1953, civ-1942, civ-1942-5]
+- id: during-tenancy-entry
+  section: Privacy
+  title: Understand entry notice and respond in writing
+  prompt: prompts/system.md
+  practice_note: practice-notes/written-communication.md
+  facts: [entry-notice, waivers-void]
+  sources: [civ-1954, civ-1953]
+- id: during-tenancy-rent-increases
+  section: Money
+  title: 'Check a rent increase notice: percentage, notice period, local rules'
+  prompt: prompts/system.md
+  practice_note: practice-notes/written-communication.md
+  facts: [rent-increase-notice, rent-cap, local-rules, retaliation]
+  sources: [civ-827, civ-1947-12, civ-1942-5]
+- id: ending-the-lease
+  section: Ending
+  title: 'Plan the end of the lease: renewal, notice, leaving early'
+  prompt: prompts/system.md
+  practice_note: practice-notes/written-communication.md
+  facts: [termination-notice-mtm, just-cause, auto-renewal, mitigation, dv-termination, local-rules]
+  sources: [civ-1946-1, civ-1946-2, civ-1945-5, civ-1951-2, civ-1946-7, civ-1947-12]
+- id: move-out-and-deposit
+  section: Deposit
+  title: Pre-move-out inspection, move-out photos, 21-day tracker, itemization review, written request
+  prompt: prompts/deposit-return.md
+  practice_note: practice-notes/deposit-return-checklist.md
+  facts: [deposit-pre-moveout-inspection, deposit-photos, deposit-21-days, deposit-allowed-deductions,
+    deposit-receipts, deposit-no-nonrefundable, deposit-bad-faith, small-claims-limit, local-rules]
+  sources: [civ-1950-5, ccp-116-221, civ-1947-12]

@@ -1,0 +1,218 @@
+# Facts sheet — the ONLY substantive legal statements this kit may make.
+# Same rules as kits/ca-small-claims/sources/facts.yaml: cite by [F:id]; anything not here is
+# not stated as fact; verified: false until the attorney confirms against the official source.
+#
+# Drafted 2026-10-01. Where LegalFriend's attorney-approved Lease Review language exists
+# (legalfriend_v1.1 backend/CA_State_Config.yaml, "approved_language"), it is recorded in
+# `approved_language` so chapters and notes can reuse it verbatim.
+
+schema_version: 1
+as_of: 2026-10-01
+facts:
+
+  # ---------- Security deposits ----------
+  - id: deposit-what-counts
+    statement: In California, "security" for a residential lease includes any payment, fee, deposit, or charge used to cover unpaid rent, damage, or cleaning — so security, pet, key, and cleaning deposits generally count together toward the limit. Application screening fees are treated separately.
+    cite: Cal. Civ. Code § 1950.5(b)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+    approved_language: "All deposits combined (security + pet + other) must comply with CA limits: 1 month rent for most landlords, 2 months for small owners (≤2 properties, ≤4 units)"
+  - id: deposit-limit-general
+    statement: For most residential leases since July 1, 2024, a landlord may not demand or receive total security deposits of more than one month's rent.
+    cite: Cal. Civ. Code § 1950.5(c)(1) (as amended by AB 12, 2023)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+    approved_language: "Deposits exceed CA standard limit (1 month rent). Legal only if landlord owns ≤2 properties with ≤4 units total."
+  - id: deposit-limit-small-landlord
+    statement: A small landlord — generally a natural person (or an LLC or family trust made up of natural persons) who owns no more than two residential rental properties with no more than four units in total — may collect up to two months' rent as security.
+    cite: Cal. Civ. Code § 1950.5(c)(2), (c)(4) (subsections to confirm)
+    sources: [civ-1950-5]
+    confidence: medium
+    verified: false
+    approved_language: "Deposits exceed CA legal limits (1 month for most landlords, 2 months for small landlords with ≤2 properties)."
+  - id: deposit-limit-servicemember
+    statement: The small-landlord exception does not apply when the tenant is a service member; the one-month limit applies.
+    cite: Cal. Civ. Code § 1950.5(c)(3) (subsection to confirm)
+    sources: [civ-1950-5]
+    confidence: medium
+    verified: false
+  - id: deposit-no-nonrefundable
+    statement: A lease may not make a security deposit, or any part of it, nonrefundable.
+    cite: Cal. Civ. Code § 1950.5(m)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+  - id: deposit-allowed-deductions
+    statement: A landlord may deduct only what is reasonably necessary for unpaid rent, repairing damage beyond ordinary wear and tear caused by the tenant or the tenant's guests, cleaning needed to return the unit to its move-in level of cleanliness, and (if the lease allows) replacing personal property beyond ordinary wear and tear.
+    cite: Cal. Civ. Code § 1950.5(b), (e)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+    approved_language: "Reasonable wear and tear from normal use"
+  - id: deposit-21-days
+    statement: Within 21 days after the tenant moves out, the landlord must return the deposit or send an itemized statement of deductions with any remaining balance.
+    cite: Cal. Civ. Code § 1950.5(g)(1)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+  - id: deposit-receipts
+    statement: When deductions for repairs or cleaning total more than $125, the itemized statement must include copies of receipts or invoices (or a good-faith estimate, followed by receipts, if the work could not be completed within 21 days).
+    cite: Cal. Civ. Code § 1950.5(g)(2)–(3)
+    sources: [civ-1950-5]
+    confidence: medium
+    verified: false
+  - id: deposit-pre-moveout-inspection
+    statement: A tenant may request an initial inspection before moving out, no earlier than two weeks before the tenancy ends, so the tenant has a chance to fix identified problems; the landlord must tell the tenant in writing about this right.
+    cite: Cal. Civ. Code § 1950.5(f)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+  - id: deposit-photos
+    statement: Newer rules require landlords to take photos of the unit at certain points (for example, at move-out before repairs or cleaning, and at move-in for tenancies starting on or after a 2025 effective date) to support deductions.
+    cite: Cal. Civ. Code § 1950.5 (as amended by AB 2801, 2024; dates to confirm)
+    sources: [civ-1950-5]
+    confidence: medium
+    verified: false
+  - id: deposit-bad-faith
+    statement: If a landlord keeps a deposit in bad faith, a court may award statutory damages of up to twice the amount of the deposit in addition to actual damages.
+    cite: Cal. Civ. Code § 1950.5(l)
+    sources: [civ-1950-5]
+    confidence: high
+    verified: false
+  - id: small-claims-limit
+    statement: A natural person may generally sue for up to $12,500 in California small claims court, which is where many deposit disputes are heard.
+    cite: Cal. Code Civ. Proc. § 116.221
+    sources: [ccp-116-221]
+    confidence: high
+    verified: false
+
+  # ---------- Rent and fees ----------
+  - id: late-fee-reasonable
+    statement: A late fee must be a reasonable estimate of the landlord's actual costs from late payment; a fee set as a penalty may be unenforceable. A late fee above about 5% of monthly rent is commonly treated as a signal to look more closely.
+    cite: Cal. Civ. Code § 1671(d); Orozco v. Casimiro (2004) 121 Cal.App.4th Supp. 7
+    sources: [civ-1671, case-orozco-2004]
+    confidence: medium
+    verified: false
+    approved_language: "This late fee is over 5% of rent (California's common \"reasonableness\" benchmark)—if charged, demand proof of the landlord's actual costs before paying."
+  - id: rent-cap
+    statement: For many units covered by the Tenant Protection Act, rent increases over any 12-month period are limited to 5% plus the regional change in the cost of living, and never more than 10%. Some housing is exempt (for example, units built within the past 15 years and many single-family homes or condos when the lease contains the required exemption notice).
+    cite: Cal. Civ. Code § 1947.12
+    sources: [civ-1947-12]
+    confidence: high
+    verified: false
+  - id: just-cause
+    statement: For many tenancies covered by the Tenant Protection Act, once the tenant has lived in the unit for 12 months the landlord needs a "just cause" reason to end the tenancy, and some no-fault reasons require relocation assistance.
+    cite: Cal. Civ. Code § 1946.2
+    sources: [civ-1946-2]
+    confidence: high
+    verified: false
+  - id: rent-increase-notice
+    statement: For a month-to-month tenancy, a rent increase of 10% or less requires at least 30 days' written notice, and an increase of more than 10% requires at least 90 days' notice.
+    cite: Cal. Civ. Code § 827(b)
+    sources: [civ-827]
+    confidence: high
+    verified: false
+  - id: local-rules
+    statement: Many California cities and counties have their own rent stabilization or tenant protection ordinances that can be stricter than state law, so the local rules for the property's address also apply.
+    cite: Cal. Civ. Code § 1947.12 (local ordinances); local ordinances
+    sources: [civ-1947-12]
+    confidence: high
+    verified: false
+  - id: screening-fee
+    statement: An application screening fee is capped by state law at an amount adjusted each year for inflation, and the applicant is entitled to an itemized receipt; check the current cap rather than relying on a number in this kit.
+    cite: Cal. Civ. Code § 1950.6
+    sources: [civ-1950-6]
+    confidence: medium
+    verified: false
+
+  # ---------- Entry and privacy ----------
+  - id: entry-notice
+    statement: Except in an emergency, a landlord may enter only for specified reasons, during normal business hours, after reasonable written notice — 24 hours is presumed reasonable (six days if the notice is mailed).
+    cite: Cal. Civ. Code § 1954
+    sources: [civ-1954]
+    confidence: high
+    verified: false
+    approved_language: "California requires reasonable notice (commonly 24+ hours) for non-emergency entry"
+
+  # ---------- Repairs and habitability ----------
+  - id: habitability
+    statement: California rental housing must meet basic habitability standards — including weatherproofing, working plumbing, hot and cold water, heating, electrical systems, safe floors and stairways, and freedom from rodents and vermin — and this duty cannot be waived by the lease.
+    cite: Cal. Civ. Code §§ 1941.1, 1942.1, 1953
+    sources: [civ-1941-1, civ-1953]
+    confidence: high
+    verified: false
+    approved_language: "Despite any contradicting clause, your landlord is still required to maintain heating, plumbing, and a safe structure. Document any issues and ask for repairs in writing."
+  - id: repair-and-deduct
+    statement: After giving the landlord notice and a reasonable time to fix a habitability problem, a tenant may in some cases pay for the repair and deduct it from rent, up to one month's rent and no more than twice in 12 months; the conditions are strict.
+    cite: Cal. Civ. Code § 1942
+    sources: [civ-1942]
+    confidence: medium
+    verified: false
+  - id: retaliation
+    statement: A landlord may not retaliate — for example by raising rent, reducing services, or ending the tenancy — because a tenant exercised legal rights such as complaining to a government agency; retaliation is presumed for actions within 180 days after certain protected acts.
+    cite: Cal. Civ. Code § 1942.5
+    sources: [civ-1942-5]
+    confidence: high
+    verified: false
+
+  # ---------- Lease clauses that do not hold ----------
+  - id: waivers-void
+    statement: A lease clause that has the tenant give up rights to a habitable home, to proper entry notice, to the deposit protections, or to hold the landlord responsible for the landlord's own negligence is void.
+    cite: Cal. Civ. Code § 1953
+    sources: [civ-1953]
+    confidence: high
+    verified: false
+    approved_language: "Despite this clause, landlords remain liable for their negligence and must provide habitable housing."
+  - id: jury-waiver
+    statement: A pre-dispute waiver of the right to a jury trial in a contract such as a lease is unenforceable in California.
+    cite: Grafton Partners v. Superior Court (2005) 36 Cal.4th 944
+    sources: [case-grafton-2005]
+    confidence: high
+    verified: false
+    approved_language: "Despite this clause, you can still request a jury trial. This waiver is invalid in CA."
+  - id: attorney-fees-reciprocal
+    statement: If a lease says only the landlord can recover attorney's fees in a dispute, California law makes that clause apply to both sides.
+    cite: Cal. Civ. Code § 1717
+    sources: [civ-1717]
+    confidence: high
+    verified: false
+  - id: auto-renewal
+    statement: An automatic renewal or extension clause in a residential lease is voidable by the tenant unless it appears in at least 8-point boldface type immediately above the tenant's signature.
+    cite: Cal. Civ. Code § 1945.5
+    sources: [civ-1945-5]
+    confidence: medium
+    verified: false
+  - id: translation
+    statement: If a lease is negotiated primarily in Spanish, Chinese, Tagalog, Vietnamese, or Korean, the landlord must give the tenant a translation in that language before signing.
+    cite: Cal. Civ. Code § 1632
+    sources: [civ-1632]
+    confidence: high
+    verified: false
+
+  # ---------- Ending the lease ----------
+  - id: termination-notice-mtm
+    statement: To end a month-to-month tenancy (where termination is otherwise allowed), a landlord generally must give 30 days' notice if the tenant has lived there less than a year and 60 days if a year or more; a tenant generally gives 30 days.
+    cite: Cal. Civ. Code § 1946.1
+    sources: [civ-1946-1]
+    confidence: high
+    verified: false
+  - id: mitigation
+    statement: If a tenant leaves before a fixed-term lease ends, the landlord must make reasonable efforts to re-rent, and the tenant is generally responsible only for rent losses that could not reasonably have been avoided.
+    cite: Cal. Civ. Code § 1951.2
+    sources: [civ-1951-2]
+    confidence: high
+    verified: false
+  - id: dv-termination
+    statement: A tenant who is a victim of domestic violence, sexual assault, stalking, or certain other crimes may end a lease early with written notice and qualifying documentation.
+    cite: Cal. Civ. Code § 1946.7
+    sources: [civ-1946-7]
+    confidence: medium
+    verified: false
+
+do_not_state:
+  - The current application screening fee cap or any other inflation-adjusted dollar amount
+  - Whether a specific unit is exempt from the Tenant Protection Act or local rent control
+  - Local ordinance details for any city or county
+  - That a specific clause in the reader's lease is illegal, or that the reader should refuse to sign or withhold rent

@@ -7,7 +7,7 @@ export async function onRequestGet({ request, env }: { request: Request; env: Ki
   const v = await verifyPurchase(env, sessionId)
   if (!v.ok) return json({ ok: false, reason: v.reason }, v.status)
 
-  const obj = await env.KITS!.get(env.KIT_OBJECT_KEY!)
+  const obj = await env.KITS!.get(v.product.object)
   if (!obj) return json({ ok: false, reason: "file_missing" }, 503)
 
   // Record before streaming: if Stripe can't record it, don't hand out the file, so the
@@ -16,7 +16,7 @@ export async function onRequestGet({ request, env }: { request: Request; env: Ki
     return json({ ok: false, reason: "stripe_error" }, 502)
   }
 
-  const filename = (env.KIT_FILENAME || "legalfriend-kit.zip").replace(/[^A-Za-z0-9._-]/g, "")
+  const filename = v.product.filename.replace(/[^A-Za-z0-9._-]/g, "")
   return new Response(obj.body, {
     headers: {
       "Content-Type": "application/zip",

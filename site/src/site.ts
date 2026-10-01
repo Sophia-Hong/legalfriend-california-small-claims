@@ -11,5 +11,16 @@ export const KIT_CHECKOUT_URL: string | undefined = import.meta.env.PUBLIC_KIT_C
 export const COMPANY = "PeopleShine Inc."
 export const BRAND = "LegalFriend"
 export const SUPPORT_EMAIL = "support@legalfriend.ai"
-export const LEGAL_EFFECTIVE_DATE = "September 29, 2026"
+export const LEGAL_EFFECTIVE_DATE = "October 1, 2026"
 export const KIT_PRICE_LABEL = "$79"
+
+// Retirement of the hosted Lease Review service (lease.legalfriend.ai).
+export const LEASE_SERVICE_ENDED = "October 1, 2026"
+export const LEASE_ACCESS_UNTIL = "October 31, 2026"
+export const LEASE_DELETION_BY = "November 15, 2026"
+
+// California Lease Review Kit. The landing copy is new: keep it out of search until the
+// attorney approves it (flip LEASE_LANDING_APPROVED), and the CTA off until checkout exists.
+export const LEASE_LANDING_APPROVED = false
+export const LEASE_KIT_CHECKOUT_URL: string | undefined = import.meta.env.PUBLIC_LEASE_KIT_CHECKOUT_URL || undefined
+export const LEASE_KIT_PRICE_LABEL = "$49"

@@ -1,11 +1,13 @@
-# CLAUDE.md — LegalFriend California Small Claims Kit
+# CLAUDE.md — LegalFriend kits + legalfriend.ai
 
-Read `docs/PRD.md` before making changes. Key rules:
+Read `docs/PRD.md` before making changes. Each kit lives in `kits/<name>/` with the same layout
+(see README). Paths below are relative to a kit unless they start with `site/`, `scripts/`, or `docs/`.
+Key rules:
 
 ## Product boundary (never cross without PRD owner + attorney sign-off)
 - Self-help publication/toolkit. No hosted inference, no case intake, no storage of
   user facts, prompts, or AI answers, no filing or communication on a user's behalf.
-- Plaintiff side, California small claims only.
+- Every kit is California-only and scoped by its own `kit.yaml` / landing page.
 
 ## Content rules
 - **AI drafts, the attorney approves.** Since 2026-09-29 (Sophia's instruction) AI may draft

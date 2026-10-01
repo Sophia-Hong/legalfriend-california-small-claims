@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate sources/manifest.yaml against the provenance and versioning rules (PRD §10).
+"""Validate each kit's sources/manifest.yaml (kits/<name>/) against the provenance and versioning rules (PRD §10).
 
 Exit code 1 on any error. Requires PyYAML.
 """
@@ -9,11 +9,10 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent
-MANIFEST = ROOT / "sources" / "manifest.yaml"
+from kits import selected_kits
 
 STAGES = {"prefiling", "pleading", "filing", "service", "hearing", "judgment"}
-DOC_TYPES = {"self_help", "form", "instruction", "statute", "rule", "local_rule"}
+DOC_TYPES = {"self_help", "form", "instruction", "statute", "case", "rule", "local_rule"}
 STATUSES = {"pending_fetch", "verified", "superseded", "broken"}
 REQUIRED = [
     "id", "source_title", "source_url", "publisher", "official", "priority",
@@ -72,8 +71,8 @@ def check(src, ids, errors):
         err("record with superseded_by must have status 'superseded'")
 
 
-def main():
-    data = yaml.safe_load(MANIFEST.read_text())
+def validate(kit):
+    data = yaml.safe_load((kit / "sources" / "manifest.yaml").read_text())
     sources = data.get("sources") or []
     errors = []
 
@@ -96,7 +95,7 @@ def main():
         check(s, set(ids), errors)
 
     # Every fact in sources/facts.yaml must cite at least one known manifest source.
-    facts_path = ROOT / "sources" / "facts.yaml"
+    facts_path = kit / "sources" / "facts.yaml"
     fact_ids = set()
     if facts_path.exists():
         for f in yaml.safe_load(facts_path.read_text()).get("facts") or []:
@@ -114,9 +113,16 @@ def main():
 
     pending = sum(1 for s in sources if s.get("status") == "pending_fetch")
     if errors:
-        print("\n".join(f"ERROR {e}" for e in errors))
+        print("\n".join(f"ERROR [{kit.name}] {e}" for e in errors))
+        return False
+    print(f"OK [{kit.name}]: {len(sources)} sources ({pending} pending fetch), {len(fact_ids)} facts")
+    return True
+
+
+def main():
+    results = [validate(k) for k in selected_kits()]
+    if not all(results):
         sys.exit(1)
-    print(f"OK: {len(sources)} sources ({pending} pending fetch), {len(fact_ids)} facts")
 
 
 if __name__ == "__main__":

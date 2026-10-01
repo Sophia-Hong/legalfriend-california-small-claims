@@ -1,0 +1,36 @@
+---
+// Title, description, and heading copied from lease.legalfriend.ai/blog.
+import Base from "../../layouts/Base.astro"
+import { getCollection } from "astro:content"
+import "../../styles/content.css"
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => (b.data.publishedAt?.getTime() ?? 0) - (a.data.publishedAt?.getTime() ?? 0),
+)
+const fmt = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })
+---
+<Base
+  title="Blog: Rental Resources | LegalFriend"
+  description="Helpful articles and guides for California renters. Learn about security deposits, tenant rights, and lease terms."
+>
+  <section class="legal">
+    <div class="wrap">
+      <article>
+        <span class="eyebrow">Blog</span>
+        <h1>Rental Resources</h1>
+        <p class="lead">Helpful articles and guides for California renters</p>
+        <ul class="post-list">
+          {posts.map((post) => (
+            <li>
+              <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
+              <p>{post.data.description}</p>
+              {post.data.publishedAt && (
+                <time datetime={post.data.publishedAt.toISOString()}>{fmt(post.data.publishedAt)}</time>
+              )}
+            </li>
+          ))}
+        </ul>
+      </article>
+    </div>
+  </section>
+</Base>

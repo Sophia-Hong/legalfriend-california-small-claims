@@ -1,0 +1,86 @@
+---
+// Ported from lease.legalfriend.ai/deposit-dispute (app/[locale]/deposit-dispute/page.tsx,
+// components/deposit/DepositHero.tsx, TrustSignals.tsx). Copy is verbatim except where it
+// sold the retired $39 Deposit Dispute Kit, which was removed; see migration notes.
+import Base from "../layouts/Base.astro"
+import DeadlineCalculator from "../components/DeadlineCalculator.astro"
+import "../styles/content.css"
+
+const faqs = [
+  {
+    q: "Is this legal advice?",
+    a: "No. LegalFriend is not a law firm and does not provide legal advice. We provide educational information about California security deposit laws based on CA Civil Code §1950.5 to help you understand your rights. For legal advice specific to your situation, consult a licensed California attorney.",
+  },
+  {
+    q: "What if my landlord ignores the demand letter?",
+    a: "If your landlord doesn't respond within 14 days, the next step is filing a claim in small claims court. In California, small claims court handles cases up to $12,500 for individuals.",
+  },
+  {
+    q: "How long does the small claims process take?",
+    a: "From filing to hearing, typically 30-70 days depending on your county. The hearing itself usually takes under an hour. You don't need a lawyer for small claims court in California.",
+  },
+  {
+    q: "Can I use this if I moved out months ago?",
+    a: "Yes. California has a 2-year statute of limitations for security deposit claims (CCP §339). If your landlord wrongfully withheld your deposit, you can still take action within that window.",
+  },
+]
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+}
+---
+<Base
+  title="Get Your Security Deposit Back | LegalFriend"
+  description="California tenants: check your 21-day deadline. Built by a licensed CA attorney. Based on CA Civil Code §1950.5."
+>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <section class="legal">
+    <div class="wrap">
+      <article>
+        <span class="eyebrow">Deposit Dispute</span>
+        <h1>Get Your Security Deposit Back</h1>
+        <p class="lead">California law gives your landlord 21 days to return your security deposit. After that, you may be entitled to 2x damages under Civil Code §1950.5.</p>
+
+        <ol class="deposit-steps">
+          <li><strong>Step 1:</strong> Calculate your deadline</li>
+          <li><strong>Step 2:</strong> Check your rights</li>
+        </ol>
+
+        <DeadlineCalculator />
+
+        <p><a href="/deposit-dispute/deadline-calculator">Security Deposit Deadline Calculator</a></p>
+
+        <ul class="trust">
+          <li>Based on CA Civil Code §1950.5</li>
+          <li>Built by a licensed CA attorney</li>
+          <li>Your data stays private</li>
+        </ul>
+
+        <aside class="cta-card" aria-label="California Small Claims Kit">
+          <p>Dealing with a deposit dispute? The California Small Claims Kit walks you through filing, serving, and preparing for your hearing. It is built around official California court materials.</p>
+          <a class="btn btn--primary" href="/california-small-claims">See the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
+        </aside>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+          {faqs.map((faq) => (
+            <details>
+              <summary>{faq.q}</summary>
+              <p>{faq.a}</p>
+            </details>
+          ))}
+        </div>
+
+        <p class="disclaimer">
+          <strong>Disclaimer:</strong> LegalFriend.ai is not a law firm and does not provide legal advice. This tool provides educational information about California security deposit laws based on CA Civil Code §1950.5. The information and documents generated are for educational purposes and to help you understand your rights. For legal advice specific to your situation, consult a licensed California attorney. Use of this tool does not create an attorney-client relationship.
+        </p>
+      </article>
+    </div>
+  </section>
+</Base>

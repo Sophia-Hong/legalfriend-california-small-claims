@@ -5,5 +5,5 @@ export async function onRequestGet({ request, env }: { request: Request; env: Ki
   const sessionId = new URL(request.url).searchParams.get("session_id")
   const v = await verifyPurchase(env, sessionId)
   if (!v.ok) return json({ ok: false, reason: v.reason }, v.status)
-  return json({ ok: true, downloaded: v.firstDownloadedAt !== null, firstDownloadedAt: v.firstDownloadedAt, email: v.email })
+  return json({ ok: true, downloaded: v.firstDownloadedAt !== null, firstDownloadedAt: v.firstDownloadedAt, email: v.email, product: v.product.name })
 }

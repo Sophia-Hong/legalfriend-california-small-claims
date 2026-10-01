@@ -1,0 +1,54 @@
+---
+// Ported from lease.legalfriend.ai/deposit-dispute/deadline-calculator
+// (app/[locale]/deposit-dispute/deadline-calculator/page.tsx). Copy is verbatim except the
+// sentence selling the retired $39 Deposit Dispute Kit, replaced by the Small Claims Kit CTA.
+import Base from "../../layouts/Base.astro"
+import DeadlineCalculator from "../../components/DeadlineCalculator.astro"
+import "../../styles/content.css"
+---
+<Base
+  title="Security Deposit Deadline Calculator | California 21-Day Rule | LegalFriend"
+  description="Free tool: Calculate your landlord's 21-day deadline to return your security deposit under California Civil Code §1950.5. Instant results."
+>
+  <section class="legal">
+    <div class="wrap">
+      <article>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/deposit-dispute">Deposit Dispute</a></nav>
+        <h1>Security Deposit Deadline Calculator</h1>
+        <p class="lead">California law gives your landlord exactly 21 days to return your deposit or provide an itemized statement. Check your deadline for free.</p>
+
+        <DeadlineCalculator />
+
+        <ul class="trust">
+          <li>Based on CA Civil Code §1950.5</li>
+          <li>Built by a licensed CA attorney</li>
+          <li>Your data stays private</li>
+        </ul>
+
+        <h2>What is the 21-day rule?</h2>
+        <p>
+          Under California Civil Code §1950.5(h)(1), your landlord must return your full security deposit
+          <strong>or</strong> provide an itemized statement of deductions within <strong>21 calendar days</strong> after
+          you vacate the property. If they fail to do so, they may be acting in bad faith, and you could be
+          entitled to up to <strong>2x your deposit amount</strong> in statutory damages under §1950.5(m).
+        </p>
+
+        <h2>What if the deadline has passed?</h2>
+        <p>
+          If your landlord missed the 21-day deadline, you have strong legal standing. The recommended next step
+          is to send a formal demand letter citing the specific code sections your landlord violated.
+        </p>
+
+        <aside class="cta-card" aria-label="California Small Claims Kit">
+          <p>Dealing with a deposit dispute? The California Small Claims Kit walks you through filing, serving, and preparing for your hearing. It is built around official California court materials.</p>
+          <a class="btn btn--primary" href="/california-small-claims">See the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
+        </aside>
+
+        <p class="disclaimer">
+          <strong>Disclaimer:</strong> This calculator provides educational information based on CA Civil Code §1950.5.
+          It is not legal advice. Consult a licensed California attorney for advice specific to your situation.
+        </p>
+      </article>
+    </div>
+  </section>
+</Base>

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Citation integrity + guardrail check for kit content (PRD §18.6, §6.4).
+"""Citation integrity + guardrail check for each kit's content (PRD §18.6, §6.4).
+
+Usage: check_content.py [--kit NAME ...] [--release]
 
 - Every [F:id] must exist in sources/facts.yaml; every [S:id] in sources/manifest.yaml.
 - Front matter facts_used / sources_used must match what the body cites.
@@ -13,9 +15,8 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent
-FILES = sorted((ROOT / "ebook" / "chapters").glob("*.md")) + sorted((ROOT / "practice-notes").glob("*.md"))
-PROMPTS = sorted((ROOT / "prompts").glob("*.md"))
+from kits import ROOT, selected_kits
+
 FORBIDDEN = re.compile(r"\b(trap|trick|scam|fight|battle|win your case|beat|crush|AI lawyer|guaranteed? (?:to )?win)\b", re.I)
 F_TAG = re.compile(r"\[F:([a-z0-9-]+)\]")
 S_TAG = re.compile(r"\[S:([a-z0-9-]+)\]")
@@ -28,9 +29,11 @@ def front_matter(text):
     return {}, text
 
 
-def main(release=False):
-    facts = {f["id"]: f for f in yaml.safe_load((ROOT / "sources/facts.yaml").read_text())["facts"]}
-    sources = {s["id"] for s in yaml.safe_load((ROOT / "sources/manifest.yaml").read_text())["sources"]}
+def check(kit, release):
+    FILES = sorted((kit / "ebook" / "chapters").glob("*.md")) + sorted((kit / "practice-notes").glob("*.md"))
+    PROMPTS = sorted((kit / "prompts").glob("*.md"))
+    facts = {f["id"]: f for f in yaml.safe_load((kit / "sources/facts.yaml").read_text())["facts"]}
+    sources = {s["id"] for s in yaml.safe_load((kit / "sources/manifest.yaml").read_text())["sources"]}
     errors, rows = [], []
 
     for path in FILES + PROMPTS:
@@ -57,14 +60,21 @@ def main(release=False):
             for f in unverified:
                 errors.append(f"{rel}: uses unverified fact {f}")
 
-    print(f"{'file':52} {'status':36} facts unverified")
+    print(f"{'file':70} {'status':36} facts unverified")
     for r in rows:
-        print(f"{r[0]:52} {r[1]:36} {r[2]:5} {r[3]:10}")
+        print(f"{r[0]:70} {r[1]:36} {r[2]:5} {r[3]:10}")
     if errors:
-        print("\n".join(f"ERROR {e}" for e in errors))
+        print("\n".join(f"ERROR [{kit.name}] {e}" for e in errors))
+        return False
+    print(f"OK [{kit.name}]: {len(FILES)} content files, {len(PROMPTS)} prompts" + (" — release gate passed" if release else ""))
+    return True
+
+
+def main():
+    release = "--release" in sys.argv
+    if not all([check(k, release) for k in selected_kits()]):
         sys.exit(1)
-    print(f"OK: {len(FILES)} content files, {len(PROMPTS)} prompts" + (" — release gate passed" if release else ""))
 
 
 if __name__ == "__main__":
-    main(release="--release" in sys.argv)
+    main()

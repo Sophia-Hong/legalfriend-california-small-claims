@@ -1,0 +1,61 @@
+---
+// Port of the lease app's components/deposit/DeadlineCalculator.tsx.
+// Runs entirely in the browser: no network requests, no storage, no analytics.
+// Removed from the original: the "$39 demand letter" button, the email-capture form
+// (it posted to /api/newsletter/subscribe), and the coloured urgency bar.
+interface Props {
+  id?: string
+}
+const { id = "deadline-calculator" } = Astro.props
+---
+<div class="calc" data-deadline-calculator id={id}>
+  <h2 class="calc__title">Deposit Return Deadline Calculator</h2>
+  <form class="calc__controls" novalidate>
+    <div class="calc__field">
+      <label for={`${id}-move-out-date`}>When did you move out?</label>
+      <input type="date" id={`${id}-move-out-date`} name="moveOutDate" required />
+    </div>
+    <button type="submit" class="btn btn--primary" disabled>Check My Deadline</button>
+  </form>
+  <div class="calc__result" aria-live="polite" hidden>
+    <div class="calc__deadline">
+      <p>Your landlord's deadline</p>
+      <p data-out="deadline"></p>
+    </div>
+    <div class="calc__message" data-out="level">
+      <p class="calc__message-title" data-out="title"></p>
+      <p data-out="description"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { computeDeadline, formatDate, parseMoveOutDate, urgencyMessage } from "../lib/deposit-deadline"
+
+  for (const root of document.querySelectorAll<HTMLElement>("[data-deadline-calculator]")) {
+    const form = root.querySelector("form")!
+    const input = root.querySelector<HTMLInputElement>('input[type="date"]')!
+    const button = root.querySelector<HTMLButtonElement>('button[type="submit"]')!
+    const result = root.querySelector<HTMLElement>(".calc__result")!
+    const out = (name: string) => root.querySelector<HTMLElement>(`[data-out="${name}"]`)!
+
+    // Same as the original: the latest selectable move-out date is today (UTC date string).
+    input.max = new Date().toISOString().split("T")[0]
+    const sync = () => { button.disabled = !input.value }
+    input.addEventListener("input", sync)
+    input.addEventListener("change", sync)
+    sync()
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
+      if (!input.value) return
+      const r = computeDeadline(parseMoveOutDate(input.value))
+      const msg = urgencyMessage(r)
+      out("deadline").textContent = formatDate(r.deadlineDate)
+      out("title").textContent = msg.title
+      out("description").textContent = msg.description
+      out("level").dataset.level = r.urgency
+      result.hidden = false
+    })
+  }
+</script>

@@ -2,7 +2,7 @@
 // Unified privacy policy for legalfriend.ai and every LegalFriend self-help kit.
 // Written for the bring-your-own-AI model: we never receive case information.
 import Base from "../layouts/Base.astro"
-import { COMPANY, SUPPORT_EMAIL, LEGAL_EFFECTIVE_DATE } from "../site"
+import { COMPANY, SUPPORT_EMAIL, LEGAL_EFFECTIVE_DATE, LEASE_SERVICE_ENDED, LEASE_ACCESS_UNTIL, LEASE_DELETION_BY } from "../site"
 const mail = `mailto:${SUPPORT_EMAIL}`
 ---
 <Base title="Privacy Policy | LegalFriend" description="How LegalFriend handles personal information for legalfriend.ai and its self-help kits.">
@@ -23,7 +23,7 @@ const mail = `mailto:${SUPPORT_EMAIL}`
         </div>
 
         <h2>1. Who we are and what this policy covers</h2>
-        <p>This policy is issued by {COMPANY}, doing business as LegalFriend ("LegalFriend," "we," "us"). It covers the website at legalfriend.ai and every LegalFriend self-help kit and publication we sell there (together, the "Products"). A service that we operate on a different website and that posts its own privacy policy is covered by that policy instead.</p>
+        <p>This policy is issued by {COMPANY}, doing business as LegalFriend ("LegalFriend," "we," "us"). It covers the website at legalfriend.ai and every LegalFriend self-help kit and publication we sell there (together, the "Products"), and it replaces the separate privacy policy of our former hosted Lease Review service (see section 10).</p>
 
         <h2>2. Information we do not collect</h2>
         <p>Our Products are downloadable publications and toolkits. You use them with an AI service or other tools that you select and control. By design:</p>
@@ -85,10 +85,21 @@ const mail = `mailto:${SUPPORT_EMAIL}`
         <h2>9. Security</h2>
         <p>We use reputable providers and reasonable safeguards to protect personal information. No method of transmission or storage is completely secure. Downloads are delivered through links tied to a completed purchase.</p>
 
-        <h2>10. Changes to this policy</h2>
+        <h2 id="lease-review">10. Former hosted Lease Review service</h2>
+        <p>Until {LEASE_SERVICE_ENDED}, LegalFriend operated a hosted Lease Review service (at legalfriend.ai and later lease.legalfriend.ai). Unlike our current Products, that service received the information needed to run it:</p>
+        <ul>
+          <li>lease documents you uploaded and the analysis results generated from them;</li>
+          <li>your email address, session and access records, and payment records;</li>
+          <li>if you used them, contact-form messages and newsletter or reminder email sign-ups.</li>
+        </ul>
+        <p>Uploaded leases were processed by AI service providers (primarily Google's Gemini models) to produce the analysis, and the service's data was stored with Supabase. Emails were sent through Resend.</p>
+        <p>The service stopped accepting new uploads and payments on {LEASE_SERVICE_ENDED}. If you have an existing analysis, you can view or save it until <strong>{LEASE_ACCESS_UNTIL}</strong>. After that date we delete the service's uploaded leases, analysis results, session and access records, and email lists. Deletion will be completed by <strong>{LEASE_DELETION_BY}</strong>; copies in our database provider's routine backups expire on that provider's standard schedule. Payment records stay with Stripe for the accounting periods described in section 6. To have your data deleted sooner, email <a href={mail}>{SUPPORT_EMAIL}</a>.</p>
+        <p>The same service is now offered as a California Lease Review kit that you run in your own AI, under the rest of this policy.</p>
+
+        <h2>11. Changes to this policy</h2>
         <p>We may update this policy. We will post the new version here with a new effective date. If a change materially affects how we use personal information we already have, we will tell you before it applies to that information.</p>
 
-        <h2>11. Contact</h2>
+        <h2>12. Contact</h2>
         <p>{COMPANY}, doing business as LegalFriend: <a href={mail}>{SUPPORT_EMAIL}</a></p>
       </article>
     </div>

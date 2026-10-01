@@ -9,13 +9,18 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent
+from kits import selected_kits
 UA = "LegalFriend-SourceCheck/0.1 (+https://legalfriend.ai)"
 
 
 def main():
-    data = yaml.safe_load((ROOT / "sources" / "manifest.yaml").read_text())
-    entries = (data.get("sources") or []) + (data.get("design_references") or [])
+    entries, seen = [], set()
+    for kit in selected_kits():
+        data = yaml.safe_load((kit / "sources" / "manifest.yaml").read_text())
+        for s in (data.get("sources") or []) + (data.get("design_references") or []):
+            if s["source_url"] not in seen:
+                seen.add(s["source_url"])
+                entries.append(s)
     failed = 0
     for s in entries:
         url = s["source_url"]

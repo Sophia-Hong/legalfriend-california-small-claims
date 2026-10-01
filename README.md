@@ -15,7 +15,8 @@ Served at: `https://legalfriend.ai/california-small-claims`
 
 > **Status: v0.1 drafts.** All chapters, practice notes, and prompts are AI-drafted from
 > `sources/facts.yaml` and await attorney review — see
-> [`docs/attorney-review.md`](docs/attorney-review.md). The release build refuses to package
+> [`docs/attorney-review.md`](docs/attorney-review.md).
+> Kits: [`kits/ca-small-claims`](kits/ca-small-claims) and [`kits/ca-lease-review`](kits/ca-lease-review). The release build refuses to package
 > unapproved content.
 
 ## What's in the kit
@@ -43,23 +44,27 @@ See `docs/PRD.md` §9.2.
 
 ## Repository layout
 
+The repo holds every LegalFriend kit plus the legalfriend.ai website. Each kit has the same
+layout, so the scripts, the download service, and the website treat them alike.
+
 ```text
-ebook/              Reader edition (Markdown), chapter per PRD §13
-sources/
-  manifest.yaml     Every source we rely on, with version key + freshness
-  statewide/        Fetched official statewide material (self-help, forms, statutes, rules)
-  counties/         County layer (Phase 2; only where there is real local content)
-corpus/
-  metadata.schema.json   Chunk metadata contract (PRD §10.2)
-  chunks.jsonl           Built retrieval corpus (generated)
-  index-manifest.json    Build record (generated)
-prompts/            System prompt + task prompts for the purchaser's AI
-workflows/          Plaintiff workflow and stage workflows (YAML)
-practice-notes/     Attorney-authored commentary (stubs until written)
-scripts/            Source fetch / normalize / validate / diff / build tooling
-tests/              Freshness, citation-integrity, form-version, retrieval cases
-docs/               PRD, distribution plan, legalfriend.ai integration
-site/               legalfriend.ai public site (Astro → Cloudflare Pages)
+kits/
+  LICENSE-KIT.md          License shipped inside every kit zip
+  ca-small-claims/        California Small Claims Plaintiff Kit ($79)
+  ca-lease-review/        California Lease Review Kit ($49)
+    kit.yaml              name, title, version, price
+    README-KIT.md         buyer-facing README (becomes README.md in the zip)
+    sources/
+      facts.yaml          every legal statement the kit may make, with citation
+      manifest.yaml       official sources: URLs, version keys, freshness
+    ebook/                reader edition, one chapter per step
+    practice-notes/       LegalFriend commentary (separate provenance layer)
+    prompts/              system prompt + task prompts for the buyer's AI
+    workflows/            stage workflows; each item cites its facts
+DISCLAIMER.md             shared relationship notice (shipped in every kit)
+scripts/                  validate / check / build — all take --kit NAME (default: all kits)
+site/                     legalfriend.ai (Astro → Cloudflare Pages) + download functions
+docs/                     PRD, attorney review guide, hosting and distribution notes
 ```
 
 ## Source versioning
@@ -87,7 +92,8 @@ Stripe Payment Link → `https://legalfriend.ai/kit/download?session_id={CHECKOU
 The download page asks `/api/kit/status`; the file comes from `/api/kit/file`, which verifies
 the Checkout Session with Stripe (paid, not refunded, right price), stamps the first download
 on the PaymentIntent (`metadata.kit_first_downloaded_at`, used for the refund policy), and
-streams the zip from R2. No database. Configuration is described in
+streams that price's zip from R2. One `KIT_CATALOG` setting maps each Stripe Price to its kit
+file, so every kit shares the same download page. No database. Configuration is described in
 `site/functions/_lib/kit.ts`.
 
 ## Website (`site/`)

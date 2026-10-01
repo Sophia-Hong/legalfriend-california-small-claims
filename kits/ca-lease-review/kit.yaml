@@ -1,0 +1,5 @@
+# Kit build metadata (scripts/build_kit.py).
+name: legalfriend-ca-lease-review-kit
+title: LegalFriend — California Lease Review Kit
+version: 0.1.0
+price_usd: 49

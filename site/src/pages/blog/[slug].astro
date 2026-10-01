@@ -1,0 +1,70 @@
+---
+// Post bodies are migrated verbatim from lease.legalfriend.ai (attorney-reviewed).
+import Base from "../../layouts/Base.astro"
+import { getCollection, render } from "astro:content"
+import "../../styles/content.css"
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog")
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+const d = post.data
+const site = Astro.site!
+const url = new URL(`/blog/${post.id}`, site).href
+const fmt = (date: Date) => date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })
+const org = { "@type": "Organization", name: "LegalFriend", url: site.href.replace(/\/$/, "") }
+
+const article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: d.title,
+  description: d.description,
+  ...(d.image ? { image: d.image } : {}),
+  ...(d.publishedAt ? { datePublished: d.publishedAt.toISOString() } : {}),
+  ...((d.updatedAt ?? d.publishedAt) ? { dateModified: (d.updatedAt ?? d.publishedAt)!.toISOString() } : {}),
+  author: org,
+  publisher: { ...org, logo: { "@type": "ImageObject", url: new URL("/logo.svg", site).href } },
+  mainEntityOfPage: { "@type": "WebPage", "@id": url },
+  url,
+  inLanguage: "en-US",
+}
+const breadcrumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", site).href },
+    { "@type": "ListItem", position: 2, name: "Blog", item: new URL("/blog", site).href },
+    { "@type": "ListItem", position: 3, name: d.title, item: url },
+  ],
+}
+const json = (o: unknown) => JSON.stringify(o).replace(/</g, "\\u003c")
+---
+<Base title={`${d.metaTitle ?? d.title} | LegalFriend`} description={d.description} image={d.image}>
+  <script is:inline type="application/ld+json" set:html={json(article)} />
+  <script is:inline type="application/ld+json" set:html={json(breadcrumbs)} />
+  <section class="legal">
+    <div class="wrap">
+      <article>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog">Blog</a></nav>
+        <h1>{d.title}</h1>
+        {(d.author || d.publishedAt) && (
+          <p class="meta">
+            {d.author}{d.author && d.publishedAt && " · "}
+            {d.publishedAt && <time datetime={d.publishedAt.toISOString()}>{fmt(d.publishedAt)}</time>}
+          </p>
+        )}
+        <div class="prose">
+          <Content />
+        </div>
+        <aside class="cta-card" aria-label="California Small Claims Kit">
+          <p>Dealing with a deposit dispute? The California Small Claims Kit walks you through filing, serving, and preparing for your hearing. It is built around official California court materials.</p>
+          <a class="btn btn--primary" href="/california-small-claims">See the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
+        </aside>
+        <p class="fine">General information, not legal advice.</p>
+      </article>
+    </div>
+  </section>
+</Base>

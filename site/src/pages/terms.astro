@@ -4,7 +4,7 @@
 // California law and courts, no arbitration; seller PeopleShine Inc. dba LegalFriend.
 // Sections 3–4 mirror DISCLAIMER.md.
 import Base from "../layouts/Base.astro"
-import { COMPANY, SUPPORT_EMAIL, LEGAL_EFFECTIVE_DATE } from "../site"
+import { COMPANY, SUPPORT_EMAIL, LEGAL_EFFECTIVE_DATE, LEASE_SERVICE_ENDED, LEASE_ACCESS_UNTIL } from "../site"
 const mail = `mailto:${SUPPORT_EMAIL}`
 ---
 <Base title="Terms of Sale and Use | LegalFriend" description="The terms that apply to legalfriend.ai and LegalFriend self-help kits.">
@@ -26,7 +26,7 @@ const mail = `mailto:${SUPPORT_EMAIL}`
         </div>
 
         <h2>1. Agreement</h2>
-        <p>These terms are an agreement between you and {COMPANY}, doing business as LegalFriend ("LegalFriend," "we," "us"). They apply to the website at legalfriend.ai and to every LegalFriend self-help kit and publication sold there (the "Products"). A product page may add terms for a specific Product. A service we operate on a different website under its own posted terms is governed by those terms. By buying or using a Product, you agree to these terms.</p>
+        <p>These terms are an agreement between you and {COMPANY}, doing business as LegalFriend ("LegalFriend," "we," "us"). They apply to the website at legalfriend.ai and to every LegalFriend self-help kit and publication sold there (the "Products"). A product page may add terms for a specific Product. By buying or using a Product, you agree to these terms. These terms replace the separate terms of our former hosted Lease Review service (see section 14).</p>
 
         <h2>2. What the Products are</h2>
         <p>The Products are self-help publications and toolkits: guides, organized copies of and links to official public sources, checklists, workflows, and prompts that you can load into an AI service or other tools you choose. They provide general information about legal procedures. They are not legal advice about your situation, and they are not a substitute for advice from a lawyer. {COMPANY} is not a law firm.</p>
@@ -80,10 +80,13 @@ const mail = `mailto:${SUPPORT_EMAIL}`
         <h2>13. Changes</h2>
         <p>We may update these terms. The version in effect when you buy a Product applies to that purchase. Changes to website-use terms apply from the date we post them.</p>
 
-        <h2>14. Notice for California consumers</h2>
+        <h2 id="lease-review">14. Former hosted Lease Review service</h2>
+        <p>Our hosted Lease Review service stopped accepting new uploads and purchases on {LEASE_SERVICE_ENDED}. Purchases made before then were governed by the terms in effect at the time of purchase. Existing analyses remain viewable until {LEASE_ACCESS_UNTIL}; after that, the service and its stored data are deleted as described in our <a href="/privacy#lease-review">Privacy Policy</a>. Questions about a past purchase: <a href={mail}>{SUPPORT_EMAIL}</a>.</p>
+
+        <h2>15. Notice for California consumers</h2>
         <p>Under California Civil Code section 1789.3, California users are entitled to the following notice: the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 North Market Blvd., Suite N 112, Sacramento, CA 95834, or by telephone at (916) 445-1254 or (800) 952-5210.</p>
 
-        <h2>15. Contact</h2>
+        <h2>16. Contact</h2>
         <p>{COMPANY}, doing business as LegalFriend: <a href={mail}>{SUPPORT_EMAIL}</a></p>
       </article>
     </div>

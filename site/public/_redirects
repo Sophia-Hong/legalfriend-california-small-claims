@@ -10,10 +10,6 @@
 /contact/*  https://lease.legalfriend.ai/contact/:splat  301
 /faq    https://lease.legalfriend.ai/faq    301
 /faq/*  https://lease.legalfriend.ai/faq/:splat  301
-/blog    https://lease.legalfriend.ai/blog    301
-/blog/*  https://lease.legalfriend.ai/blog/:splat  301
-/deposit-dispute    https://lease.legalfriend.ai/deposit-dispute    301
-/deposit-dispute/*  https://lease.legalfriend.ai/deposit-dispute/:splat  301
 /analysis    https://lease.legalfriend.ai/analysis    301
 /analysis/*  https://lease.legalfriend.ai/analysis/:splat  301
 /analysis-teaser    https://lease.legalfriend.ai/analysis-teaser    301
@@ -40,3 +36,5 @@
 /en/*  https://lease.legalfriend.ai/:splat  301
 /og-home-20260715.png  https://lease.legalfriend.ai/og-home-20260715.png  301
 /design-preview  /california-small-claims  301
+/deposit-dispute/kit    /california-small-claims    301
+/deposit-dispute/kit/*  /california-small-claims    301

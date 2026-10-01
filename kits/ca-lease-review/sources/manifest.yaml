@@ -1,0 +1,432 @@
+# Source manifest — California Lease Review Kit. Same rules as kits/ca-small-claims.
+# Seeded 2026-10-01; every entry is pending_fetch until fetched and hashed.
+# `side`/`stage` fields come from the small-claims schema; for this kit they are not meaningful
+# beyond satisfying the shared validator.
+
+schema_version: 1
+jurisdiction: CA
+proceeding: residential_lease
+
+sources:
+- id: oag-landlord-tenant
+  source_title: California Attorney General — Landlord-Tenant Issues
+  source_url: https://oag.ca.gov/consumers/general/landlord-tenant-issues
+  publisher: California Department of Justice
+  official: true
+  priority: 1
+  document_type: self_help
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: &id001
+  - prefiling
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: dre-california-tenants
+  source_title: 'California Tenants: A Guide to Residential Tenants'' and Landlords'' Rights and Responsibilities'
+  source_url: https://www.dre.ca.gov/Publications/
+  publisher: California Department of Real Estate
+  official: true
+  priority: 1
+  document_type: self_help
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd:
+  - Publication index page; record the guide's direct URL and edition when fetched.
+- id: case-grafton-2005
+  source_title: Grafton Partners v. Superior Court (2005) 36 Cal.4th 944
+  source_url: https://www.courtlistener.com/?q=%22Grafton+Partners%22+%2236+Cal.4th+944%22
+  publisher: California courts (reported decision)
+  official: true
+  priority: 3
+  document_type: case
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd:
+  - Search link; replace with the official opinion URL when verified.
+- id: case-orozco-2004
+  source_title: Orozco v. Casimiro (2004) 121 Cal.App.4th Supp. 7
+  source_url: https://www.courtlistener.com/?q=%22Orozco+v.+Casimiro%22
+  publisher: California courts (reported decision)
+  official: true
+  priority: 3
+  document_type: case
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd:
+  - Search link; replace with the official opinion URL when verified.
+- id: ccp-116-221
+  source_title: Cal. Code of Civil Procedure § 116.221
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.221
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1632
+  source_title: Cal. Civil Code § 1632
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1632
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1671
+  source_title: Cal. Civil Code § 1671
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1671
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1717
+  source_title: Cal. Civil Code § 1717
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1717
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1941-1
+  source_title: Cal. Civil Code § 1941.1
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1942
+  source_title: Cal. Civil Code § 1942
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1942
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1942-5
+  source_title: Cal. Civil Code § 1942.5
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1942.5
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1945-5
+  source_title: Cal. Civil Code § 1945.5
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1945.5
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1946-1
+  source_title: Cal. Civil Code § 1946.1
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.1
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1946-2
+  source_title: Cal. Civil Code § 1946.2
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1946-7
+  source_title: Cal. Civil Code § 1946.7
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.7
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1947-12
+  source_title: Cal. Civil Code § 1947.12
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1950-5
+  source_title: Cal. Civil Code § 1950.5
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1950-6
+  source_title: Cal. Civil Code § 1950.6
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1951-2
+  source_title: Cal. Civil Code § 1951.2
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1951.2
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1953
+  source_title: Cal. Civil Code § 1953
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1953
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-1954
+  source_title: Cal. Civil Code § 1954
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []
+- id: civ-827
+  source_title: Cal. Civil Code § 827
+  source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=827
+  publisher: California Legislative Information
+  official: true
+  priority: 3
+  document_type: statute
+  court_level: statewide
+  county: null
+  side: plaintiff
+  stage: *id001
+  form_number: null
+  effective_date: null
+  last_verified: null
+  version_hash: null
+  supersedes: null
+  superseded_by: null
+  status: pending_fetch
+  notes_from_prd: []

@@ -8,4 +8,6 @@ export default defineConfig({
   // didn't match the canonical.
   trailingSlash: "never",
   build: { format: "file" },
+  // Keep straight quotes: migrated blog posts are verbatim, attorney-reviewed text.
+  markdown: { smartypants: false },
 })
