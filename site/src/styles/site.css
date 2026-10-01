@@ -1,4 +1,4 @@
-/* Design reference: "industrial command deck" — achromatic surfaces, one 8px radius,
+/* Design reference: "industrial command deck": achromatic surfaces, one 8px radius,
    one shadow stack, and a single vermillion accent reserved for actions. */
 :root {
   --vermillion: #e42b0c;
