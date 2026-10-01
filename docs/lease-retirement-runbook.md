@@ -23,7 +23,8 @@ is retired in favor of the California Lease Review Kit. Promises made in the uni
      upload, pricing, FAQ, about, contact to `/california-lease-review` (temporary);
    - keeps `/analysis/*` and payment pages working, with a retirement banner and `noindex`;
    - removes the daily cart-recovery cron.
-2. **Make existing analysis links work until Oct 31.** Paid customers' email links use
+2. ~~Make existing analysis links work until Oct 31~~ — **skipped** (no customers; the access
+   window in the Privacy Policy stays as written and costs nothing). For reference: Paid customers' email links use
    `access_tokens`, which expired 30 days after payment. In the Supabase SQL editor:
    ```sql
    -- read-only preview
@@ -37,8 +38,8 @@ is retired in favor of the California Lease Review Kit. Promises made in the uni
 3. **Stripe (Live):** archive the lease-review Products/Prices and deactivate their Payment
    Links. Do not delete anything. Keep the webhook endpoint
    (`https://lease.legalfriend.ai/api/webhooks/stripe`) enabled until Day 30 so refunds still sync.
-4. **Notify past customers** (template below): paid customers from Stripe (lease product), sent
-   from support@legalfriend.ai with recipients in BCC or individually.
+4. ~~Notify past customers~~ — **not needed** (Sophia, 2026-10-01: the service had no customers).
+   The template below is kept for reference only.
 
 ## Day 30 — on or after 2026-11-01 (shutdown and deletion)
 
@@ -121,10 +122,10 @@ support@legalfriend.ai
 
 | Step | Done on | By | Notes |
 |---|---|---|---|
-| Retirement PR merged | | | |
-| Tokens extended | | | |
+| Retirement PR merged | 2026-10-01 | Claude | legalfriend_v1.1#12; production verified (307/308/410) |
+| Tokens extended | — | — | Skipped: no customers |
 | Stripe products archived | | | |
-| Customer notice sent | | | |
+| Customer notice sent | — | — | Not needed: no customers (Sophia, 2026-10-01) |
 | Blog images moved | | | |
 | Data deleted | | | |
 | Vercel paused, webhook disabled | | | |
