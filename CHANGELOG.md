@@ -15,7 +15,9 @@ a changed claim limit, etc.) are logged here with the manifest `id` they touch.
 - Prompts: venue rule names the venue category and court(s) for the facts; timeline builder
   states the timing conclusion (within / past / cannot tell); source research answers the
   question for the facts under AI WORKSPACE with OFFICIAL SOURCE as citations; first reply
-  carries a one-line publication notice (red team 2026-10-01).
+  carries a one-line publication notice (red team 2026-10-01). A "past it" timing
+  conclusion and government-claim deadlines carry a one-line confirm-before-abandoning
+  safeguard (counsel 2026-10-01).
 - Liability wording: three sentences (what the kit is · no result promised · liability
   capped at the price paid) added to DISCLAIMER "short version", LICENSE-KIT, the site
   RelationshipNotice, and the kit README; product-page subtitle "Handle your … case" →
