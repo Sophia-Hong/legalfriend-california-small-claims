@@ -146,6 +146,8 @@ a { color: inherit; }
   color: var(--slate-700);
 }
 .notice li:last-child { border-bottom: 0; }
+.notice li strong { color: var(--slate-900); font-weight: 600; }
+.notice .notice__privacy { margin: 0 -16px; padding-right: 16px; padding-left: 16px; background: #fafafa; }
 .notice li::before {
   content: counter(notice, decimal-leading-zero); padding-top: 2px; color: var(--vermillion);
   font-size: 11px; font-weight: 600; line-height: 1.5; letter-spacing: .4px;
