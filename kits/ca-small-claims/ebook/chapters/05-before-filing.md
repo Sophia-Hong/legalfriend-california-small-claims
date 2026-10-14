@@ -134,3 +134,5 @@ These are general periods only. This kit does not explain when a period starts o
 - [S:gov-945-4] Cal. Government Code § 945.4 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=945.4
 - [S:cc-selfhelp-small-claims] California Small Claims Process — https://selfhelp.courts.ca.gov/small-claims
 - [S:ccp-116-260] Cal. Code of Civil Procedure § 116.260 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.260
+- [S:cc-selfhelp-small-claims-advisor] Find your Small Claims Advisor — https://selfhelp.courts.ca.gov/small-claims-advisor
+- [S:cc-selfhelp-government-claim] Ask a government agency to pay you — https://selfhelp.courts.ca.gov/ask-government-agency-pay-you-submit-claim

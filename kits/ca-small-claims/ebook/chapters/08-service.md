@@ -78,7 +78,7 @@ Sometimes a defendant is hard to find, or the hearing is too close to meet the d
 
 One option to ask about is a postponement. A party can ask to postpone the hearing using form SC-150, and whether the request is granted is up to the court [F:postpone]. Read the official form for how and when to submit it [S:jcc-form-sc-150]. This kit does not say what happens at a hearing if service was not completed. Check the official source or ask the clerk.
 
-Free help may be available. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors], and an advisor can walk you through service questions.
+Free help may be available. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors]. An advisor can walk you through service questions.
 
 ## Checklist
 
@@ -101,3 +101,4 @@ Free help may be available. Most counties are required to have a free small clai
 - [S:ccp-415-20] Cal. Code of Civil Procedure § 415.20 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=415.20
 - [S:jcc-form-sc-104] SC-104 — Proof of Service (Small Claims) — https://selfhelp.courts.ca.gov/jcc-form/SC-104
 - [S:jcc-form-sc-150] SC-150 — Request to Postpone Trial (Small Claims) — https://selfhelp.courts.ca.gov/jcc-form/SC-150
+- [S:cc-selfhelp-serve] Serve your small claims forms — https://selfhelp.courts.ca.gov/small-claims/start-case/serve

@@ -939,6 +939,48 @@ sources:
     superseded_by: null
     status: pending_fetch
     notes_from_prd: []
+  - id: jcc-form-sc-200
+    source_title: SC-200 — Notice of Entry of Judgment (Small Claims)
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-200
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: SC-200
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - "Observed 2026-10-14 by Shirl (not by the PRD author); re-confirm on fetch: form page shows Effective: January 1, 2025."
+
+  - id: jcc-form-ej-100
+    source_title: EJ-100 — Acknowledgment of Satisfaction of Judgment
+    source_url: https://selfhelp.courts.ca.gov/jcc-form/EJ-100
+    publisher: Judicial Council of California
+    official: true
+    priority: 2
+    document_type: form
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: EJ-100
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - "Observed 2026-10-14 by Shirl (not by the PRD author); re-confirm on fetch: form page shows Effective: July 1, 2014."
+
   - id: jcc-form-sc-290
     source_title: SC-290 — Acknowledgment of Satisfaction of Judgment (Small Claims)
     source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-290

@@ -19,6 +19,9 @@ a changed claim limit, etc.) are logged here with the manifest `id` they touch.
   `waive-excess` and `entity-appearance` unchanged — self-help does not state them; noted for
   the attorney's statute check. New manifest sources: `cc-selfhelp-serve`,
   `cc-selfhelp-after-trial`, `cc-selfhelp-when-you-get-paid`.
+- 2026-10-14 (attorney review notes): added `jcc-form-sc-200` and `jcc-form-ej-100` to the
+  manifest and fact sources so visible cites match the source lists; synced each chapter's
+  "Official sources" list with the new `[S:…]` tags; split three run-on advisor sentences.
 
 ### Added
 - Repository scaffold per PRD §11 (Draft v0.1, 2026-09-28).

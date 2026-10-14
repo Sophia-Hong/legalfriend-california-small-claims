@@ -44,7 +44,7 @@ A store with a national brand name is often owned by a separate local company. T
 
 ## More than one possible defendant
 
-Sometimes more than one person or business may be involved. Form SC-100A lists additional plaintiffs or defendants when SC-100 does not have room for all of them. [F:sc100a] [S:jcc-form-sc-100a] Whether more than one defendant belongs in a case depends on the facts. Most counties are required to have a free small claims advisor, and the services vary by county, and an advisor can talk through the general options. [F:advisors]
+Sometimes more than one person or business may be involved. Form SC-100A lists additional plaintiffs or defendants when SC-100 does not have room for all of them. [F:sc100a] [S:jcc-form-sc-100a] Whether more than one defendant belongs in a case depends on the facts. Most counties are required to have a free small claims advisor, and the services vary by county. [F:advisors] An advisor can talk through the general options.
 
 If a possible defendant is a public entity, such as a city, county, or school district, a different step usually comes first. A claimant usually must first present a government claim. California Courts lists the deadlines as generally 6 months from the injury for an injury to you or damage to something you own, and 1 year for a broken contract or damage to your real estate, with exceptions. [F:government-claim] [S:cc-selfhelp-government-claim]
 
@@ -69,3 +69,4 @@ California Courts offers free form-filling help, including Guide & File, and fre
 - [S:jcc-form-sc-100a] SC-100A — Other Plaintiffs or Defendants (Attachment to SC-100) — https://selfhelp.courts.ca.gov/jcc-form/SC-100A
 - [S:jcc-form-sc-103] SC-103 — Fictitious Business Name (Small Claims) — https://selfhelp.courts.ca.gov/jcc-form/SC-103
 - [S:cc-selfhelp-small-claims] California Small Claims Process — https://selfhelp.courts.ca.gov/small-claims
+- [S:cc-selfhelp-government-claim] Ask a government agency to pay you — https://selfhelp.courts.ca.gov/ask-government-agency-pay-you-submit-claim

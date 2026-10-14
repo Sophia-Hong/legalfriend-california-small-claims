@@ -30,7 +30,7 @@ A judgment is the court's decision. If the court decides money is owed, the cour
 
 ## What happens after judgment
 
-The judge's decision is given on a Notice of Entry of Judgment (form SC-130 or SC-200), at the hearing or by mail from the clerk. [F:notice-of-entry] [S:cc-selfhelp-after-trial] [S:jcc-form-sc-130] Keep it with your case papers.
+The judge's decision is given on a Notice of Entry of Judgment (form SC-130 or SC-200), at the hearing or by mail from the clerk. [F:notice-of-entry] [S:cc-selfhelp-after-trial] [S:jcc-form-sc-130] [S:jcc-form-sc-200] Keep it with your case papers.
 
 A plaintiff cannot appeal a judgment on the plaintiff's own claim. A defendant can appeal, which leads to a new hearing in superior court. [F:plaintiff-no-appeal]
 
@@ -58,7 +58,7 @@ A California money judgment generally expires after 10 years unless it is renewe
 
 ## When you are paid
 
-When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded — and California Courts says a creditor who does not file within 14 days of being paid can be fined. [F:satisfaction] [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] The "judgment creditor" is the party owed money. Keep a record of every payment you receive, with dates and amounts.
+When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded — and California Courts says a creditor who does not file within 14 days of being paid can be fined. [F:satisfaction] [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] [S:jcc-form-ej-100] The "judgment creditor" is the party owed money. Keep a record of every payment you receive, with dates and amounts.
 
 ## Common pitfalls
 
@@ -81,3 +81,8 @@ When the judgment is paid in full, the judgment creditor must file an Acknowledg
 - [S:jcc-form-ej-001] EJ-001 — Abstract of Judgment—Civil and Small Claims — https://selfhelp.courts.ca.gov/jcc-form/EJ-001
 - [S:ccp-683-020] Cal. Code of Civil Procedure § 683.020 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=683.020
 - [S:jcc-form-sc-290] SC-290 — Acknowledgment of Satisfaction of Judgment (Small Claims) — https://selfhelp.courts.ca.gov/jcc-form/SC-290
+- [S:cc-selfhelp-after-trial] What happens after your trial — https://selfhelp.courts.ca.gov/small-claims/after-trial
+- [S:jcc-form-sc-200] SC-200 — Notice of Entry of Judgment (Small Claims) — https://selfhelp.courts.ca.gov/jcc-form/SC-200
+- [S:cc-selfhelp-renew-judgment] Renew a small claims judgment — https://selfhelp.courts.ca.gov/small-claims/after-trial/collect-money/renew-judgment
+- [S:cc-selfhelp-when-you-get-paid] What to do when you get paid — https://selfhelp.courts.ca.gov/small-claims/after-trial/collect-money/when-you-get-paid
+- [S:jcc-form-ej-100] EJ-100 — Acknowledgment of Satisfaction of Judgment — https://selfhelp.courts.ca.gov/jcc-form/EJ-100

@@ -26,7 +26,7 @@ Read the judgment carefully. Check that the names, the amount, and the case numb
 
 ## The Notice of Entry of Judgment
 
-The judge's decision is given on a Notice of Entry of Judgment (form SC-130 or SC-200). The judge may decide at the hearing, or the court clerk mails the decision [F:notice-of-entry] [S:cc-selfhelp-after-trial]. Keep it with your case file. The date it was mailed or delivered matters, because the appeal deadline counts from that date (see below).
+The judge's decision is given on a Notice of Entry of Judgment (form SC-130 or SC-200). The judge may decide at the hearing, or the court clerk mails the decision [F:notice-of-entry] [S:cc-selfhelp-after-trial] [S:jcc-form-sc-130] [S:jcc-form-sc-200]. Keep it with your case file. The date it was mailed or delivered matters, because the appeal deadline counts from that date (see below).
 
 ## Who can appeal
 
@@ -72,7 +72,7 @@ A California money judgment generally expires after 10 years unless it is renewe
 
 ## When the judgment is paid
 
-When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate [F:satisfaction]. This tells the court the debt is paid. California Courts says a creditor who does not file within 14 days of being paid can be fined [F:satisfaction]. For how to file it, check the official source [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290]. If you are the one who was paid, keep a copy of the filed form with your records.
+When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate [F:satisfaction]. This tells the court the debt is paid. California Courts says a creditor who does not file within 14 days of being paid can be fined [F:satisfaction]. For how to file it, check the official source [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] [S:jcc-form-ej-100]. If you are the one who was paid, keep a copy of the filed form with your records.
 
 ## Checklist
 
@@ -104,3 +104,8 @@ When the judgment is paid in full, the judgment creditor must file an Acknowledg
 - [S:ccp-116-850] Cal. Code of Civil Procedure § 116.850 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.850
 - [S:jcc-form-sc-290] SC-290 — Acknowledgment of Satisfaction of Judgment (Small Claims) — https://selfhelp.courts.ca.gov/jcc-form/SC-290
 - [S:ccp-116-260] Cal. Code of Civil Procedure § 116.260 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.260
+- [S:cc-selfhelp-after-trial] What happens after your trial — https://selfhelp.courts.ca.gov/small-claims/after-trial
+- [S:jcc-form-sc-200] SC-200 — Notice of Entry of Judgment (Small Claims) — https://selfhelp.courts.ca.gov/jcc-form/SC-200
+- [S:cc-selfhelp-renew-judgment] Renew a small claims judgment — https://selfhelp.courts.ca.gov/small-claims/after-trial/collect-money/renew-judgment
+- [S:cc-selfhelp-when-you-get-paid] What to do when you get paid — https://selfhelp.courts.ca.gov/small-claims/after-trial/collect-money/when-you-get-paid
+- [S:jcc-form-ej-100] EJ-100 — Acknowledgment of Satisfaction of Judgment — https://selfhelp.courts.ca.gov/jcc-form/EJ-100

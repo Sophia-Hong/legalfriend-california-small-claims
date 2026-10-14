@@ -90,3 +90,4 @@ California Courts also offers free help with forms, including Guide & File, alon
 - [S:cc-selfhelp-fill-out-forms] Fill out forms to start a small claims case — https://selfhelp.courts.ca.gov/small-claims/start-case/forms/fill-out-forms
 - [S:jcc-form-sc-100] SC-100 — Plaintiff's Claim and ORDER to Go to Small Claims Court — https://selfhelp.courts.ca.gov/jcc-form/SC-100
 - [S:ccp-116-260] Cal. Code of Civil Procedure § 116.260 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.260
+- [S:cc-selfhelp-small-claims-advisor] Find your Small Claims Advisor — https://selfhelp.courts.ca.gov/small-claims-advisor
