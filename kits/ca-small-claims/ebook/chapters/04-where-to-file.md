@@ -32,7 +32,7 @@ It can help to write down the facts that connect the dispute to a place. This is
 - **Where the injury or property damage happened.**
 - **Whether the dispute involves a consumer contract.** Special venue rules apply to certain consumer contracts. [F:venue-basics] This kit does not list those special rules. Check the current rule on the official source. [S:ccp-116-370]
 
-Once the list is done, compare it to the official venue rule. Some disputes connect to only one place. Others connect to several. When the facts point to more than one place, or when it is unclear which category fits, that is a question to bring to the official source or a small claims advisor. Each county offers free small claims advisor help. [F:advisors] [S:ccp-116-260]
+Once the list is done, compare it to the official venue rule. Some disputes connect to only one place. Others connect to several. When the facts point to more than one place, or when it is unclear which category fits, that is a question to bring to the official source or a small claims advisor. Most counties are required to have a free small claims advisor, and the services vary by county. [F:advisors] [S:cc-selfhelp-small-claims-advisor] [S:ccp-116-260]
 
 ## Why convenience alone does not decide venue
 

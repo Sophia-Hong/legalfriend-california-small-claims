@@ -5,6 +5,14 @@ a changed claim limit, etc.) are logged here with the manifest `id` they touch.
 
 ## [Unreleased]
 
+### Changed
+- 2026-10-14 source check against California Courts self-help (facts still `verified: false`):
+  `advisors` ("Most counties are required…", was "Each county provides"),
+  `government-claim` (real-estate damage moved to the 1-year deadline),
+  `judgment-ten-years` (added the 2023 once-for-5-years renewal limit; confidence → medium).
+  Every ebook/practice-note line citing them was rewritten to match. New manifest sources:
+  `cc-selfhelp-small-claims-advisor`, `cc-selfhelp-government-claim`, `cc-selfhelp-renew-judgment`.
+
 ### Added
 - Repository scaffold per PRD §11 (Draft v0.1, 2026-09-28).
 - Source manifest seeded with the statewide sources listed in PRD §25

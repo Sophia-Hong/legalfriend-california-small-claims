@@ -57,7 +57,7 @@ Courts do not all accept small claims papers the same way. Depending on the cour
 - Whether mailed filings are accepted, and where to send them.
 - How fees are paid for each method.
 
-California Courts offers free form-filling help, including Guide & File, and free small claims advisors [F:guide-and-file]. Each county provides free small claims advisor assistance [F:advisors]. An advisor can help you understand the filing steps where you live.
+California Courts offers free form-filling help, including Guide & File, and free small claims advisors [F:guide-and-file]. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors]. An advisor can help you understand the filing steps where you live.
 
 ## Local requirements
 

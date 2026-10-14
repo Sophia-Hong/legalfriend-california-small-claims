@@ -54,7 +54,7 @@ Each tool has its own steps, forms, and costs. Check the official guidance befor
 
 ## How long a judgment lasts
 
-A California money judgment is generally enforceable for 10 years and can be renewed. [F:judgment-ten-years] [S:ccp-683-020] Keep your case file for that whole time.
+A California money judgment generally expires after 10 years unless it is renewed before then, and since January 1, 2023 some judgments can be renewed only once, for 5 years. [F:judgment-ten-years] [S:cc-selfhelp-renew-judgment] [S:ccp-683-020] Keep your case file for that whole time.
 
 ## When you are paid
 

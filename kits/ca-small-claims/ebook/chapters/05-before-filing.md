@@ -86,7 +86,7 @@ Show the arithmetic in writing:
 
 Subtract any money already paid back to you, so the total reflects what is still unpaid. Keep one row per item, with its own proof.
 
-This table is only arithmetic. Whether a particular item can be recovered is a legal question this kit does not answer. Check the official self-help guidance or ask a small claims advisor. [S:cc-selfhelp-small-claims] Each county provides free small claims advisor help. [F:advisors] [S:ccp-116-260]
+This table is only arithmetic. Whether a particular item can be recovered is a legal question this kit does not answer. Check the official self-help guidance or ask a small claims advisor. [S:cc-selfhelp-small-claims] Most counties are required to have a free small claims advisor, and the services vary by county. [F:advisors] [S:cc-selfhelp-small-claims-advisor] [S:ccp-116-260]
 
 **Compare the total to the limits.** A natural person (an individual) may generally sue for up to $12,500 in small claims. [F:limit-natural] [S:ccp-116-221] The general limit for plaintiffs that are not natural persons, such as corporations, LLCs, and partnerships, is $6,250. [F:limit-entity] [S:ccp-116-220] A claim may not be split into several cases to fit under the limit. A plaintiff who sues in small claims for less than the full amount generally gives up the rest. [F:waive-excess] If your total is near or above a limit, check the current rule on the official source before filing. [S:ccp-116-220]
 
@@ -101,7 +101,7 @@ Claims have deadlines, called "limitations periods" (or statutes of limitations)
 
 These are general periods only. This kit does not explain when a period starts or what might change it. Check the current rule on the official source.
 
-**Claims against a public entity.** Before suing a public entity, such as a city, county, state agency, or school district, a claimant usually must first present a government claim. This is generally within six months for injury or property damage and one year for other claims. The claimant may sue only after the claim is denied or deemed denied. [F:government-claim] [S:gov-911-2] [S:gov-945-4]
+**Claims against a public entity.** Before suing a public entity, such as a city, county, state agency, or school district, a claimant usually must first present a government claim. California Courts lists the deadlines as generally 6 months from the injury for an injury to you or damage to something you own, and 1 year for a broken contract or damage to your real estate, with exceptions. The claimant may sue only after the claim is denied or deemed denied. [F:government-claim] [S:cc-selfhelp-government-claim] [S:gov-911-2] [S:gov-945-4]
 
 > **LegalFriend practice note** — Put the key dates from your timeline next to these periods on one page. Seeing them side by side makes it easier to notice a question that needs checking early, rather than close to a deadline.
 

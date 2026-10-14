@@ -87,7 +87,7 @@ If the kit has no source for a question, a well-behaved AI will say so rather th
 - **No attorney-client relationship.** Buying or using the kit does not, by itself, create an attorney-client relationship with LegalFriend or any lawyer associated with it.
 - **Limited scope.** The kit covers the California small claims plaintiff side. Other matters are outside it.
 
-Free help is also available. California Courts offers free form-filling help, including Guide & File, and free small claims advisors [F:guide-and-file]. Each county provides free small claims advisor assistance [F:advisors].
+Free help is also available. California Courts offers free form-filling help, including Guide & File, and free small claims advisors [F:guide-and-file]. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors].
 
 ## Checklist
 

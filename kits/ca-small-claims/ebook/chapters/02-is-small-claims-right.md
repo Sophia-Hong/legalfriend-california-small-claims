@@ -53,13 +53,13 @@ A **statute of limitations** is a deadline set by law for filing a lawsuit. Here
 | Damage to property | 3 years [F:sol-property-damage] |
 | Personal injury | 2 years [F:sol-personal-injury] |
 
-Use this table to spot a possible issue, not to settle it. This book does not cover which category fits a dispute, when the clock starts, or whether any exception applies. Check the statutes themselves for those details [S:ccp-337] [S:ccp-339] [S:ccp-338] [S:ccp-335-1]. If your dates are close to one of these periods, note it as an open question. Free small claims advisor help is available in each county [F:advisors].
+Use this table to spot a possible issue, not to settle it. This book does not cover which category fits a dispute, when the clock starts, or whether any exception applies. Check the statutes themselves for those details [S:ccp-337] [S:ccp-339] [S:ccp-338] [S:ccp-335-1]. If your dates are close to one of these periods, note it as an open question. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors].
 
 ## Claims against a public entity
 
 A **public entity** is a government body, such as a city, county, state agency, or school district. Suing one has an extra step.
 
-Before suing a public entity, a person usually must first present a **government claim** to that entity [F:government-claim]. This is generally due within six months for injury or property damage, and within one year for other claims [F:government-claim]. You may sue only after the claim is denied, or is treated as denied [F:government-claim].
+Before suing a public entity, a person usually must first present a **government claim** to that entity [F:government-claim]. California Courts lists the deadlines as generally 6 months from the injury for an injury to you or damage to something you own, and 1 year for a broken contract or damage to your real estate, with exceptions [F:government-claim] [S:cc-selfhelp-government-claim]. You may sue only after the claim is denied, or is treated as denied [F:government-claim].
 
 For how and where to present a government claim, and any deadline after a denial, check the official sources [S:gov-911-2] [S:gov-945-4]. These points are not covered in this book.
 

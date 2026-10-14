@@ -48,7 +48,7 @@ In small claims, parties generally may not be represented by an attorney at the 
 
 ## Free help from the courts
 
-- **Small claims advisors.** Each county provides free small claims advisor help [F:advisors]. To find your county's advisor and hours, check your court's website or the California Courts self-help site [S:cc-selfhelp-small-claims].
+- **Small claims advisors.** Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors]. To find your county's advisor and hours, check your court's website or the California Courts self-help site [S:cc-selfhelp-small-claims].
 - **Free form help.** California Courts offers free help filling out forms, including a tool called Guide & File [F:guide-and-file].
 - **Fees and fee waivers.** Filing fees depend on how much you are asking for and how many small claims you have filed in the past 12 months [F:fees-vary]. Check your court's current fee schedule rather than relying on a number you read elsewhere. If you cannot afford court fees, you can ask for a fee waiver using form FW-001 [F:fee-waiver] [S:jcc-form-fw-001].
 

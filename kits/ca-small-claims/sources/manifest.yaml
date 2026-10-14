@@ -66,6 +66,69 @@ sources:
     notes_from_prd:
       - Emphasizes the defendant's proper legal name, correct county, possible additional local forms, and supplemental forms such as SC-100A and SC-103.
 
+  - id: cc-selfhelp-small-claims-advisor
+    source_title: Find your Small Claims Advisor
+    source_url: https://selfhelp.courts.ca.gov/small-claims-advisor
+    publisher: California Courts
+    official: true
+    priority: 1
+    document_type: self_help
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling, pleading, filing, service, hearing, judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - "Observed 2026-10-14 by Shirl (not by the PRD author); re-confirm on fetch: \"Most counties are required to have a small claims advisor ...\""
+
+  - id: cc-selfhelp-government-claim
+    source_title: Ask a government agency to pay you
+    source_url: https://selfhelp.courts.ca.gov/ask-government-agency-pay-you-submit-claim
+    publisher: California Courts
+    official: true
+    priority: 1
+    document_type: self_help
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - "Observed 2026-10-14 by Shirl (not by the PRD author); re-confirm on fetch: 6 months for injury or damage to something you own; 1 year for a broken contract or real estate damage; exceptions exist."
+
+  - id: cc-selfhelp-renew-judgment
+    source_title: Renew a small claims judgment
+    source_url: https://selfhelp.courts.ca.gov/small-claims/after-trial/collect-money/renew-judgment
+    publisher: California Courts
+    official: true
+    priority: 1
+    document_type: self_help
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd:
+      - "Observed 2026-10-14 by Shirl (not by the PRD author); re-confirm on fetch: since 2023-01-01 some medical/personal-debt judgments renew only once for 5 years."
+
   - id: jcc-form-sc-100
     source_title: SC-100 — Plaintiff's Claim and ORDER to Go to Small Claims Court
     source_url: https://selfhelp.courts.ca.gov/jcc-form/SC-100

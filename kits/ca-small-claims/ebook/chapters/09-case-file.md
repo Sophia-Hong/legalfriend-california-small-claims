@@ -116,7 +116,7 @@ Put everything into one binder or folder, in this order:
 
 Keep a digital copy as a backup. Store originals separately from the copies you work from.
 
-Free help is available as you organize. Each county provides free small claims advisor assistance [F:advisors].
+Free help may be available as you organize. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors].
 
 ## Checklist
 

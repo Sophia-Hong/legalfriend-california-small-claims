@@ -56,11 +56,16 @@ facts:
     confidence: medium
     verified: false
   - id: advisors
-    statement: Each county provides free small claims advisor assistance.
-    cite: Cal. Code Civ. Proc. § 116.260
-    sources: [ccp-116-260, cc-selfhelp-small-claims]
+    statement: Most counties are required to have a small claims advisor who gives free legal information in small claims cases; the services offered vary from county to county.
+    cite: Cal. Code Civ. Proc. § 116.260; California Courts, Find your Small Claims Advisor
+    sources: [ccp-116-260, cc-selfhelp-small-claims-advisor, cc-selfhelp-small-claims]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official page reads "Most counties are required to have a small
+      claims advisor to give free legal information in small claims cases. The kinds of
+      services offered vary from county to county." Earlier wording "Each county provides"
+      overstated it. Statute text not read (leginfo blocked).
 
   # ---------- Before filing ----------
   - id: demand-first
@@ -94,11 +99,16 @@ facts:
     confidence: high
     verified: false
   - id: government-claim
-    statement: Before suing a public entity (a city, county, state agency, school district, etc.), a claimant usually must first present a government claim — generally within six months for injury or property damage and one year for other claims — and may sue only after it is denied or deemed denied.
-    cite: Cal. Gov. Code §§ 911.2, 945.4
-    sources: [gov-911-2, gov-945-4]
+    statement: Before suing a public entity (a city, county, state agency, school district, etc.), a claimant usually must first present a government claim — California Courts lists the deadlines as generally 6 months from the injury for an injury to you or damage to something you own, and 1 year for a broken contract or damage to your real estate, with exceptions — and may sue only after it is denied or deemed denied.
+    cite: Cal. Gov. Code §§ 911.2, 945.4; California Courts, Ask a government agency to pay you
+    sources: [cc-selfhelp-government-claim, gov-911-2, gov-945-4]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official page lists "6 months from the injury if you are suing about
+      an injury to you or damage to something you own" and "1 year from the date a contract
+      was broken or your real estate was damaged", and says "There are exceptions." Earlier
+      wording put all property damage at six months. Statute text not read (leginfo blocked).
 
   # ---------- Defendant name ----------
   - id: defendant-name-collection
@@ -250,11 +260,16 @@ facts:
     confidence: medium
     verified: false
   - id: judgment-ten-years
-    statement: A California money judgment is generally enforceable for 10 years and can be renewed.
-    cite: Cal. Code Civ. Proc. §§ 683.020, 683.110
-    sources: [ccp-683-020]
-    confidence: high
+    statement: A California money judgment generally expires after 10 years unless it is renewed before then. Since January 1, 2023, some judgments can be renewed only once, for 5 years — California Courts describes this as applying when the debtor is a person (not a business or government agency), the principal owed is less than $200,000 for a medical expense or less than $50,000 for a personal debt, and the debt is not from a tort, fraud, unpaid wages, or other money owed to an employee.
+    cite: Cal. Code Civ. Proc. §§ 683.020, 683.110; California Courts, Renew a small claims judgment
+    sources: [cc-selfhelp-renew-judgment, ccp-683-020]
+    confidence: medium
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official page reads "As of January 1, 2023, a judgment can only be
+      renewed once for 5 years if" the three conditions above are met. Earlier wording ("can be
+      renewed") had no exception, and many small claims judgments may fall under it. Confidence
+      lowered to medium until the statute text is read (leginfo blocked).
   - id: satisfaction
     statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment (form SC-290).
     cite: Cal. Code Civ. Proc. § 116.850; SC-290

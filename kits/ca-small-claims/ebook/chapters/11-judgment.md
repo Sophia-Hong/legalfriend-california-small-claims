@@ -60,7 +60,7 @@ If a judgment is not paid, the official sources describe several collection tool
 - **Abstract of judgment (form EJ-001).** A document that creates a lien on real property [F:enforcement-tools]. A "lien" is a legal claim attached to property, such as a house or land.
 - **Order to appear for examination.** An order for the debtor to appear for an examination [F:enforcement-tools]. For what this involves, check the official source [S:cc-selfhelp-small-claims].
 
-Each tool has its own forms, steps, and possible fees. There may also be limits on what can be collected. This kit does not cover those details. Check the official source and the form pages before using any tool [S:cc-selfhelp-small-claims] [S:jcc-form-ej-130] [S:jcc-form-ej-001]. Free small claims advisor help is available in each county [F:advisors].
+Each tool has its own forms, steps, and possible fees. There may also be limits on what can be collected. This kit does not cover those details. Check the official source and the form pages before using any tool [S:cc-selfhelp-small-claims] [S:jcc-form-ej-130] [S:jcc-form-ej-001]. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors].
 
 Collection depends on having the debtor's correct legal name. California Courts warns that naming the defendant incorrectly can prevent the plaintiff from collecting after winning [F:defendant-name-collection]. This is one reason Chapter 3 spends time on identifying the right defendant.
 
@@ -68,7 +68,7 @@ Collection depends on having the debtor's correct legal name. California Courts 
 
 ## How long a judgment lasts
 
-A California money judgment is generally enforceable for 10 years and can be renewed [F:judgment-ten-years]. For how and when to renew, check the official source [S:ccp-683-020].
+A California money judgment generally expires after 10 years unless it is renewed before then [F:judgment-ten-years]. Since January 1, 2023, some judgments can be renewed only once, for 5 years — California Courts describes this as applying to certain medical-expense and personal-debt judgments against a person [F:judgment-ten-years]. For how and when to renew, and whether the limit applies, check the official source [S:cc-selfhelp-renew-judgment] [S:ccp-683-020].
 
 ## When the judgment is paid
 
@@ -83,7 +83,7 @@ When the judgment is paid in full, the judgment creditor must file an Acknowledg
 - [ ] I watched for the Statement of Assets (SC-133) [F:statement-of-assets].
 - [ ] I keep a payment log with dates, amounts, and receipts.
 - [ ] Before using a collection tool, I read its official form page [F:enforcement-tools].
-- [ ] I noted the 10-year enforcement period and the renewal option [F:judgment-ten-years].
+- [ ] I noted the 10-year enforcement period, the renewal option, and that some judgments can be renewed only once for 5 years [F:judgment-ten-years].
 - [ ] When paid in full, I know SC-290 must be filed [F:satisfaction].
 
 ## Official sources for this chapter

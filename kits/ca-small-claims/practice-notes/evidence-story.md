@@ -75,7 +75,7 @@ Also be ready for the other side's view. The defendant may file a claim against 
 
 ## Copies and local practice
 
-Courts can differ on how many copies to bring and how to hand up papers. Some courts require additional local forms, so check the specific court's website or clerk. [F:local-forms] Each county provides free small claims advisor assistance, and an advisor can help you check your organization. [F:advisors]
+Courts can differ on how many copies to bring and how to hand up papers. Some courts require additional local forms, so check the specific court's website or clerk. [F:local-forms] Most counties are required to have a free small claims advisor, and the services vary by county, and an advisor can help you check your organization. [F:advisors]
 
 ## Common pitfalls
 
