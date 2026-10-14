@@ -26,7 +26,7 @@ Read the judgment carefully. Check that the names, the amount, and the case numb
 
 ## The Notice of Entry of Judgment
 
-The clerk sends the parties a Notice of Entry of Judgment (form SC-130) [F:notice-of-entry]. Keep it with your case file. The date it was mailed or delivered matters, because the appeal deadline counts from that date (see below).
+The judge's decision is given on a Notice of Entry of Judgment (form SC-130 or SC-200). The judge may decide at the hearing, or the court clerk mails the decision [F:notice-of-entry] [S:cc-selfhelp-after-trial]. Keep it with your case file. The date it was mailed or delivered matters, because the appeal deadline counts from that date (see below).
 
 ## Who can appeal
 
@@ -72,19 +72,19 @@ A California money judgment generally expires after 10 years unless it is renewe
 
 ## When the judgment is paid
 
-When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment (form SC-290) [F:satisfaction]. This tells the court the debt is paid. For the deadline and how to file it, check the form page [S:jcc-form-sc-290]. If you are the one who was paid, keep a copy of the filed form with your records.
+When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate [F:satisfaction]. This tells the court the debt is paid. California Courts says a creditor who does not file within 14 days of being paid can be fined [F:satisfaction]. For how to file it, check the official source [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290]. If you are the one who was paid, keep a copy of the filed form with your records.
 
 ## Checklist
 
 - [ ] I read the judgment and checked names, amount, and case number.
-- [ ] I saved the Notice of Entry of Judgment (SC-130) and noted the date it was mailed or delivered [F:notice-of-entry].
+- [ ] I saved the Notice of Entry of Judgment (SC-130 or SC-200) and noted the date it was handed or mailed to me [F:notice-of-entry].
 - [ ] I understand who can appeal in my situation [F:plaintiff-no-appeal] and the general 30-day timeline [F:appeal-deadline].
 - [ ] I checked the official source for the waiting period before collection [F:enforcement-wait].
 - [ ] I watched for the Statement of Assets (SC-133) [F:statement-of-assets].
 - [ ] I keep a payment log with dates, amounts, and receipts.
 - [ ] Before using a collection tool, I read its official form page [F:enforcement-tools].
 - [ ] I noted the 10-year enforcement period, the renewal option, and that some judgments can be renewed only once for 5 years [F:judgment-ten-years].
-- [ ] When paid in full, I know SC-290 must be filed [F:satisfaction].
+- [ ] When paid in full, I know SC-290 (or EJ-100 if a lien was recorded) must be filed within 14 days [F:satisfaction].
 
 ## Official sources for this chapter
 

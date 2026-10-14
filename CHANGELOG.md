@@ -12,6 +12,13 @@ a changed claim limit, etc.) are logged here with the manifest `id` they touch.
   `judgment-ten-years` (added the 2023 once-for-5-years renewal limit; confidence → medium).
   Every ebook/practice-note line citing them was rewritten to match. New manifest sources:
   `cc-selfhelp-small-claims-advisor`, `cc-selfhelp-government-claim`, `cc-selfhelp-renew-judgment`.
+- 2026-10-14 (second pass): `service-who` / `service-methods` (sheriff and clerk certified mail
+  only where offered; "professional" not "registered" process server), `proof-of-service`
+  (file at least 5 days before the court date), `notice-of-entry` (SC-130 or SC-200; at the
+  hearing or mailed), `satisfaction` (EJ-100 if a lien was recorded; 14-day deadline).
+  `waive-excess` and `entity-appearance` unchanged — self-help does not state them; noted for
+  the attorney's statute check. New manifest sources: `cc-selfhelp-serve`,
+  `cc-selfhelp-after-trial`, `cc-selfhelp-when-you-get-paid`.
 
 ### Added
 - Repository scaffold per PRD §11 (Draft v0.1, 2026-09-28).

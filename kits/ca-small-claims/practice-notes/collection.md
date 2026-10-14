@@ -30,7 +30,7 @@ A judgment is the court's decision. If the court decides money is owed, the cour
 
 ## What happens after judgment
 
-The clerk sends the parties a Notice of Entry of Judgment (form SC-130). [F:notice-of-entry] [S:jcc-form-sc-130] Keep it with your case papers.
+The judge's decision is given on a Notice of Entry of Judgment (form SC-130 or SC-200), at the hearing or by mail from the clerk. [F:notice-of-entry] [S:cc-selfhelp-after-trial] [S:jcc-form-sc-130] Keep it with your case papers.
 
 A plaintiff cannot appeal a judgment on the plaintiff's own claim. A defendant can appeal, which leads to a new hearing in superior court. [F:plaintiff-no-appeal]
 
@@ -58,7 +58,7 @@ A California money judgment generally expires after 10 years unless it is renewe
 
 ## When you are paid
 
-When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment (form SC-290). [F:satisfaction] [S:jcc-form-sc-290] The "judgment creditor" is the party owed money. Keep a record of every payment you receive, with dates and amounts.
+When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded — and California Courts says a creditor who does not file within 14 days of being paid can be fined. [F:satisfaction] [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] The "judgment creditor" is the party owed money. Keep a record of every payment you receive, with dates and amounts.
 
 ## Common pitfalls
 
@@ -66,7 +66,7 @@ When the judgment is paid in full, the judgment creditor must file an Acknowledg
 - Starting collection before the waiting period has passed. [F:enforcement-wait]
 - Not keeping a payment log, so the balance is unclear.
 - Losing the Notice of Entry of Judgment.
-- Forgetting to file SC-290 after full payment. [F:satisfaction]
+- Forgetting to file SC-290 (or EJ-100) within 14 days of full payment. [F:satisfaction]
 - Letting the judgment period run without checking renewal. [F:judgment-ten-years]
 - Contacting the other side in a way that feels pressuring. Keep contact brief, polite, and in writing.
 

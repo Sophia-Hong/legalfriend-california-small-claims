@@ -62,7 +62,7 @@ The California Courts self-help website organizes small claims into four steps: 
 
 **3. Go to your court date.** You gather your papers and evidence and prepare a short explanation of what happened (Chapters 9 and 10).
 
-**4. After the trial.** The clerk sends the parties a Notice of Entry of Judgment (form SC-130) [F:notice-of-entry]. A plaintiff cannot appeal a judgment on the plaintiff's own claim [F:plaintiff-no-appeal]. Chapter 11 gives an overview of what comes next, including payment and collection.
+**4. After the trial.** The judge's decision is given on a Notice of Entry of Judgment (form SC-130 or SC-200), at the hearing or by mail from the clerk [F:notice-of-entry]. A plaintiff cannot appeal a judgment on the plaintiff's own claim [F:plaintiff-no-appeal]. Chapter 11 gives an overview of what comes next, including payment and collection.
 
 > **LegalFriend practice note** — Official pages and forms are updated from time to time. When you print or save a court page or form, write the date you viewed it on the first page. If two versions ever differ, that date shows which one you used.
 

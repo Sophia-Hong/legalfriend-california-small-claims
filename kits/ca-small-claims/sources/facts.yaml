@@ -41,6 +41,8 @@ facts:
     sources: [ccp-116-220, cc-selfhelp-small-claims]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official self-help pages read on this date do not state this rule. The before-you-start page's loan example says a person may sue for missed installments and "sue them again if they miss more payments" — the attorney should check how that fits this statement. Statement unchanged pending statute check.
 
   # ---------- Who appears ----------
   - id: no-attorneys
@@ -55,6 +57,8 @@ facts:
     sources: [ccp-116-540]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official self-help pages read on this date do not state who appears for an entity; the forms page lists SC-109 (Authorization to Appear on Behalf of Party). Statement unchanged pending statute check.
   - id: advisors
     statement: Most counties are required to have a small claims advisor who gives free legal information in small claims cases; the services offered vary from county to county.
     cite: Cal. Code Civ. Proc. § 116.260; California Courts, Find your Small Claims Advisor
@@ -178,15 +182,21 @@ facts:
 
   # ---------- Service ----------
   - id: service-who
-    statement: The plaintiff may not serve the papers personally; service must be done by an adult (18 or older) who is not a party, a registered process server, a sheriff or marshal, or by certified mail sent by the court clerk.
-    cite: Cal. Code Civ. Proc. § 116.340
-    sources: [ccp-116-340]
+    statement: The plaintiff may not serve the papers personally; service must be done by someone 18 or older who is not part of the case (for example a friend or family member, or a professional process server), by the county sheriff in counties that offer it, or by certified mail sent by the court clerk in courts that offer it.
+    cite: Cal. Code Civ. Proc. § 116.340; California Courts, Serve your small claims forms
+    sources: [cc-selfhelp-serve, ccp-116-340]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official page lists "The county sheriff (in some counties)", "A professional
+      process server you pay", and "Court clerk sends forms by certified mail (only offered in
+      some courts)". Earlier wording listed the sheriff/marshal and clerk mail without that
+      condition and said "registered" process server, which the page does not say. Statute
+      text not read (leginfo blocked).
   - id: service-methods
-    statement: Common service methods are personal service, substituted service (leaving papers with a competent adult at the home or business and then mailing a copy), and certified mail by the clerk.
-    cite: Cal. Code Civ. Proc. §§ 116.340, 415.20
-    sources: [ccp-116-340, ccp-415-20]
+    statement: Common service methods are personal service, substituted service (leaving papers with a competent adult at the home or business and then mailing a copy), and, in courts that offer it, certified mail by the clerk.
+    cite: Cal. Code Civ. Proc. §§ 116.340, 415.20; California Courts, Serve your small claims forms
+    sources: [cc-selfhelp-serve, ccp-116-340, ccp-415-20]
     confidence: high
     verified: false
   - id: service-deadline
@@ -202,11 +212,14 @@ facts:
     confidence: medium
     verified: false
   - id: proof-of-service
-    statement: After service, the server completes a proof of service (form SC-104), which is filed with the court before the hearing by the deadline the court specifies.
-    cite: Cal. Code Civ. Proc. § 116.340; SC-104
-    sources: [ccp-116-340, jcc-form-sc-104]
+    statement: After service, the server completes and signs a proof of service (form SC-104); California Courts says to file the original and a copy at least 5 days before the court date.
+    cite: Cal. Code Civ. Proc. § 116.340; SC-104; California Courts, Serve your small claims forms
+    sources: [cc-selfhelp-serve, ccp-116-340, jcc-form-sc-104]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official page reads "File the original and copy at least 5 days before your
+      court hearing". Earlier wording said "by the deadline the court specifies".
 
   # ---------- Hearing ----------
   - id: defendant-claim
@@ -236,11 +249,16 @@ facts:
     confidence: high
     verified: false
   - id: notice-of-entry
-    statement: The clerk sends the parties a Notice of Entry of Judgment (form SC-130).
-    cite: Judicial Council form SC-130
-    sources: [jcc-form-sc-130]
+    statement: The judge's decision (the judgment) is given on a Notice of Entry of Judgment (form SC-130 or SC-200); the judge may decide at the hearing, or the court clerk mails the decision.
+    cite: Judicial Council forms SC-130, SC-200; California Courts, What happens after your trial
+    sources: [cc-selfhelp-after-trial, jcc-form-sc-130]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official page reads "the judge will either make a decision that day while
+      you're in court or a court clerk will mail the judge's decision to you" and "will be on the
+      Notice of Entry of Judgment (form SC-130) or Notice of Entry of Judgment (form SC-200)".
+      Earlier wording named only SC-130 sent by the clerk.
   - id: statement-of-assets
     statement: Unless the judgment is paid or appealed, the losing party generally must complete a Judgment Debtor's Statement of Assets (form SC-133) and send it to the winning party within the time the law sets.
     cite: Cal. Code Civ. Proc. § 116.830; SC-133
@@ -271,11 +289,16 @@ facts:
       renewed") had no exception, and many small claims judgments may fall under it. Confidence
       lowered to medium until the statute text is read (leginfo blocked).
   - id: satisfaction
-    statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment (form SC-290).
-    cite: Cal. Code Civ. Proc. § 116.850; SC-290
-    sources: [ccp-116-850, jcc-form-sc-290]
+    statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate. California Courts says a creditor who does not file within 14 days of being paid can be fined.
+    cite: Cal. Code Civ. Proc. § 116.850; SC-290; EJ-100; California Courts, What to do when you get paid
+    sources: [cc-selfhelp-when-you-get-paid, ccp-116-850, jcc-form-sc-290]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-14 (Shirl): official page reads "If you don't file an Acknowledgment within 14 days of
+      being paid, you can be fined" and "If you put any liens on their property (real estate),
+      you must use Form EJ-100 instead ... It must be signed in front of a notary." Earlier
+      wording named only SC-290 with no deadline.
 
   # ---------- Common dispute: security deposit ----------
   - id: deposit-21-days

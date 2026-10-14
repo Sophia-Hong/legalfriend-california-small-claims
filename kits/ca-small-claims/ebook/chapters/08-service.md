@@ -23,12 +23,12 @@ Which papers must be delivered, and in what form, is explained in the official s
 
 You may not serve the papers yourself. Service must be done by one of these [F:service-who]:
 
-- An adult (18 or older) who is not a party to the case.
-- A registered process server.
-- A sheriff or marshal.
-- The court clerk, by certified mail.
+- Someone 18 or older who is not part of the case, such as a friend or family member.
+- A professional process server you pay.
+- The county sheriff, in counties that offer it.
+- The court clerk, by certified mail, in courts that offer it.
 
-A "party" is anyone named as a plaintiff or defendant. So a co-plaintiff cannot serve either. A friend, relative, or coworker who is 18 or older and not part of the case may be able to serve. Check the official source for the details [S:ccp-116-340].
+A "party" is anyone named as a plaintiff or defendant. So a co-plaintiff cannot serve either. A friend, relative, or coworker who is 18 or older and not part of the case may be able to serve. Check the official source for the details [S:cc-selfhelp-serve] [S:ccp-116-340].
 
 ## Common methods of service
 
@@ -36,7 +36,7 @@ The common service methods are [F:service-methods]:
 
 - **Personal service.** The server hands the papers directly to the defendant.
 - **Substituted service.** The server leaves the papers with a competent adult at the defendant's home or business, and then a copy is mailed.
-- **Certified mail by the clerk.** The court clerk mails the papers by certified mail.
+- **Certified mail by the clerk.** In courts that offer it, the court clerk mails the papers by certified mail.
 
 Each method has its own requirements. For example, the rules for substituted service include details about where the papers can be left and how the mailing is done [S:ccp-415-20]. If you plan to use certified mail by the clerk, ask the clerk how to request it, whether a fee applies, and how you will know whether it worked [S:cc-selfhelp-small-claims].
 
@@ -58,7 +58,7 @@ In practice, this means the papers must be left and mailed early enough that the
 
 ## Proof of service (SC-104)
 
-After service, the server completes a proof of service, form SC-104. It is filed with the court before the hearing, by the deadline the court specifies [F:proof-of-service]. A proof of service is a signed statement telling the court who served which papers, on whom, how, and when.
+After service, the server completes a proof of service, form SC-104. California Courts says to file the original and a copy at least 5 days before the court date [F:proof-of-service] [S:cc-selfhelp-serve]. A proof of service is a signed statement telling the court who served which papers, on whom, how, and when.
 
 The server, not you, fills out and signs the form. Read the official form and its instructions so you can give the server the right version [S:jcc-form-sc-104]. Ask the clerk what deadline your court uses for filing it.
 
@@ -70,7 +70,7 @@ The server, not you, fills out and signs the form. Read the official form and it
 - **Missing the deadline.** Service completed fewer than 15 days (in county) or 20 days (out of county) before the hearing does not meet the deadline [F:service-deadline].
 - **Forgetting the extra 10 days for substituted service.** The 10 days after mailing count toward the deadline [F:substituted-service-timing].
 - **Using the wrong address.** An old home address, a closed business location, or a P.O. box may not reach the defendant. Confirm the address before you send your server out.
-- **Not filing the proof of service.** Serving the papers is only part of the step. SC-104 must also be filed by the court's deadline [F:proof-of-service].
+- **Not filing the proof of service.** Serving the papers is only part of the step. SC-104 must also be filed, at least 5 days before the court date according to California Courts [F:proof-of-service].
 
 ## If service cannot be completed in time
 
@@ -83,7 +83,7 @@ Free help may be available. Most counties are required to have a free small clai
 ## Checklist
 
 - [ ] Checked which papers must be served (official guidance).
-- [ ] Chose a server who is not a party (adult 18+, registered process server, sheriff or marshal, or clerk by certified mail).
+- [ ] Chose a server who is not part of the case (adult 18+, professional process server, the sheriff where offered, or clerk certified mail where offered).
 - [ ] Confirmed the defendant's current service address.
 - [ ] If the defendant is a business, checked the official guidance on who can be served.
 - [ ] Wrote down the hearing date and whether the defendant is in or out of the county.
@@ -91,7 +91,7 @@ Free help may be available. Most counties are required to have a free small clai
 - [ ] If using substituted service, added the 10 days after mailing.
 - [ ] Gave the server a written information sheet.
 - [ ] Reviewed the completed SC-104 before it was signed.
-- [ ] Filed SC-104 by the court's deadline and kept a copy.
+- [ ] Filed SC-104 at least 5 days before the court date and kept a copy.
 - [ ] If service could not be completed in time, checked the official guidance, asked the clerk, and looked at SC-150.
 
 ## Official sources for this chapter

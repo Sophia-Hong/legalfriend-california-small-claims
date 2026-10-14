@@ -75,7 +75,7 @@ If you or a witness needs a language interpreter, or you need a disability accom
 ## What to bring
 
 - The papers you filed, including your copy of the claim and the hearing date and location.
-- A copy of the proof of service. After service, the server completes a proof of service (form SC-104), which is filed with the court before the hearing by the deadline the court specifies [F:proof-of-service].
+- A copy of the proof of service. After service, the server completes and signs a proof of service (form SC-104); California Courts says to file it at least 5 days before the court date [F:proof-of-service].
 - Your two-minute summary and your "only if asked" list.
 - Your exhibit index and all labeled exhibits, plus copies.
 - Your damages table.
@@ -92,7 +92,7 @@ If you or a witness needs a language interpreter, or you need a disability accom
 - [ ] I checked how many copies my court expects [S:cc-selfhelp-small-claims].
 - [ ] I have a damages table that ties each amount to an exhibit.
 - [ ] I have short answers ready for common questions.
-- [ ] I confirmed the proof of service was filed by the court's deadline [F:proof-of-service].
+- [ ] I confirmed the proof of service was filed at least 5 days before the court date [F:proof-of-service].
 - [ ] If I received a defendant's claim (SC-120), I gathered documents about it [F:defendant-claim].
 - [ ] If I need a new date, I checked the SC-150 process [F:postpone].
 - [ ] If I or a witness needs an interpreter or accommodation, I checked the official process.
