@@ -15,7 +15,7 @@ sources_used: [cc-selfhelp-small-claims, cc-small-claims-forms, jcc-form-sc-100]
 
 ## Why a case file matters
 
-Parties generally may not be represented by an attorney at the small claims hearing, though they may consult one before or after [F:no-attorneys]. A business or other entity appears through an authorized employee, officer, or director rather than an attorney [F:entity-appearance]. That means you, or your business's representative, will explain the dispute yourself. A well-organized file makes it easier to find the right page when you need it.
+Parties generally may not be represented by an attorney at the small claims hearing, though they may consult one before or after [F:no-attorneys]. A business or other entity appears through a regular employee, officer, or director who was not hired just to appear in small claims court, and that person files a declaration of authority (SC-109) [F:entity-appearance]. That means you, or your business's representative, will explain the dispute yourself. A well-organized file makes it easier to find the right page when you need it.
 
 This chapter does not tell you which evidence matters most in your dispute. It gives you a way to organize what you have so you can see it clearly.
 
@@ -29,7 +29,7 @@ Common items include:
 - Letters, emails, and text messages.
 - Photos and videos, with the date each was taken.
 - Bank or card statements showing payments.
-- Your written request for payment, if you made one. SC-100 asks whether you asked the defendant to pay before filing, or why not [F:demand-first]. Keep a copy of that request and any reply.
+- Your written request for payment, if you made one. Where possible, ask the defendant to pay before you file; SC-100 asks whether you did and, if not, why not [F:demand-first]. Keep a copy of that request and any reply.
 - Your filed SC-100, the filed proof of service (SC-104) [F:proof-of-service], and anything else the court sent you.
 - If the defendant files a claim against you on form SC-120 to be heard in the same case [F:defendant-claim], keep those papers in the file as well.
 

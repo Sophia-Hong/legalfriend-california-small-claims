@@ -15,7 +15,7 @@ sources_used: [cc-selfhelp-small-claims, ccp-116-530, ccp-116-540, ccp-116-260, 
 
 ## Who speaks at the hearing
 
-In small claims court, you generally present your own case. Parties generally may not have a lawyer represent them at the hearing, but they may talk to a lawyer before or after it [F:no-attorneys]. If a party is a corporation or other business entity, it appears through an authorized employee, officer, or director rather than a lawyer [F:entity-appearance].
+In small claims court, you generally present your own case. Parties generally may not have a lawyer represent them at the hearing, but they may talk to a lawyer before or after it [F:no-attorneys]. If a party is a corporation or other business entity, it appears through a regular employee, officer, or director who was not hired just to appear in small claims court (a partnership may also appear through a partner) [F:entity-appearance].
 
 You do not have to prepare alone. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors]. To find the advisor for your county, check the official source [S:cc-selfhelp-small-claims].
 

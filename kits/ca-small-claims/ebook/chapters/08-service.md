@@ -44,7 +44,7 @@ If the defendant is a business, the rules on *which person* at the business can 
 
 ## Deadlines
 
-Service must be completed at least 15 days before the hearing if the defendant is in the county where you filed. It must be completed at least 20 days before the hearing if the defendant is outside that county [F:service-deadline].
+Service must be completed at least 15 days before the hearing if the defendant lives in the county where you filed. It must be completed at least 20 days before the hearing if the defendant lives outside that county [F:service-deadline].
 
 These deadlines are counted back from your hearing date. How days are counted (for example, how weekends and court holidays are treated) is set by law. Check the current rule on the official source before you rely on a date [S:ccp-116-340].
 

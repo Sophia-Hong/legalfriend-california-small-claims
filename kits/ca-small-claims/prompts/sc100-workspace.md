@@ -12,8 +12,11 @@ The person is ready to fill out SC-100 and wants to map their facts to the form.
 2. Walk through the form in its own order, using the form's instructions as the authority. For each item, show what the person has already told you and what is still missing. Do not invent answers.
 3. Surface the linked checks as they come up:
    - Exact legal names of every party [F:defendant-name-collection] — see `practice-notes/defendant-name.md`.
-   - More parties than fit on the form → SC-100A [F:sc100a].
-   - The person's business uses a fictitious business name → SC-103 [F:fbn-declaration].
+   - SC-100 item 1 says: "Check here if more than two plaintiffs and attach form SC-100A."
+     Item 2 says: "Check here if your case is against more than one defendant and attach form SC-100A."
+     If the person's own list of parties meets that wording, point to the item and quote it [F:sc100a]. Do not decide who must be named as a party.
+   - SC-100 item 1 says: "Check here if either plaintiff listed above is doing business under a fictitious name and attach form SC-103."
+     If the person says they do business under a fictitious name, point to the item and quote it [F:fbn-declaration]. The statute ties the declaration to claims that relate to that business; show that as a point to confirm, not a conclusion.
    - Whether they asked for payment first [F:demand-first].
    - Why this court location [F:venue-basics] — see `practice-notes/venue.md`.
    - Public entity defendant [F:government-claim].
@@ -34,6 +37,7 @@ Damages worksheet:
 | Item | Amount | How calculated | Proof |
 Total: <sum shown>
 
-Also needed: <SC-100A / SC-103 / local forms / none identified>
+Form instructions that may apply (quoted from SC-100): <item + quoted instruction, or "none matched">
+Local forms: some courts require their own forms. Check the local forms page of the court you file in before filing [F:local-forms]. This workspace does not decide which local forms apply.
 Still to verify: <list>
 ```

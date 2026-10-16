@@ -52,13 +52,19 @@ facts:
     confidence: high
     verified: false
   - id: entity-appearance
-    statement: A corporation or other entity appears through an authorized employee, officer, or director rather than an attorney.
-    cite: Cal. Code Civ. Proc. § 116.540
+    statement: A corporation or other business entity appears through a regular employee, officer, or director who was not hired just to appear in small claims court (a partnership may also appear through a partner); the representative must file a declaration of authority (SC-109).
+    cite: Cal. Code Civ. Proc. § 116.540(b), (c), (j)
     sources: [ccp-116-540]
     confidence: medium
     verified: false
     source_check: >-
       2026-10-14 (Shirl): official self-help pages read on this date do not state who appears for an entity; the forms page lists SC-109 (Authorization to Appear on Behalf of Party). Statement unchanged pending statute check.
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): § 116.540(b) reads "only through a regular employee, or a duly appointed or elected
+      officer or director, who is employed, appointed, or elected for purposes other than solely
+      representing the corporation in small claims court"; (c) applies the same rule to other
+      entities and lets a partnership appear through a partner; (j) requires a declaration of
+      authority. "Authorized employee" replaced. The no-attorney rule is the separate fact
+      no-attorneys (§ 116.530).
   - id: advisors
     statement: Most counties are required to have a small claims advisor who gives free legal information in small claims cases; the services offered vary from county to county.
     cite: Cal. Code Civ. Proc. § 116.260; California Courts, Find your Small Claims Advisor
@@ -73,11 +79,20 @@ facts:
 
   # ---------- Before filing ----------
   - id: demand-first
-    statement: The plaintiff's claim must state whether the plaintiff asked the defendant to pay before filing (or why not); SC-100 asks this question.
-    cite: Cal. Code Civ. Proc. § 116.320 (subsection to confirm); SC-100
+    statement: Where possible, ask the defendant to pay (or, if the claim is for possession of property, to return the property) before you file. SC-100 item 4 says the request can be made in person, in writing, or by phone, and asks whether you did and, if not, why not.
+    cite: Cal. Code Civ. Proc. § 116.320(b)(3); SC-100 item 4 (Rev. Jan. 1, 2026)
     sources: [ccp-116-320, jcc-form-sc-100]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): § 116.320(b)(3) — the claim form has a place to state "that the plaintiff, where
+      possible, has demanded payment and, in applicable cases, possession of the property."
+      SC-100 item 4 (Rev. Jan. 1, 2026): "You must ask the defendant (in person, in writing, or
+      by phone) to pay you before you sue. If your claim is for possession of property, you must
+      ask the defendant to give you the property. Have you done this? Yes / No If no, explain why
+      not." First sentence is Yul's proposed wording; the "in person, in writing, or by phone"
+      clause is from the form (Shirl 2026-10-16, theo-workspace
+      reports/legalfriend/2026-10-16-sc100-demand-first-check.md cb70f3870).
   - id: sol-written-contract
     statement: The general limitations period for breach of a written contract is four years.
     cite: Cal. Code Civ. Proc. § 337
@@ -113,6 +128,21 @@ facts:
       an injury to you or damage to something you own" and "1 year from the date a contract
       was broken or your real estate was damaged", and says "There are exceptions." Earlier
       wording put all property damage at six months. Statute text not read (leginfo blocked).
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): matches § 911.2(a) and § 945.4; § 912.4(a), (c) — no action within 45 days means the
+      claim is deemed rejected.
+  - id: government-suit-deadline
+    statement: If the agency mails or hands you a written rejection, you must file your lawsuit within 6 months of that date. If the agency does not act within 45 days (unless you and the agency agree in writing to extend it), the claim is treated as rejected; if you never got a written rejection notice, you generally have 2 years from when the claim arose to sue.
+    cite: Cal. Gov. Code §§ 912.4, 945.6(a)
+    sources: [gov-912-4, gov-945-6]
+    confidence: high
+    verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): § 945.6(a)(1) "not later than six months after the date such notice is personally
+      delivered or deposited in the mail"; (a)(2) "within two years from the accrual of the cause
+      of action" if written notice is not given under § 913; § 912.4(a), (c) 45 days, then deemed
+      rejected (extendable by agreement). Statement is Yul's proposed wording.
+      2026-10-16 (Yul recheck, Theo 1792109841): added the written-extension clause per
+      § 912.4(b).
 
   # ---------- Defendant name ----------
   - id: defendant-name-collection
@@ -122,19 +152,25 @@ facts:
     confidence: high
     verified: false
   - id: fbn-declaration
-    statement: A plaintiff doing business under a fictitious business name must file a declaration (form SC-103) showing compliance with the fictitious business name laws.
-    cite: Cal. Code Civ. Proc. § 116.430; SC-103
+    statement: A plaintiff doing business under a fictitious business name, if the claim relates to that business, must file a declaration (form SC-103) showing compliance with the fictitious business name laws; a case filed without complying with the fictitious business name laws is dismissed without prejudice.
+    cite: Cal. Code Civ. Proc. § 116.430(a)–(b); SC-103
     sources: [ccp-116-430, jcc-form-sc-103]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): § 116.430(a) "… and the claim relates to that business"; (b) "shall be dismissed
+      without prejudice." Statement is Yul's wording.
 
   # ---------- Venue ----------
   - id: venue-basics
     statement: Small claims venue follows specific rules — commonly where a defendant lives or does business, where a contract was made or was to be performed, or where the injury or property damage happened — with special rules for certain consumer contracts.
-    cite: Cal. Code Civ. Proc. § 116.370 (and the venue statutes it references)
-    sources: [ccp-116-370]
+    cite: Cal. Code Civ. Proc. §§ 116.370(a), 395, 395.5
+    sources: [ccp-116-370, ccp-395, ccp-395-5]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): § 116.370(a) — venue "shall be the same as in other civil actions" (it names no
+      statute); § 395(a)–(b) and § 395.5 hold the rules. Statement matches.
 
   # ---------- Forms ----------
   - id: sc100-starts-case
@@ -183,8 +219,8 @@ facts:
   # ---------- Service ----------
   - id: service-who
     statement: The plaintiff may not serve the papers personally; service must be done by someone 18 or older who is not part of the case (for example a friend or family member, or a professional process server), by the county sheriff in counties that offer it, or by certified mail sent by the court clerk in courts that offer it.
-    cite: Cal. Code Civ. Proc. § 116.340; California Courts, Serve your small claims forms
-    sources: [cc-selfhelp-serve, ccp-116-340]
+    cite: Cal. Code Civ. Proc. §§ 116.340, 414.10; California Courts, Serve your small claims forms
+    sources: [cc-selfhelp-serve, ccp-116-340, ccp-414-10]
     confidence: high
     verified: false
     source_check: >-
@@ -193,6 +229,8 @@ facts:
       some courts)". Earlier wording listed the sheriff/marshal and clerk mail without that
       condition and said "registered" process server, which the page does not say. Statute
       text not read (leginfo blocked).
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): the "plaintiff may not serve" rule is § 414.10 ("any person who is at least 18 years
+      of age and not a party to the action"); clerk mail is § 116.340(a)(1).
   - id: service-methods
     statement: Common service methods are personal service, substituted service (leaving papers with a competent adult at the home or business and then mailing a copy), and, in courts that offer it, certified mail by the clerk.
     cite: Cal. Code Civ. Proc. §§ 116.340, 415.20; California Courts, Serve your small claims forms
@@ -200,26 +238,34 @@ facts:
     confidence: high
     verified: false
   - id: service-deadline
-    statement: Service must be completed at least 15 days before the hearing if the defendant is in the county where the case was filed, or at least 20 days before if the defendant is outside that county.
+    statement: Service must be completed at least 15 days before the hearing if the defendant lives in the county where the case was filed, or at least 20 days before if the defendant lives outside that county.
     cite: Cal. Code Civ. Proc. § 116.340(b)
     sources: [ccp-116-340]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): matches § 116.340(b) ("resides within the county"); "is in" changed to "lives in".
   - id: substituted-service-timing
     statement: Substituted service is not complete until 10 days after the mailing, which must be counted toward the service deadline.
-    cite: Cal. Code Civ. Proc. § 415.20
-    sources: [ccp-415-20]
+    cite: Cal. Code Civ. Proc. §§ 116.340(a)(3), 415.20(a)–(b)
+    sources: [ccp-415-20, ccp-116-340]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): matches § 415.20(a)–(b) ("deemed complete on the 10th day after the mailing");
+      § 116.340(a)(3) allows substituted service in small claims "without the need to attempt
+      personal service". AB 747 (2025) rewrites § 415.20 from 2027-01-01 — recheck in December.
   - id: proof-of-service
-    statement: After service, the server completes and signs a proof of service (form SC-104); California Courts says to file the original and a copy at least 5 days before the court date.
-    cite: Cal. Code Civ. Proc. § 116.340; SC-104; California Courts, Serve your small claims forms
+    statement: After service, the server completes and signs a proof of service (form SC-104); file it with the court at least 5 days before the hearing.
+    cite: Cal. Code Civ. Proc. § 116.340(c); SC-104; California Courts, Serve your small claims forms
     sources: [cc-selfhelp-serve, ccp-116-340, jcc-form-sc-104]
     confidence: medium
     verified: false
     source_check: >-
       2026-10-14 (Shirl): official page reads "File the original and copy at least 5 days before your
       court hearing". Earlier wording said "by the deadline the court specifies".
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): § 116.340(c) "Proof of service … shall be filed with the small claims court at least
+      five days before the hearing."
 
   # ---------- Hearing ----------
   - id: defendant-claim
@@ -272,15 +318,19 @@ facts:
     confidence: medium
     verified: false
   - id: enforcement-tools
-    statement: Common collection tools include a writ of execution (EJ-130) used for bank levies and wage garnishment, an abstract of judgment (EJ-001) that creates a lien on real property, and an order for the debtor to appear for examination.
-    cite: Cal. Code Civ. Proc. §§ 699.510, 674; forms EJ-130, EJ-001
-    sources: [jcc-form-ej-130, jcc-form-ej-001]
+    statement: Common collection tools include a writ of execution (EJ-130) used for bank levies and wage garnishment, an abstract of judgment (EJ-001) that creates a lien on the debtor's real property in a county once it is recorded with that county's recorder, and an order for the debtor to appear for examination.
+    cite: Cal. Code Civ. Proc. §§ 699.510, 697.310(a), 708.110; forms EJ-130, EJ-001
+    sources: [jcc-form-ej-130, jcc-form-ej-001, ccp-699-510, ccp-697-310, ccp-708-110]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): § 697.310(a) — the lien is created "by recording an abstract of a money judgment with
+      the county recorder"; § 674 only lists what the abstract contains, so it was dropped from
+      the cite. Debtor examination = § 708.110(a).
   - id: judgment-ten-years
     statement: A California money judgment generally expires after 10 years unless it is renewed before then. Since January 1, 2023, some judgments can be renewed only once, for 5 years — California Courts describes this as applying when the debtor is a person (not a business or government agency), the principal owed is less than $200,000 for a medical expense or less than $50,000 for a personal debt, and the debt is not from a tort, fraud, unpaid wages, or other money owed to an employee.
-    cite: Cal. Code Civ. Proc. §§ 683.020, 683.110; California Courts, Renew a small claims judgment
-    sources: [cc-selfhelp-renew-judgment, ccp-683-020]
+    cite: Cal. Code Civ. Proc. §§ 683.020, 683.110(c)–(d), 683.120(c); California Courts, Renew a small claims judgment
+    sources: [cc-selfhelp-renew-judgment, ccp-683-020, ccp-683-110, ccp-683-120]
     confidence: medium
     verified: false
     source_check: >-
@@ -288,9 +338,12 @@ facts:
       renewed once for 5 years if" the three conditions above are met. Earlier wording ("can be
       renewed") had no exception, and many small claims judgments may fall under it. Confidence
       lowered to medium until the statute text is read (leginfo blocked).
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): statement matches § 683.110(c)–(d) (renew only once; medical principal < $200,000,
+      personal debt < $50,000; natural-person debtor; tort, fraud, employee wages excluded) and
+      § 683.120(c) (five years). Cite narrowed.
   - id: satisfaction
-    statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate. California Courts says a creditor who does not file within 14 days of being paid can be fined.
-    cite: Cal. Code Civ. Proc. § 116.850; SC-290; EJ-100; California Courts, What to do when you get paid
+    statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment right away — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate. If the debtor asks in writing and the creditor, without good cause, does not file within 14 days of the request, the creditor can be liable for the debtor's damages plus $50.
+    cite: Cal. Code Civ. Proc. § 116.850(a)–(b); SC-290; EJ-100
     sources: [cc-selfhelp-when-you-get-paid, ccp-116-850, jcc-form-sc-290, jcc-form-ej-100]
     confidence: medium
     verified: false
@@ -299,20 +352,28 @@ facts:
       being paid, you can be fined" and "If you put any liens on their property (real estate),
       you must use Form EJ-100 instead ... It must be signed in front of a notary." Earlier
       wording named only SC-290 with no deadline.
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): the statute differs from the self-help page — § 116.850(a) "immediately upon receipt of
+      payment"; (b) 14 days run from the debtor's written demand, and the sanction is damages plus
+      $50, not a fine. Statement is Yul's wording; the page's "can be fined" line was dropped.
 
   # ---------- Common dispute: security deposit ----------
   - id: deposit-21-days
     statement: A residential landlord must return the security deposit, or an itemized statement of deductions with any remaining balance, within 21 days after the tenant moves out.
-    cite: Cal. Civ. Code § 1950.5(g)
+    cite: Cal. Civ. Code § 1950.5(h)(1)
     sources: [civ-1950-5]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): the 21-day rule is now subdivision (h)(1) (AB 414, eff. 2026-01-01); (g) is now the
+      photo requirement. Cite corrected from (g).
   - id: deposit-bad-faith
     statement: If a landlord keeps a deposit in bad faith, a court may award statutory damages of up to twice the amount of the deposit in addition to actual damages.
-    cite: Cal. Civ. Code § 1950.5(l)
+    cite: Cal. Civ. Code § 1950.5(m)
     sources: [civ-1950-5]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): bad-faith damages are now subdivision (m). Cite corrected from (l).
 
 # Things the kit must NOT state as fact (always send the reader to the source):
 do_not_state:

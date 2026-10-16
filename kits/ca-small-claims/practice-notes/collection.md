@@ -42,7 +42,7 @@ Unless the judgment is paid or appealed, the losing party generally must complet
 
 ## Common collection tools
 
-Common collection tools include a writ of execution (EJ-130), used for bank levies and wage garnishment; an abstract of judgment (EJ-001), which creates a lien on real property; and an order for the debtor to appear for examination. [F:enforcement-tools] [S:jcc-form-ej-130] [S:jcc-form-ej-001]
+Common collection tools include a writ of execution (EJ-130), used for bank levies and wage garnishment; an abstract of judgment (EJ-001), which creates a lien on the debtor's real property in a county once it is recorded with that county's recorder; and an order for the debtor to appear for examination. [F:enforcement-tools] [S:jcc-form-ej-130] [S:jcc-form-ej-001]
 
 A few plain-language terms:
 
@@ -58,7 +58,7 @@ A California money judgment generally expires after 10 years unless it is renewe
 
 ## When you are paid
 
-When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded — and California Courts says a creditor who does not file within 14 days of being paid can be fined. [F:satisfaction] [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] [S:jcc-form-ej-100] The "judgment creditor" is the party owed money. Keep a record of every payment you receive, with dates and amounts.
+When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded — right away. If the debtor asks in writing and the creditor, without good cause, does not file within 14 days of the request, the creditor can be liable for the debtor's damages plus $50. [F:satisfaction] [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] [S:jcc-form-ej-100] The "judgment creditor" is the party owed money. Keep a record of every payment you receive, with dates and amounts.
 
 ## Common pitfalls
 
@@ -66,7 +66,7 @@ When the judgment is paid in full, the judgment creditor must file an Acknowledg
 - Starting collection before the waiting period has passed. [F:enforcement-wait]
 - Not keeping a payment log, so the balance is unclear.
 - Losing the Notice of Entry of Judgment.
-- Forgetting to file SC-290 (or EJ-100) within 14 days of full payment. [F:satisfaction]
+- Forgetting to file SC-290 (or EJ-100) right after full payment. [F:satisfaction]
 - Letting the judgment period run without checking renewal. [F:judgment-ten-years]
 - Contacting the other side in a way that feels pressuring. Keep contact brief, polite, and in writing.
 

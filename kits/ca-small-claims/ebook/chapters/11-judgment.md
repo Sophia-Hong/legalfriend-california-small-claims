@@ -57,7 +57,7 @@ Unless the judgment is paid or appealed, the judgment debtor generally must comp
 If a judgment is not paid, the official sources describe several collection tools. Common ones include:
 
 - **Writ of execution (form EJ-130).** A court document used for bank levies and wage garnishment [F:enforcement-tools]. A "levy" means taking money from an account to pay the judgment. "Wage garnishment" means taking part of a paycheck.
-- **Abstract of judgment (form EJ-001).** A document that creates a lien on real property [F:enforcement-tools]. A "lien" is a legal claim attached to property, such as a house or land.
+- **Abstract of judgment (form EJ-001).** A document that creates a lien on the debtor's real property in a county once you record it with that county's recorder [F:enforcement-tools]. A "lien" is a legal claim attached to property, such as a house or land.
 - **Order to appear for examination.** An order for the debtor to appear for an examination [F:enforcement-tools]. For what this involves, check the official source [S:cc-selfhelp-small-claims].
 
 Each tool has its own forms, steps, and possible fees. There may also be limits on what can be collected. This kit does not cover those details. Check the official source and the form pages before using any tool [S:cc-selfhelp-small-claims] [S:jcc-form-ej-130] [S:jcc-form-ej-001]. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors].
@@ -72,7 +72,7 @@ A California money judgment generally expires after 10 years unless it is renewe
 
 ## When the judgment is paid
 
-When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate [F:satisfaction]. This tells the court the debt is paid. California Courts says a creditor who does not file within 14 days of being paid can be fined [F:satisfaction]. For how to file it, check the official source [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] [S:jcc-form-ej-100]. If you are the one who was paid, keep a copy of the filed form with your records.
+When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment right away — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate [F:satisfaction]. This tells the court the debt is paid. If the debtor asks in writing and the creditor, without good cause, does not file within 14 days of the request, the creditor can be liable for the debtor's damages plus $50 [F:satisfaction]. For how to file it, check the official source [S:cc-selfhelp-when-you-get-paid] [S:jcc-form-sc-290] [S:jcc-form-ej-100]. If you are the one who was paid, keep a copy of the filed form with your records.
 
 ## Checklist
 
@@ -84,7 +84,7 @@ When the judgment is paid in full, the judgment creditor must file an Acknowledg
 - [ ] I keep a payment log with dates, amounts, and receipts.
 - [ ] Before using a collection tool, I read its official form page [F:enforcement-tools].
 - [ ] I noted the 10-year enforcement period, the renewal option, and that some judgments can be renewed only once for 5 years [F:judgment-ten-years].
-- [ ] When paid in full, I know SC-290 (or EJ-100 if a lien was recorded) must be filed within 14 days [F:satisfaction].
+- [ ] When paid in full, I know SC-290 (or EJ-100 if a lien was recorded) must be filed right away [F:satisfaction].
 
 ## Official sources for this chapter
 

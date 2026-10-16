@@ -635,6 +635,63 @@ sources:
     superseded_by: null
     status: pending_fetch
     notes_from_prd: []
+  - id: ccp-395
+    source_title: Cal. Code of Civil Procedure § 395
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=395
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-395-5
+    source_title: Cal. Code of Civil Procedure § 395.5
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=395.5
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-414-10
+    source_title: Cal. Code of Civil Procedure § 414.10
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=414.10
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [service]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
   - id: ccp-415-20
     source_title: Cal. Code of Civil Procedure § 415.20
     source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=415.20
@@ -657,6 +714,101 @@ sources:
   - id: ccp-683-020
     source_title: Cal. Code of Civil Procedure § 683.020
     source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=683.020
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-683-110
+    source_title: Cal. Code of Civil Procedure § 683.110
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=683.110
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-683-120
+    source_title: Cal. Code of Civil Procedure § 683.120
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=683.120
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-697-310
+    source_title: Cal. Code of Civil Procedure § 697.310
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=697.310
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-699-510
+    source_title: Cal. Code of Civil Procedure § 699.510
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=699.510
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [judgment]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-708-110
+    source_title: Cal. Code of Civil Procedure § 708.110
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=708.110
     publisher: California Legislative Information
     official: true
     priority: 3
@@ -711,9 +863,47 @@ sources:
     superseded_by: null
     status: pending_fetch
     notes_from_prd: []
+  - id: gov-912-4
+    source_title: Cal. Government Code § 912.4
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=912.4
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
   - id: gov-945-4
     source_title: Cal. Government Code § 945.4
     source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=945.4
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [prefiling]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: gov-945-6
+    source_title: Cal. Government Code § 945.6
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=945.6
     publisher: California Legislative Information
     official: true
     priority: 3

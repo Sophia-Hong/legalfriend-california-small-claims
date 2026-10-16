@@ -21,7 +21,7 @@ Before you file, gather everything you prepared in Chapter 6:
 
 - Your signed SC-100.
 - SC-100A, if you have more plaintiffs or defendants than SC-100 has room for [F:sc100a].
-- SC-103, if you are doing business under a fictitious business name. A plaintiff in that situation must file this declaration showing compliance with the fictitious business name laws [F:fbn-declaration].
+- SC-103, if you are doing business under a fictitious business name and the claim relates to that business. A plaintiff in that situation must file this declaration showing compliance with the fictitious business name laws [F:fbn-declaration].
 - Any local form your court requires (see "Local requirements" below).
 
 ## Making copies

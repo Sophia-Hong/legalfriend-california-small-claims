@@ -40,7 +40,7 @@ These are general limits. Check the current statutes and the California Courts p
 
 Both individuals and businesses file small claims cases. Common examples are everyday money disputes between tenants and landlords, customers and businesses, or neighbors. Whether a particular dispute fits small claims is the subject of Chapter 2.
 
-A business that files as the plaintiff has its own rules. A corporation or other entity appears through an authorized employee, officer, or director, not an attorney [F:entity-appearance]. It also has the lower dollar limit described above [F:limit-entity].
+A business that files as the plaintiff has its own rules. A corporation or other business entity appears through a regular employee, officer, or director who was not hired just to appear in small claims court, and that person files a declaration of authority (SC-109) [F:entity-appearance]. It also has the lower dollar limit described above [F:limit-entity].
 
 ## No lawyers at the hearing
 
