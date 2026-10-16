@@ -78,7 +78,7 @@ Clear, written communication is the best place to start.
 - [ ] Took move-out photos from the same angles as move-in.
 - [ ] Gave the landlord a forwarding address in writing and noted the key-return date.
 - [ ] Counted 21 days from move-out on a calendar.
-- [ ] Checked any itemized statement for receipts where deductions total more than $125.
+- [ ] Checked that each repair or cleaning deduction has support (bills or receipts, or time and hourly rate for the landlord's own work, plus photos and a cost explanation), or asked for it within 14 days of getting the statement.
 - [ ] If there is a dispute, sent a written request before taking further steps.
 
 ## Official sources for this chapter

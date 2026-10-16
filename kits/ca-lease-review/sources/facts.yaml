@@ -25,7 +25,7 @@ facts:
     approved_language: "All deposits combined (security + pet + other) must comply with CA limits: 1 month rent for most landlords, 2 months for small owners (≤2 properties, ≤4 units)"
   - id: deposit-limit-general
     statement: For most residential leases since July 1, 2024, a landlord may not demand or receive total security deposits of more than one month's rent, not counting the first month's rent.
-    cite: Cal. Civ. Code § 1950.5(c)(1), (c)(6) (as amended by AB 12, 2023)
+    cite: Cal. Civ. Code § 1950.5(c)(1), (c)(6)
     sources: [civ-1950-5]
     confidence: high
     verified: false
