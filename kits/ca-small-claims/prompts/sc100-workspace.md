@@ -38,5 +38,6 @@ Damages worksheet:
 Total: <sum shown>
 
 Form instructions that may apply (quoted from SC-100): <item + quoted instruction, or "none matched">
+Local forms: some courts require their own forms. Check the local forms page of the court you file in before filing [F:local-forms]. This workspace does not decide which local forms apply.
 Still to verify: <list>
 ```
