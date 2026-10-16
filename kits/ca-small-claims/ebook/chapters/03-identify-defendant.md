@@ -68,7 +68,7 @@ When you find an FBN, trace it back to the owner. The county record may name a p
 
 ## If you are the plaintiff and use a fictitious business name
 
-This point is about you, not the defendant. A plaintiff doing business under a fictitious business name must file a declaration, form SC-103, showing compliance with the fictitious business name laws [F:fbn-declaration]. Check the current version on the official form page [S:jcc-form-sc-103].
+This point is about you, not the defendant. A plaintiff doing business under a fictitious business name, if the claim relates to that business, must file a declaration, form SC-103, showing compliance with the fictitious business name laws [F:fbn-declaration]. Check the current version on the official form page [S:jcc-form-sc-103].
 
 ## More than one defendant
 

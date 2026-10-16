@@ -32,7 +32,7 @@ For a person, people commonly use the full legal name, not a nickname. If you on
 
 Many small businesses are one person using a trade name. This is sometimes called a "DBA" ("doing business as") or a fictitious business name. The sign may say one thing while the owner is someone else. Counties keep a fictitious business name index, and many let you search it online or at the county clerk's office. Check the official instructions on how to list both the owner and the business name. [S:cc-selfhelp-fill-out-forms]
 
-If you are the one doing business under a fictitious name, that is a separate issue. A plaintiff doing business under a fictitious business name must file a declaration (form SC-103). [F:fbn-declaration] [S:jcc-form-sc-103]
+If you are the one doing business under a fictitious name, that is a separate issue. A plaintiff doing business under a fictitious business name, if the claim relates to that business, must file a declaration (form SC-103). [F:fbn-declaration] [S:jcc-form-sc-103]
 
 ## LLCs and corporations
 

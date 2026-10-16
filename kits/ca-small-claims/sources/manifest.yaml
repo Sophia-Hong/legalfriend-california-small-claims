@@ -635,6 +635,63 @@ sources:
     superseded_by: null
     status: pending_fetch
     notes_from_prd: []
+  - id: ccp-395
+    source_title: Cal. Code of Civil Procedure § 395
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=395
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-395-5
+    source_title: Cal. Code of Civil Procedure § 395.5
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=395.5
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [pleading]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
+  - id: ccp-414-10
+    source_title: Cal. Code of Civil Procedure § 414.10
+    source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=414.10
+    publisher: California Legislative Information
+    official: true
+    priority: 3
+    document_type: statute
+    court_level: statewide
+    county: null
+    side: plaintiff
+    stage: [service]
+    form_number: null
+    effective_date: null
+    last_verified: null
+    version_hash: null
+    supersedes: null
+    superseded_by: null
+    status: pending_fetch
+    notes_from_prd: []
   - id: ccp-415-20
     source_title: Cal. Code of Civil Procedure § 415.20
     source_url: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=415.20

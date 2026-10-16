@@ -152,19 +152,25 @@ facts:
     confidence: high
     verified: false
   - id: fbn-declaration
-    statement: A plaintiff doing business under a fictitious business name must file a declaration (form SC-103) showing compliance with the fictitious business name laws.
-    cite: Cal. Code Civ. Proc. § 116.430; SC-103
+    statement: A plaintiff doing business under a fictitious business name, if the claim relates to that business, must file a declaration (form SC-103) showing compliance with the fictitious business name laws; a case filed without complying with the fictitious business name laws is dismissed without prejudice.
+    cite: Cal. Code Civ. Proc. § 116.430(a)–(b); SC-103
     sources: [ccp-116-430, jcc-form-sc-103]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): § 116.430(a) "… and the claim relates to that business"; (b) "shall be dismissed
+      without prejudice." Statement is Yul's wording.
 
   # ---------- Venue ----------
   - id: venue-basics
     statement: Small claims venue follows specific rules — commonly where a defendant lives or does business, where a contract was made or was to be performed, or where the injury or property damage happened — with special rules for certain consumer contracts.
-    cite: Cal. Code Civ. Proc. § 116.370 (and the venue statutes it references)
-    sources: [ccp-116-370]
+    cite: Cal. Code Civ. Proc. §§ 116.370(a), 395, 395.5
+    sources: [ccp-116-370, ccp-395, ccp-395-5]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): § 116.370(a) — venue "shall be the same as in other civil actions" (it names no
+      statute); § 395(a)–(b) and § 395.5 hold the rules. Statement matches.
 
   # ---------- Forms ----------
   - id: sc100-starts-case
@@ -213,8 +219,8 @@ facts:
   # ---------- Service ----------
   - id: service-who
     statement: The plaintiff may not serve the papers personally; service must be done by someone 18 or older who is not part of the case (for example a friend or family member, or a professional process server), by the county sheriff in counties that offer it, or by certified mail sent by the court clerk in courts that offer it.
-    cite: Cal. Code Civ. Proc. § 116.340; California Courts, Serve your small claims forms
-    sources: [cc-selfhelp-serve, ccp-116-340]
+    cite: Cal. Code Civ. Proc. §§ 116.340, 414.10; California Courts, Serve your small claims forms
+    sources: [cc-selfhelp-serve, ccp-116-340, ccp-414-10]
     confidence: high
     verified: false
     source_check: >-
@@ -223,6 +229,8 @@ facts:
       some courts)". Earlier wording listed the sheriff/marshal and clerk mail without that
       condition and said "registered" process server, which the page does not say. Statute
       text not read (leginfo blocked).
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): the "plaintiff may not serve" rule is § 414.10 ("any person who is at least 18 years
+      of age and not a party to the action"); clerk mail is § 116.340(a)(1).
   - id: service-methods
     statement: Common service methods are personal service, substituted service (leaving papers with a competent adult at the home or business and then mailing a copy), and, in courts that offer it, certified mail by the clerk.
     cite: Cal. Code Civ. Proc. §§ 116.340, 415.20; California Courts, Serve your small claims forms
@@ -248,14 +256,16 @@ facts:
       § 116.340(a)(3) allows substituted service in small claims "without the need to attempt
       personal service". AB 747 (2025) rewrites § 415.20 from 2027-01-01 — recheck in December.
   - id: proof-of-service
-    statement: After service, the server completes and signs a proof of service (form SC-104); California Courts says to file the original and a copy at least 5 days before the court date.
-    cite: Cal. Code Civ. Proc. § 116.340; SC-104; California Courts, Serve your small claims forms
+    statement: After service, the server completes and signs a proof of service (form SC-104); file it with the court at least 5 days before the hearing.
+    cite: Cal. Code Civ. Proc. § 116.340(c); SC-104; California Courts, Serve your small claims forms
     sources: [cc-selfhelp-serve, ccp-116-340, jcc-form-sc-104]
     confidence: medium
     verified: false
     source_check: >-
       2026-10-14 (Shirl): official page reads "File the original and copy at least 5 days before your
       court hearing". Earlier wording said "by the deadline the court specifies".
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): § 116.340(c) "Proof of service … shall be filed with the small claims court at least
+      five days before the hearing."
 
   # ---------- Hearing ----------
   - id: defendant-claim
@@ -332,8 +342,8 @@ facts:
       personal debt < $50,000; natural-person debtor; tort, fraud, employee wages excluded) and
       § 683.120(c) (five years). Cite narrowed.
   - id: satisfaction
-    statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate. California Courts says a creditor who does not file within 14 days of being paid can be fined.
-    cite: Cal. Code Civ. Proc. § 116.850; SC-290; EJ-100; California Courts, What to do when you get paid
+    statement: When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment right away — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate. If the debtor asks in writing and the creditor, without good cause, does not file within 14 days of the request, the creditor can be liable for the debtor's damages plus $50.
+    cite: Cal. Code Civ. Proc. § 116.850(a)–(b); SC-290; EJ-100
     sources: [cc-selfhelp-when-you-get-paid, ccp-116-850, jcc-form-sc-290, jcc-form-ej-100]
     confidence: medium
     verified: false
@@ -342,6 +352,9 @@ facts:
       being paid, you can be fined" and "If you put any liens on their property (real estate),
       you must use Form EJ-100 instead ... It must be signed in front of a notary." Earlier
       wording named only SC-290 with no deadline.
+      2026-10-16 (Yul, statute check 2B — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md 4cde0dc7e): the statute differs from the self-help page — § 116.850(a) "immediately upon receipt of
+      payment"; (b) 14 days run from the debtor's written demand, and the sanction is damages plus
+      $50, not a fine. Statement is Yul's wording; the page's "can be fined" line was dropped.
 
   # ---------- Common dispute: security deposit ----------
   - id: deposit-21-days
