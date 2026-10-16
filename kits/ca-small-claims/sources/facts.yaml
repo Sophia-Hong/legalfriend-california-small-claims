@@ -131,7 +131,7 @@ facts:
       2026-10-16 (Yul, statute check 2A — theo-workspace reports/legalfriend/2026-10-16-ca-statute-check-2A.md fab3e7d46; official text from the Legislature's bulk data pubinfo_2025, records updated 2026-09-26): matches § 911.2(a) and § 945.4; § 912.4(a), (c) — no action within 45 days means the
       claim is deemed rejected.
   - id: government-suit-deadline
-    statement: If the agency mails or hands you a written rejection, you must file your lawsuit within 6 months of that date. If the agency does not act within 45 days, the claim is treated as rejected; if you never got a written rejection notice, you generally have 2 years from when the claim arose to sue.
+    statement: If the agency mails or hands you a written rejection, you must file your lawsuit within 6 months of that date. If the agency does not act within 45 days (unless you and the agency agree in writing to extend it), the claim is treated as rejected; if you never got a written rejection notice, you generally have 2 years from when the claim arose to sue.
     cite: Cal. Gov. Code §§ 912.4, 945.6(a)
     sources: [gov-912-4, gov-945-6]
     confidence: high
@@ -141,6 +141,8 @@ facts:
       delivered or deposited in the mail"; (a)(2) "within two years from the accrual of the cause
       of action" if written notice is not given under § 913; § 912.4(a), (c) 45 days, then deemed
       rejected (extendable by agreement). Statement is Yul's proposed wording.
+      2026-10-16 (Yul recheck, Theo 1792109841): added the written-extension clause per
+      § 912.4(b).
 
   # ---------- Defendant name ----------
   - id: defendant-name-collection
