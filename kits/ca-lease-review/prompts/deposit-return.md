@@ -26,14 +26,16 @@ itemization.
      beyond ordinary wear and tear [F:deposit-allowed-deductions]. If none fits clearly,
      mark it "worth a closer look."
    - What the move-in record and move-out photos show for that item.
-   - Whether receipts or invoices are attached. When repair and cleaning deductions total
-     more than $125, the statement must include copies of receipts or invoices, or a
-     good-faith estimate followed by receipts if the work could not be finished within 21
-     days [F:deposit-receipts]. Show the total of repair and cleaning lines.
+   - Whether support is attached for each repair or cleaning deduction: bills, invoices, or
+     receipts (or time and hourly rate for the landlord's own work), photos, and a written
+     explanation of the cost. These rules do not apply at $125 or less in repair and
+     cleaning deductions or after a valid waiver, but the person can still ask for the
+     documents within 14 days of receiving the statement [F:deposit-receipts]. Show the
+     total of repair and cleaning lines.
    - Whether any part was described as nonrefundable; a lease may not make any part of
      the security deposit nonrefundable [F:deposit-no-nonrefundable].
-   - Whether the landlord's photos were provided, if the person asks [F:deposit-photos]
-     (dates to confirm).
+   - Whether the landlord's photos were provided with the repair or cleaning deductions
+     [F:deposit-photos].
 4. **Draft a neutral written request**, if the person wants one: a short, polite message
    that gives the move-out date and forwarding address, lists the deposits paid, and asks
    for either the balance or the itemized statement — or, if a statement arrived, asks

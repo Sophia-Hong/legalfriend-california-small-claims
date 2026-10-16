@@ -10,14 +10,13 @@ attorney-approved wording from the retired Lease Review service
 (`legalfriend_v1.1/backend/CA_State_Config.yaml`, `approved_language`). Nothing has been
 checked against live official sources yet.
 
-## Start here: medium-confidence facts (9)
+## Start here: medium-confidence facts (8)
 
 | Fact | Statement | Citation |
 |---|---|---|
 | `deposit-limit-small-landlord` | A small landlord — generally a natural person (or an LLC or family trust made up of natural persons) who owns no more than two residential rental properties with no more than four units in total — may collect up to two months' rent as security. | Cal. Civ. Code § 1950.5(c)(5)(A), (C) |
 | `deposit-limit-servicemember` | The small-landlord exception does not apply when the tenant is a service member; the one-month limit applies. | Cal. Civ. Code § 1950.5(c)(5)(B) |
-| `deposit-receipts` | When deductions for repairs or cleaning total more than $125, the itemized statement must include copies of receipts or invoices (or a good-faith estimate, followed by receipts, if the work could not be completed within 21 days). | Cal. Civ. Code § 1950.5(h)(2)–(4) |
-| `deposit-photos` | Newer rules require landlords to take photos of the unit at certain points (for example, at move-out before repairs or cleaning, and at move-in for tenancies starting on or after a 2025 effective date) to support deductions. | Cal. Civ. Code § 1950.5 (as amended by AB 2801, 2024; dates to confirm) |
+| `deposit-photos` | Since April 1, 2025, a landlord must photograph the unit after the tenant returns it but before any repairs or cleaning that will be deducted, and again after that work is done. For tenancies that begin on or after July 1, 2025, the landlord must also photograph the unit at move-in. Photos must be given to the tenant with any repair or cleaning deduction. | Cal. Civ. Code § 1950.5(g)(1)–(2), (h)(2)(D) |
 | `late-fee-reasonable` | A late fee must be a reasonable estimate of the landlord's actual costs from late payment; a fee set as a penalty may be unenforceable. A late fee above about 5% of monthly rent is commonly treated as a signal to look more closely. | Cal. Civ. Code § 1671(d); Orozco v. Casimiro (2004) 121 Cal.App.4th Supp. 7 |
 | `screening-fee` | An application screening fee is capped by state law at an amount adjusted each year for inflation, and the applicant is entitled to an itemized receipt; check the current cap rather than relying on a number in this kit. | Cal. Civ. Code § 1950.6 |
 | `repair-and-deduct` | After giving the landlord notice and a reasonable time to fix a habitability problem, a tenant may in some cases pay for the repair and deduct it from rent, up to one month's rent and no more than twice in 12 months; the conditions are strict. | Cal. Civ. Code § 1942 |

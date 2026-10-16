@@ -69,7 +69,7 @@ Deposits
   Key deposit:             $____
   Cleaning deposit:        $____
   Other (name):            $____
-  Total deposits:          $____  = sum of the lines above
+  Total deposits:          $____  = sum of the lines above (not the first month's rent)
   Total ÷ monthly rent:    ____ months
   Compare: one month for most landlords [F:deposit-limit-general]; up to two months
   for a small landlord who fits the definition [F:deposit-limit-small-landlord]; one

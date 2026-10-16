@@ -22,7 +22,7 @@ Where LegalFriend has attorney-approved standard wording for a type of clause, i
 
 ## Deposits, added together
 
-Security, pet, key, and cleaning deposits generally count together toward the limit. [F:deposit-what-counts] For most leases, the total may not be more than one month's rent. [F:deposit-limit-general] A small landlord who fits the definition may collect up to two months' rent [F:deposit-limit-small-landlord], but not when the tenant is a service member. [F:deposit-limit-servicemember]
+Security, pet, key, and cleaning deposits generally count together toward the limit. [F:deposit-what-counts] For most leases, the total may not be more than one month's rent, not counting the first month's rent. [F:deposit-limit-general] A small landlord who fits the definition may collect up to two months' rent [F:deposit-limit-small-landlord], but not when the tenant is a service member. [F:deposit-limit-servicemember]
 
 LegalFriend's standard wording: "All deposits combined (security + pet + other) must comply with CA limits: 1 month rent for most landlords, 2 months for small owners (≤2 properties, ≤4 units)"
 
