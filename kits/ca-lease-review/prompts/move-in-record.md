@@ -27,9 +27,9 @@ move-in: a room-by-room checklist and a photo log they can use later at move-out
 5. Add tips for keeping the record: back up the files in two places, keep the original
    files (which carry date information), and send a copy of the completed checklist to the
    landlord in writing and keep that message.
-6. Mention that newer rules require landlords to take photos at certain points, including
-   at move-in for some tenancies, to support deductions [F:deposit-photos]. The dates are
-   still being confirmed, so the person's own record is useful either way.
+6. Mention that for tenancies that begin on or after July 1, 2025, the landlord must
+   photograph the unit at move-in [F:deposit-photos]. The person's own record is useful
+   either way.
 7. If anything found affects basic living conditions — heating, plumbing, hot water,
    electrical, weatherproofing, pests, safe floors or stairs — note it separately.
    California rental housing must meet basic habitability standards [F:habitability].

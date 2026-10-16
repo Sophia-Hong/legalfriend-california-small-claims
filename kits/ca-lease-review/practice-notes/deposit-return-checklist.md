@@ -46,7 +46,7 @@ Within 21 days after the tenant moves out, the landlord must return the deposit 
 
 Go line by line. A landlord may deduct only what is reasonably necessary for unpaid rent, repairing damage beyond ordinary wear and tear caused by the tenant or guests, cleaning needed to return the unit to its move-in level of cleanliness, and (if the lease allows) replacing personal property beyond ordinary wear and tear. [F:deposit-allowed-deductions] LegalFriend's standard wording for what falls outside damage is: "Reasonable wear and tear from normal use".
 
-For each line, note which category it seems to fit, what your photos show, and whether paperwork is attached. When repair and cleaning deductions total more than $125, the statement must include copies of receipts or invoices, or a good-faith estimate followed by receipts if the work could not be finished in 21 days. [F:deposit-receipts] Also check that no part of the deposit was treated as nonrefundable. [F:deposit-no-nonrefundable]
+For each line, note which category it seems to fit, what your photos show, and whether paperwork is attached. Each repair or cleaning deduction needs support: bills, invoices, or receipts (or, for the landlord's own work, the time spent and hourly rate), plus photos and a written explanation of the cost. These rules do not apply if repair and cleaning deductions total $125 or less or you signed a valid waiver near move-out, but you can still ask for the documents within 14 days of receiving the statement. [F:deposit-receipts] Also check that no part of the deposit was treated as nonrefundable. [F:deposit-no-nonrefundable]
 
 ## Asking about it in writing
 

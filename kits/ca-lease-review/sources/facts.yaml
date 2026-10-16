@@ -12,35 +12,45 @@ facts:
 
   # ---------- Security deposits ----------
   - id: deposit-what-counts
-    statement: In California, "security" for a residential lease includes any payment, fee, deposit, or charge used to cover unpaid rent, damage, or cleaning — so security, pet, key, and cleaning deposits generally count together toward the limit. Application screening fees are treated separately.
+    statement: In California, "security" for a residential lease includes any payment, fee, deposit, or charge used to cover unpaid rent, damage, or cleaning, including move-in fees charged to process a new tenant and any advance payment of rent — so security, pet, key, and cleaning deposits generally count together toward the limit. Application screening fees are treated separately.
     cite: Cal. Civ. Code § 1950.5(b)
     sources: [civ-1950-5]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, theo-workspace reports/legalfriend/2026-10-16-lease-review-1950_5-check.md c1492628c; § 1950.5 as amended by AB 414, eff. 2026-01-01, from the Legislature's bulk data pubinfo_2025): § 1950.5(b) includes charges "imposed at the beginning of the tenancy to be used to
+      reimburse the landlord for costs associated with processing a new tenant or … imposed as an
+      advance payment of rent." Clause added. The first month's rent is excluded from the limit
+      (see deposit-limit-general).
     approved_language: "All deposits combined (security + pet + other) must comply with CA limits: 1 month rent for most landlords, 2 months for small owners (≤2 properties, ≤4 units)"
   - id: deposit-limit-general
-    statement: For most residential leases since July 1, 2024, a landlord may not demand or receive total security deposits of more than one month's rent.
-    cite: Cal. Civ. Code § 1950.5(c)(1) (as amended by AB 12, 2023)
+    statement: For most residential leases since July 1, 2024, a landlord may not demand or receive total security deposits of more than one month's rent, not counting the first month's rent.
+    cite: Cal. Civ. Code § 1950.5(c)(1), (c)(6)
     sources: [civ-1950-5]
     confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, theo-workspace reports/legalfriend/2026-10-16-lease-review-1950_5-check.md c1492628c; § 1950.5 as amended by AB 414, eff. 2026-01-01, from the Legislature's bulk data pubinfo_2025): (c)(1) counts the limit "in addition to any rent for the first month paid on or before
+      initial occupancy"; (c)(6) — not applicable to security collected or demanded before
+      July 1, 2024. Clause added so advance rent in deposit-what-counts is not read as
+      including the first month's rent.
     approved_language: "Deposits exceed CA standard limit (1 month rent). Legal only if landlord owns ≤2 properties with ≤4 units total."
   - id: deposit-limit-small-landlord
     statement: A small landlord — generally a natural person (or an LLC or family trust made up of natural persons) who owns no more than two residential rental properties with no more than four units in total — may collect up to two months' rent as security.
-    cite: Cal. Civ. Code § 1950.5(c)(2), (c)(4) (subsections to confirm)
+    cite: Cal. Civ. Code § 1950.5(c)(5)(A), (C)
     sources: [civ-1950-5]
     confidence: medium
     verified: false
     approved_language: "Deposits exceed CA legal limits (1 month for most landlords, 2 months for small landlords with ≤2 properties)."
   - id: deposit-limit-servicemember
     statement: The small-landlord exception does not apply when the tenant is a service member; the one-month limit applies.
-    cite: Cal. Civ. Code § 1950.5(c)(3) (subsection to confirm)
+    cite: Cal. Civ. Code § 1950.5(c)(5)(B)
     sources: [civ-1950-5]
     confidence: medium
     verified: false
   - id: deposit-no-nonrefundable
     statement: A lease may not make a security deposit, or any part of it, nonrefundable.
-    cite: Cal. Civ. Code § 1950.5(m)
+    cite: Cal. Civ. Code § 1950.5(n)
     sources: [civ-1950-5]
     confidence: high
     verified: false
@@ -53,16 +63,18 @@ facts:
     approved_language: "Reasonable wear and tear from normal use"
   - id: deposit-21-days
     statement: Within 21 days after the tenant moves out, the landlord must return the deposit or send an itemized statement of deductions with any remaining balance.
-    cite: Cal. Civ. Code § 1950.5(g)(1)
+    cite: Cal. Civ. Code § 1950.5(h)(1)
     sources: [civ-1950-5]
     confidence: high
     verified: false
   - id: deposit-receipts
-    statement: When deductions for repairs or cleaning total more than $125, the itemized statement must include copies of receipts or invoices (or a good-faith estimate, followed by receipts, if the work could not be completed within 21 days).
-    cite: Cal. Civ. Code § 1950.5(g)(2)–(3)
+    statement: "With the itemized statement, the landlord must include support for each repair or cleaning deduction: copies of bills, invoices, or receipts for work done by others and for materials, or, for work the landlord or an employee did, a description of the work with the time spent and the hourly rate, plus photographs of the unit and a written explanation of the cost. If the work cannot be finished, or the bills are not in hand, within 21 days, the landlord may deduct a good-faith estimate and must send the documents within 14 days after the work is done or the bills arrive. These document rules do not apply if repair and cleaning deductions total $125 or less, or if the tenant signed a valid waiver near move-out — but if the tenant asks for the documents within 14 days of receiving the statement, the landlord must provide them within 14 days."
+    cite: Cal. Civ. Code § 1950.5(h)(2)–(5)
     sources: [civ-1950-5]
-    confidence: medium
+    confidence: high
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, theo-workspace reports/legalfriend/2026-10-16-lease-review-1950_5-check.md c1492628c; § 1950.5 as amended by AB 414, eff. 2026-01-01, from the Legislature's bulk data pubinfo_2025): statement is Yul's wording from (h)(2)(A)–(D), (h)(3), (h)(4)(A)–(B), (h)(5).
   - id: deposit-pre-moveout-inspection
     statement: A tenant may request an initial inspection before moving out, no earlier than two weeks before the tenancy ends, so the tenant has a chance to fix identified problems; the landlord must tell the tenant in writing about this right.
     cite: Cal. Civ. Code § 1950.5(f)
@@ -70,17 +82,31 @@ facts:
     confidence: high
     verified: false
   - id: deposit-photos
-    statement: Newer rules require landlords to take photos of the unit at certain points (for example, at move-out before repairs or cleaning, and at move-in for tenancies starting on or after a 2025 effective date) to support deductions.
-    cite: Cal. Civ. Code § 1950.5 (as amended by AB 2801, 2024; dates to confirm)
+    statement: Since April 1, 2025, a landlord must photograph the unit after the tenant returns it but before any repairs or cleaning that will be deducted, and again after that work is done. For tenancies that begin on or after July 1, 2025, the landlord must also photograph the unit at move-in. Photos must be given to the tenant with any repair or cleaning deduction.
+    cite: Cal. Civ. Code § 1950.5(g)(1)–(2), (h)(2)(D)
     sources: [civ-1950-5]
     confidence: medium
     verified: false
+    source_check: >-
+      2026-10-16 (Yul, theo-workspace reports/legalfriend/2026-10-16-lease-review-1950_5-check.md c1492628c; § 1950.5 as amended by AB 414, eff. 2026-01-01, from the Legislature's bulk data pubinfo_2025): dates from (g)(1) (move-in, tenancies beginning on or after 2025-07-01) and (g)(2)
+      (after return and after repairs, from 2025-04-01); statement is Yul's wording. The bill-name
+      attribution was removed — not confirmed in this data.
   - id: deposit-bad-faith
     statement: If a landlord keeps a deposit in bad faith, a court may award statutory damages of up to twice the amount of the deposit in addition to actual damages.
-    cite: Cal. Civ. Code § 1950.5(l)
+    cite: Cal. Civ. Code § 1950.5(m)
     sources: [civ-1950-5]
     confidence: high
     verified: false
+  - id: deposit-small-claims
+    statement: A tenant can bring a security deposit case in small claims court, including a claim for bad-faith (statutory) damages, as long as the total amount claimed — actual and statutory damages together — is within the small claims limit.
+    cite: Cal. Civ. Code § 1950.5(o); Cal. Code Civ. Proc. §§ 116.220, 116.221
+    sources: [civ-1950-5, ccp-116-221]
+    confidence: high
+    verified: false
+    source_check: >-
+      2026-10-16 (Yul, theo-workspace reports/legalfriend/2026-10-16-lease-review-1950_5-check.md c1492628c; § 1950.5 as amended by AB 414, eff. 2026-01-01, from the Legislature's bulk data pubinfo_2025): (o) "An action under this section may be maintained in small claims court if the damages
+      claimed, whether actual, statutory, or both, are within the jurisdictional amount allowed by
+      Section 116.220 or 116.221." Fact as proposed by Yul.
   - id: small-claims-limit
     statement: A natural person may generally sue for up to $12,500 in California small claims court, which is where many deposit disputes are heard.
     cite: Cal. Code Civ. Proc. § 116.221

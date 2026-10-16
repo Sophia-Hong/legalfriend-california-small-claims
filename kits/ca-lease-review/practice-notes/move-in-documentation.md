@@ -43,7 +43,7 @@ Describe what you see in plain words: "two small nail holes above bed." Avoid gu
 - Keep the original files. They usually carry date and time information that a screenshot or edited copy may lose.
 - Back everything up in two places, and label files by room.
 
-Newer rules require landlords to take photos at certain points, including at move-in for some tenancies, to support deductions. [F:deposit-photos] The exact dates are still being confirmed, and your own record is useful either way.
+For tenancies that begin on or after July 1, 2025, the landlord must photograph the unit at move-in. [F:deposit-photos] Your own record is useful either way.
 
 ## Share it in writing
 

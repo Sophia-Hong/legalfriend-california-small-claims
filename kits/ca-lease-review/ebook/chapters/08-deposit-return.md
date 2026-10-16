@@ -50,11 +50,11 @@ Whether a particular item is wear and tear or damage depends on the details. You
 
 Before you return the keys, repeat your move-in walk-through. Photograph the same spots from the same angles. Note the date and time you returned the keys, and give the landlord your new mailing address in writing.
 
-Newer rules require landlords to take photos of the unit at certain points to support deductions. Examples include at move-out before repairs or cleaning, and at move-in for tenancies starting on or after a 2025 effective date [F:deposit-photos]. Check the official source for the exact dates and requirements [S:civ-1950-5].
+Since April 1, 2025, a landlord must photograph the unit after you return it but before any repairs or cleaning that will be deducted, and again after that work is done. For tenancies that begin on or after July 1, 2025, the landlord must also photograph the unit at move-in. Photos must be given to you with any repair or cleaning deduction [F:deposit-photos]. Check the official source for the full text [S:civ-1950-5].
 
 Within 21 days after the tenant moves out, the landlord must return the deposit or send an itemized statement of deductions with any remaining balance [F:deposit-21-days]. An "itemized statement" lists each deduction separately with its amount.
 
-When deductions for repairs or cleaning total more than $125, the statement must include copies of receipts or invoices. If the work could not be completed within 21 days, the landlord may send a good-faith estimate, followed by the receipts [F:deposit-receipts].
+For each repair or cleaning deduction, the statement must come with support: bills, invoices, or receipts for work done by others and for materials, or, for work the landlord or an employee did, a description with the time spent and the hourly rate, plus photos and a written explanation of the cost. If the work could not be finished, or the bills were not in hand, within 21 days, the landlord may deduct a good-faith estimate and send the documents within 14 days after the work is done or the bills arrive. These rules do not apply if repair and cleaning deductions total $125 or less, or if you signed a valid waiver near move-out — but if you ask for the documents within 14 days of receiving the statement, the landlord must provide them within 14 days [F:deposit-receipts].
 
 ## If you disagree with the deductions
 
@@ -78,7 +78,7 @@ Clear, written communication is the best place to start.
 - [ ] Took move-out photos from the same angles as move-in.
 - [ ] Gave the landlord a forwarding address in writing and noted the key-return date.
 - [ ] Counted 21 days from move-out on a calendar.
-- [ ] Checked any itemized statement for receipts where deductions total more than $125.
+- [ ] Checked that each repair or cleaning deduction has support (bills or receipts, or time and hourly rate for the landlord's own work, plus photos and a cost explanation), or asked for it within 14 days of getting the statement.
 - [ ] If there is a dispute, sent a written request before taking further steps.
 
 ## Official sources for this chapter

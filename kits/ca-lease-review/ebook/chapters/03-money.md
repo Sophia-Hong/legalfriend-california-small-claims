@@ -26,7 +26,7 @@ The kit's `prompts/lease-extraction.md` prompt can build this list from your lea
 
 ## What counts as a deposit
 
-In California, "security" for a residential lease includes any payment, fee, deposit, or charge used to cover unpaid rent, damage, or cleaning. So security, pet, key, and cleaning deposits generally count together toward the limit [F:deposit-what-counts]. Application screening fees are treated separately [F:deposit-what-counts].
+In California, "security" for a residential lease includes any payment, fee, deposit, or charge used to cover unpaid rent, damage, or cleaning, including move-in fees charged to process a new tenant and any advance payment of rent. So security, pet, key, and cleaning deposits generally count together toward the limit [F:deposit-what-counts]. Application screening fees are treated separately [F:deposit-what-counts].
 
 This means the name on a charge does not decide how it is treated. A "pet deposit" or "cleaning fee" that covers damage or cleaning is generally part of the deposit total.
 
@@ -34,7 +34,7 @@ This means the name on a charge does not decide how it is treated. A "pet deposi
 
 ## Deposit limits
 
-**The general rule.** For most residential leases since July 1, 2024, a landlord may not demand or receive total security deposits of more than one month's rent [F:deposit-limit-general].
+**The general rule.** For most residential leases since July 1, 2024, a landlord may not demand or receive total security deposits of more than one month's rent, not counting the first month's rent [F:deposit-limit-general].
 
 **Small landlords.** A small landlord may collect up to two months' rent as security. A "small landlord" here is generally a natural person (or an LLC or family trust made up of natural persons) who owns no more than two residential rental properties with no more than four units in total [F:deposit-limit-small-landlord].
 
