@@ -27,7 +27,7 @@ unverified. `python3 scripts/build_kit.py --draft` builds a marked review copy.
 `python3 scripts/check_content.py` prints the status of every file and how many unverified
 facts each uses.
 
-## Start here: medium-confidence facts (12)
+## Start here: medium-confidence facts (13)
 
 These are the facts most likely to need a correction (subsection numbers, exact deadlines,
 details):
@@ -45,6 +45,7 @@ details):
 | `statement-of-assets` | Unless the judgment is paid or appealed, the losing party generally must complete a Judgment Debtor's Statement of Assets (form SC-133) and send it to the winning party within the time the law sets. | Cal. Code Civ. Proc. § 116.830; SC-133 |
 | `enforcement-wait` | The winning party generally must wait until the time to appeal or to ask the court to vacate the judgment has passed before starting collection. | Cal. Code Civ. Proc. § 116.810 |
 | `enforcement-tools` | Common collection tools include a writ of execution (EJ-130) used for bank levies and wage garnishment, an abstract of judgment (EJ-001) that creates a lien on the debtor's real property in a county once it is recorded with that county's recorder, and an order for the debtor to appear for examination. | Cal. Code Civ. Proc. §§ 699.510, 697.310(a), 708.110; forms EJ-130, EJ-001 |
+| `judgment-ten-years` | A California money judgment generally expires after 10 years unless it is renewed before then. Since January 1, 2023, some judgments can be renewed only once, for 5 years — California Courts describes this as applying when the debtor is a person (not a business or government agency), the principal owed is less than $200,000 for a medical expense or less than $50,000 for a personal debt, and the debt is not from a tort, fraud, unpaid wages, or other money owed to an employee. | Cal. Code Civ. Proc. §§ 683.020, 683.110(c)–(d), 683.120(c); California Courts, Renew a small claims judgment |
 | `satisfaction` | When the judgment is paid in full, the judgment creditor must file an Acknowledgment of Satisfaction of Judgment right away — usually form SC-290, or form EJ-100 (signed in front of a notary) if a lien was recorded on the debtor's real estate. If the debtor asks in writing and the creditor, without good cause, does not file within 14 days of the request, the creditor can be liable for the debtor's damages plus $50. | Cal. Code Civ. Proc. § 116.850(a)–(b); SC-290; EJ-100 |
 
 ## Gaps the drafts avoided (candidates for new facts)
