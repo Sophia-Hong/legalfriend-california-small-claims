@@ -32,7 +32,7 @@ The timeline becomes the spine of your story. Everything else hangs off it.
 
 It often helps when each exhibit shows one thing. A contract shows the deal. A receipt shows payment. A photo shows condition on a date. When one item tries to show everything, the key detail gets lost.
 
-If you asked the other side to pay before filing, keep a copy of that request. The plaintiff's claim must state whether the plaintiff asked the defendant to pay before filing (or why not). [F:demand-first] [S:jcc-form-sc-100]
+If you asked the other side to pay before filing, keep a copy of that request. SC-100 asks whether you asked the defendant to pay before filing and, if not, why not. [F:demand-first] [S:jcc-form-sc-100]
 
 ## Labeling
 

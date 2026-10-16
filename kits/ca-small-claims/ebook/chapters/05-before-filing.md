@@ -3,8 +3,8 @@ chapter: 5
 title: Before Filing
 stages: [prefiling]
 status: ai_draft_pending_attorney_review
-facts_used: [demand-first, limit-natural, limit-entity, waive-excess, sol-written-contract, sol-oral-contract, sol-property-damage, sol-personal-injury, government-claim, advisors]
-sources_used: [ccp-116-320, jcc-form-sc-100, ccp-116-221, ccp-116-220, ccp-337, ccp-339, ccp-338, ccp-335-1, gov-911-2, gov-945-4, cc-selfhelp-small-claims, ccp-116-260]
+facts_used: [demand-first, limit-natural, limit-entity, waive-excess, sol-written-contract, sol-oral-contract, sol-property-damage, sol-personal-injury, government-claim, advisors, government-suit-deadline]
+sources_used: [ccp-116-320, jcc-form-sc-100, ccp-116-221, ccp-116-220, ccp-337, ccp-339, ccp-338, ccp-335-1, gov-911-2, gov-945-4, cc-selfhelp-small-claims, ccp-116-260, gov-912-4, gov-945-6]
 ---
 
 # Before Filing
@@ -15,7 +15,7 @@ sources_used: [ccp-116-320, jcc-form-sc-100, ccp-116-221, ccp-116-220, ccp-337, 
 
 ## Asking for payment first
 
-The plaintiff's claim form has to say whether the plaintiff asked the defendant to pay before filing, or explain why not. Form SC-100 asks this question. [F:demand-first] [S:jcc-form-sc-100] The exact wording of that requirement is in the statute. Check the current text on the official source. [S:ccp-116-320]
+Where possible, ask the defendant to pay before you file. If your claim is for the return of property, ask for the property back. Form SC-100 item 4 asks whether you did and, if not, why not, and says the request can be made in person, in writing, or by phone. [F:demand-first] [S:jcc-form-sc-100] The statute behind this question is Code of Civil Procedure § 116.320(b)(3). Check the current text on the official source. [S:ccp-116-320]
 
 A request for payment is often called a "demand." It can be a letter, an email, or another written message. A written request is easier to prove later than a phone call.
 
@@ -103,6 +103,8 @@ These are general periods only. This kit does not explain when a period starts o
 
 **Claims against a public entity.** Before suing a public entity, such as a city, county, state agency, or school district, a claimant usually must first present a government claim. California Courts lists the deadlines as generally 6 months from the injury for an injury to you or damage to something you own, and 1 year for a broken contract or damage to your real estate, with exceptions. The claimant may sue only after the claim is denied or deemed denied. [F:government-claim] [S:cc-selfhelp-government-claim] [S:gov-911-2] [S:gov-945-4]
 
+**The deadline to sue after a government claim.** If the agency mails or hands you a written rejection, you must file your lawsuit within 6 months of that date. If the agency does not act within 45 days, the claim is treated as rejected; if you never got a written rejection notice, you generally have 2 years from when the claim arose to sue. Missing this deadline can end the claim, so write the date on your calendar as soon as you get a rejection. [F:government-suit-deadline] [S:gov-912-4] [S:gov-945-6]
+
 > **LegalFriend practice note** — Put the key dates from your timeline next to these periods on one page. Seeing them side by side makes it easier to notice a question that needs checking early, rather than close to a deadline.
 
 ## Checklist
@@ -118,6 +120,7 @@ These are general periods only. This kit does not explain when a period starts o
 - [ ] I compared my total to the current limit that applies to me.
 - [ ] I checked the general time limits and noted any questions.
 - [ ] If the other side is a public entity, I checked the government claim rules.
+- [ ] If my government claim was rejected, I wrote down the deadline to file my lawsuit [F:government-suit-deadline].
 - [ ] I listed open questions to ask a small claims advisor.
 
 ## Official sources for this chapter
@@ -132,6 +135,8 @@ These are general periods only. This kit does not explain when a period starts o
 - [S:ccp-335-1] Cal. Code of Civil Procedure § 335.1 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=335.1
 - [S:gov-911-2] Cal. Government Code § 911.2 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=911.2
 - [S:gov-945-4] Cal. Government Code § 945.4 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=945.4
+- [S:gov-912-4] Cal. Government Code § 912.4 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=912.4
+- [S:gov-945-6] Cal. Government Code § 945.6 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=945.6
 - [S:cc-selfhelp-small-claims] California Small Claims Process — https://selfhelp.courts.ca.gov/small-claims
 - [S:ccp-116-260] Cal. Code of Civil Procedure § 116.260 — https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=116.260
 - [S:cc-selfhelp-small-claims-advisor] Find your Small Claims Advisor — https://selfhelp.courts.ca.gov/small-claims-advisor

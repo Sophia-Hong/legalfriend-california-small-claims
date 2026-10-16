@@ -57,7 +57,7 @@ Unless the judgment is paid or appealed, the judgment debtor generally must comp
 If a judgment is not paid, the official sources describe several collection tools. Common ones include:
 
 - **Writ of execution (form EJ-130).** A court document used for bank levies and wage garnishment [F:enforcement-tools]. A "levy" means taking money from an account to pay the judgment. "Wage garnishment" means taking part of a paycheck.
-- **Abstract of judgment (form EJ-001).** A document that creates a lien on real property [F:enforcement-tools]. A "lien" is a legal claim attached to property, such as a house or land.
+- **Abstract of judgment (form EJ-001).** A document that creates a lien on the debtor's real property in a county once you record it with that county's recorder [F:enforcement-tools]. A "lien" is a legal claim attached to property, such as a house or land.
 - **Order to appear for examination.** An order for the debtor to appear for an examination [F:enforcement-tools]. For what this involves, check the official source [S:cc-selfhelp-small-claims].
 
 Each tool has its own forms, steps, and possible fees. There may also be limits on what can be collected. This kit does not cover those details. Check the official source and the form pages before using any tool [S:cc-selfhelp-small-claims] [S:jcc-form-ej-130] [S:jcc-form-ej-001]. Most counties are required to have a free small claims advisor, and the services vary by county [F:advisors].

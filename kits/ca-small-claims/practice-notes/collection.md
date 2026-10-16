@@ -42,7 +42,7 @@ Unless the judgment is paid or appealed, the losing party generally must complet
 
 ## Common collection tools
 
-Common collection tools include a writ of execution (EJ-130), used for bank levies and wage garnishment; an abstract of judgment (EJ-001), which creates a lien on real property; and an order for the debtor to appear for examination. [F:enforcement-tools] [S:jcc-form-ej-130] [S:jcc-form-ej-001]
+Common collection tools include a writ of execution (EJ-130), used for bank levies and wage garnishment; an abstract of judgment (EJ-001), which creates a lien on the debtor's real property in a county once it is recorded with that county's recorder; and an order for the debtor to appear for examination. [F:enforcement-tools] [S:jcc-form-ej-130] [S:jcc-form-ej-001]
 
 A few plain-language terms:
 

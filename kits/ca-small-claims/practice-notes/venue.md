@@ -54,7 +54,7 @@ Practical steps that help:
 
 ## Venue can affect service timing
 
-Where the defendant is compared to where you file can matter for deadlines. Service must be completed at least 15 days before the hearing if the defendant is in the county where the case was filed, or at least 20 days before if the defendant is outside that county. [F:service-deadline]
+Where the defendant is compared to where you file can matter for deadlines. Service must be completed at least 15 days before the hearing if the defendant lives in the county where the case was filed, or at least 20 days before if the defendant lives outside that county. [F:service-deadline]
 
 ## Common pitfalls
 
