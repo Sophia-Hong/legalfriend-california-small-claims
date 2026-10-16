@@ -27,20 +27,20 @@ facts:
     approved_language: "Deposits exceed CA standard limit (1 month rent). Legal only if landlord owns ≤2 properties with ≤4 units total."
   - id: deposit-limit-small-landlord
     statement: A small landlord — generally a natural person (or an LLC or family trust made up of natural persons) who owns no more than two residential rental properties with no more than four units in total — may collect up to two months' rent as security.
-    cite: Cal. Civ. Code § 1950.5(c)(2), (c)(4) (subsections to confirm)
+    cite: Cal. Civ. Code § 1950.5(c)(5)(A), (C)
     sources: [civ-1950-5]
     confidence: medium
     verified: false
     approved_language: "Deposits exceed CA legal limits (1 month for most landlords, 2 months for small landlords with ≤2 properties)."
   - id: deposit-limit-servicemember
     statement: The small-landlord exception does not apply when the tenant is a service member; the one-month limit applies.
-    cite: Cal. Civ. Code § 1950.5(c)(3) (subsection to confirm)
+    cite: Cal. Civ. Code § 1950.5(c)(5)(B)
     sources: [civ-1950-5]
     confidence: medium
     verified: false
   - id: deposit-no-nonrefundable
     statement: A lease may not make a security deposit, or any part of it, nonrefundable.
-    cite: Cal. Civ. Code § 1950.5(m)
+    cite: Cal. Civ. Code § 1950.5(n)
     sources: [civ-1950-5]
     confidence: high
     verified: false
@@ -53,13 +53,13 @@ facts:
     approved_language: "Reasonable wear and tear from normal use"
   - id: deposit-21-days
     statement: Within 21 days after the tenant moves out, the landlord must return the deposit or send an itemized statement of deductions with any remaining balance.
-    cite: Cal. Civ. Code § 1950.5(g)(1)
+    cite: Cal. Civ. Code § 1950.5(h)(1)
     sources: [civ-1950-5]
     confidence: high
     verified: false
   - id: deposit-receipts
     statement: When deductions for repairs or cleaning total more than $125, the itemized statement must include copies of receipts or invoices (or a good-faith estimate, followed by receipts, if the work could not be completed within 21 days).
-    cite: Cal. Civ. Code § 1950.5(g)(2)–(3)
+    cite: Cal. Civ. Code § 1950.5(h)(2)–(4)
     sources: [civ-1950-5]
     confidence: medium
     verified: false
@@ -77,7 +77,7 @@ facts:
     verified: false
   - id: deposit-bad-faith
     statement: If a landlord keeps a deposit in bad faith, a court may award statutory damages of up to twice the amount of the deposit in addition to actual damages.
-    cite: Cal. Civ. Code § 1950.5(l)
+    cite: Cal. Civ. Code § 1950.5(m), (h)(7)
     sources: [civ-1950-5]
     confidence: high
     verified: false
