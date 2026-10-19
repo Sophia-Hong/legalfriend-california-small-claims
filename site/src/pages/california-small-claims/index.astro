@@ -60,6 +60,7 @@ const never = [
                 <input class="wl-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <p class="wl-done" role="status" hidden>Thanks. We'll email you once when the kit is ready.</p>
                 <p class="wl-err" role="alert" hidden>Something went wrong. Please try again.</p>
+                <p class="wl-bad" role="alert" hidden>That doesn't look like an email address.</p>
                 <p class="cta-note wl-privacy">We'll use your email only to tell you once when the California Small Claims Kit is available. Please don't include anything about your case. See our <a href="/privacy">Privacy Policy</a>.</p>
               </form>
             ) : (
@@ -143,7 +144,7 @@ const never = [
   .wl-row input[type="email"] { flex: 1 1 220px; min-width: 0; padding: 12px 14px; font: inherit; font-size: 16px; border: 1px solid var(--cloud); border-radius: var(--radius); }
   .wl-sr, .wl-hp { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .wl-done, .wl-err { margin: 0; font-weight: 600; }
-  .wl-err { color: #b42318; }
+  .wl-err, .wl-bad { color: #b42318; }
   .wl-privacy { margin: 0; }
 </style>
 
@@ -153,8 +154,10 @@ const never = [
   if (form) {
     const done = form.querySelector<HTMLElement>(".wl-done")!
     const err = form.querySelector<HTMLElement>(".wl-err")!
+    const bad = form.querySelector<HTMLElement>(".wl-bad")!
     const row = form.querySelector<HTMLElement>(".wl-row")!
-    const show = (ok: boolean) => { done.hidden = !ok; err.hidden = ok; if (ok) row.hidden = true }
+    // ok | "bad_email" (server refused the address: Shirl 1792396185) | anything else = generic retry line
+    const show = (ok: boolean, reason = "") => { done.hidden = !ok; bad.hidden = ok || reason !== "bad_email"; err.hidden = ok || reason === "bad_email"; if (ok) row.hidden = true }
     const q = new URLSearchParams(location.search).get("waitlist")
     if (q) show(q === "ok")
     form.addEventListener("submit", async (e) => {
@@ -162,7 +165,8 @@ const never = [
       const data = Object.fromEntries(new FormData(form) as any)
       try {
         const r = await fetch("/api/waitlist", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
-        show(r.ok)
+        const j = await r.json().catch(() => ({}))
+        show(r.ok, j.reason || "")
       } catch {
         show(false)
       }
