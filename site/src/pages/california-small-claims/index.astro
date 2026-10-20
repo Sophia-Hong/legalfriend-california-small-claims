@@ -3,7 +3,7 @@
 // Stay within PRD §6.4 marketing guardrails.
 import Base from "../../layouts/Base.astro"
 import RelationshipNotice from "../../components/RelationshipNotice.astro"
-import { KIT_CHECKOUT_URL, KIT_PRICE_LABEL } from "../../site"
+import { KIT_CHECKOUT_URL, KIT_PRICE_LABEL, WAITLIST_OPEN } from "../../site"
 
 const stages = [
   ["Before filing", "Small claims fit, the right defendant, venue, and pre-filing checklists."],
@@ -48,6 +48,21 @@ const never = [
                 <a class="btn btn--primary" href={KIT_CHECKOUT_URL}>Get the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
                 <span class="cta-note">{KIT_PRICE_LABEL} one-time purchase · Full refund until you download · <a href="/terms">Terms</a></span>
               </>
+            ) : WAITLIST_OPEN ? (
+              <form class="waitlist" id="waitlist" method="post" action="/api/waitlist" data-waitlist>
+                <p class="wl-lead">The kit isn't ready yet. Leave your email and we'll let you know once when it is.</p>
+                <input type="hidden" name="kit" value="ca-small-claims" />
+                <div class="wl-row">
+                  <label class="wl-sr" for="wl-email">Email</label>
+                  <input id="wl-email" type="email" name="email" required maxlength="254" autocomplete="email" placeholder="you@example.com" />
+                  <button class="btn btn--primary" type="submit">Notify me</button>
+                </div>
+                <input class="wl-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <p class="wl-done" role="status" hidden>Thanks. We'll email you once when the kit is ready.</p>
+                <p class="wl-err" role="alert" hidden>Something went wrong. Please try again.</p>
+                <p class="wl-bad" role="alert" hidden>That doesn't look like an email address.</p>
+                <p class="cta-note wl-privacy">We'll use your email only to tell you once when the California Small Claims Kit is available. Please don't include anything about your case. See our <a href="/privacy">Privacy Policy</a>.</p>
+              </form>
             ) : (
               <>
                 <a class="btn btn--primary" aria-disabled="true" role="link">Get the California Small Claims Kit <span class="arrow" aria-hidden="true">→</span></a>
@@ -121,3 +136,40 @@ const never = [
       </div>
     </section>
 </Base>
+
+<style>
+  .waitlist { display: grid; gap: 10px; max-width: 460px; }
+  .wl-lead { margin: 0; }
+  .wl-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .wl-row input[type="email"] { flex: 1 1 220px; min-width: 0; padding: 12px 14px; font: inherit; font-size: 16px; border: 1px solid var(--cloud); border-radius: var(--radius); }
+  .wl-sr, .wl-hp { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wl-done, .wl-err { margin: 0; font-weight: 600; }
+  .wl-err, .wl-bad { color: #b42318; }
+  .wl-privacy { margin: 0; }
+</style>
+
+<script>
+  // Fetch submit (no reload); without JS the form posts and the function redirects back with ?waitlist=ok|error.
+  const form = document.querySelector<HTMLFormElement>("form[data-waitlist]")
+  if (form) {
+    const done = form.querySelector<HTMLElement>(".wl-done")!
+    const err = form.querySelector<HTMLElement>(".wl-err")!
+    const bad = form.querySelector<HTMLElement>(".wl-bad")!
+    const row = form.querySelector<HTMLElement>(".wl-row")!
+    // ok | "bad_email" (server refused the address: Shirl 1792396185) | anything else = generic retry line
+    const show = (ok: boolean, reason = "") => { done.hidden = !ok; bad.hidden = ok || reason !== "bad_email"; err.hidden = ok || reason === "bad_email"; if (ok) row.hidden = true }
+    const q = new URLSearchParams(location.search).get("waitlist")
+    if (q) show(q === "ok")
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault()
+      const data = Object.fromEntries(new FormData(form) as any)
+      try {
+        const r = await fetch("/api/waitlist", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
+        const j = await r.json().catch(() => ({}))
+        show(r.ok, j.reason || "")
+      } catch {
+        show(false)
+      }
+    })
+  }
+</script>
