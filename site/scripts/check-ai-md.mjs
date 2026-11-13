@@ -3,10 +3,13 @@
 //  - the intro line must equal the home page description
 //  - every sitemap page must be listed once, nothing else
 //  - each .md must have the same word sequence as the page's visible main text
+//  - each .md must have the same link targets, in order, as the links in the page's main text
+//  - each .md must be byte-identical to what the generator makes from the built page now
+//    (catches any later edit the word comparison can't see, e.g. a stray "*" or a changed URL)
 // Usage: node scripts/check-ai-md.mjs [distDir]
 import { readFileSync } from "node:fs"
 import { join } from "node:path"
-import { parse, pageMeta, mainNodes, htmlWords, mdWords, sitemapPaths, htmlFile, mdFile } from "./ai-md.mjs"
+import { parse, pageMeta, mainNodes, htmlWords, mdWords, htmlLinks, mdLinks, toMarkdown, sitemapPaths, htmlFile, mdFile } from "./ai-md.mjs"
 
 export function checkDist(dist) {
   const errors = []
@@ -29,6 +32,16 @@ export function checkDist(dist) {
         break
       }
     }
+    const la = htmlLinks(mainNodes(root), meta.canonical)
+    const lb = mdLinks(md)
+    const ln = Math.max(la.length, lb.length)
+    for (let i = 0; i < ln; i++) {
+      if (la[i] !== lb[i]) {
+        errors.push(`${p}: ${mdFile(p)} link ${i} differs: html "${la[i] ?? "(none)"}" vs md "${lb[i] ?? "(none)"}"`)
+        break
+      }
+    }
+    if (md !== toMarkdown(mainNodes(root), meta.canonical)) errors.push(`${p}: ${mdFile(p)} is not what the generator makes from the page`)
   }
 
   const lines = readFileSync(join(dist, "llms.txt"), "utf8").split("\n")

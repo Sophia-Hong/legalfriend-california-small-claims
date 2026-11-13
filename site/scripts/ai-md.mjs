@@ -248,6 +248,26 @@ export function mdWords(md) {
   return words
 }
 
+// Link targets of the page's main text, in order, resolved like the generator does. Independent of
+// toMarkdown: an <a> with visible text and a resolvable href is a link; nothing else is.
+export function htmlLinks(nodes, base) {
+  const out = []
+  const walk = (n) => {
+    if (typeof n === "string" || SKIP.has(n.tag) || hidden(n)) return
+    if (n.tag === "a" && n.attrs.href && textOf(n).trim()) {
+      try { out.push(new URL(n.attrs.href, base).href.replace(/\)/g, "%29").replace(/ /g, "%20")) } catch {}
+    }
+    n.children.forEach(walk)
+  }
+  nodes.forEach(walk)
+  return out
+}
+
+// Link targets in the Markdown, in order.
+export function mdLinks(md) {
+  return [...md.matchAll(/(?<!\\)\[(?:[^\]\\]|\\.)*\]\(([^)\s]*)\)/g)].map((m) => m[1])
+}
+
 // Pages come from the built sitemap.xml (the site's own list of public pages).
 export function sitemapPaths(xml) {
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname)
