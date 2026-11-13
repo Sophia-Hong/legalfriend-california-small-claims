@@ -24,7 +24,8 @@ const pages = paths.map((p) => {
 const home = pages.find((p) => p.path === "/")
 if (!home) throw new Error("home page missing from sitemap")
 const item = (p) => `- [${p.title}](${p.canonical}): ${p.description}`
-const blog = pages.filter((p) => p.path.startsWith("/blog/"))
+// Sorted by path: the sitemap lists posts in collection order, which differs between machines.
+const blog = pages.filter((p) => p.path.startsWith("/blog/")).sort((a, b) => (a.path < b.path ? -1 : 1))
 const rest = pages.filter((p) => !p.path.startsWith("/blog/"))
 const llms = [
   `# ${home.siteName}`,
