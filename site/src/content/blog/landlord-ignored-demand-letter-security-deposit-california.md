@@ -5,7 +5,7 @@ slug: landlord-ignored-demand-letter-security-deposit-california
 publishedAt: 2026-07-17
 updatedAt: 2026-07-18T04:02:26.433Z
 author: "Sohyun Sophia Hong"
-image: "https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-5-records-folder-stock.webp"
+image: "https://legalfriend.ai/blog-images/w1-5-records-folder-stock.webp"
 sourceUrl: https://lease.legalfriend.ai/blog/landlord-ignored-demand-letter-security-deposit-california
 ---
 
@@ -23,7 +23,7 @@ California has no universal fixed waiting period; your reply date is no separate
 
 Afterward, organize evidence. Wait longer or file SC-100 in small claims immediately. Small claims is a simpler court process for lower-dollar disputes.
 
-![Organized dispute records and demand letter paperwork on a desk](https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-5-records-folder-stock.webp)
+![Organized dispute records and demand letter paperwork on a desk](/blog-images/w1-5-records-folder-stock.webp)
 
 ## What should you check first?
 

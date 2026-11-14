@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/check-blog-images.mjs",
     "preview": "astro preview",
     "test": "node --experimental-strip-types --no-warnings --test test/*.test.ts"
   },

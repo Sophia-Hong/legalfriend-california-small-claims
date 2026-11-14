@@ -5,7 +5,7 @@ slug: landlord-cleaning-fee-security-deposit-california
 publishedAt: 2026-07-17
 updatedAt: 2026-07-18T04:02:25.943Z
 author: "Sohyun Sophia Hong"
-image: "https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-3-cleaning-line-blurred.webp"
+image: "https://legalfriend.ai/blog-images/w1-3-cleaning-line-blurred.webp"
 sourceUrl: https://lease.legalfriend.ai/blog/landlord-cleaning-fee-security-deposit-california
 ---
 
@@ -67,7 +67,7 @@ Attach or identify your move-in evidence. Name the statement date and exact clea
 
 My statement charged $230 for cleaning and $273.60 for painting. I reviewed both under the applicable standard. I accepted the cleaning charge as reasonable based on my record and disputed the painting charge in writing. After three emails, the painting charge was fully refunded.
 
-![Blurred itemized security deposit statement showing cleaning and painting deduction lines](https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-3-cleaning-line-blurred.webp)
+![Blurred itemized security deposit statement showing cleaning and painting deduction lines](/blog-images/w1-3-cleaning-line-blurred.webp)
 
 That result sets no rule for another statement. The $230 amount is not a California cleaning benchmark. A painting charge is not automatically improper. Careful review can support accepting one deduction and disputing another.
 

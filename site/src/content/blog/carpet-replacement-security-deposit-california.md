@@ -5,7 +5,7 @@ slug: carpet-replacement-security-deposit-california
 publishedAt: 2026-07-17
 updatedAt: 2026-07-18T04:02:25.401Z
 author: "Sohyun Sophia Hong"
-image: "https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-2-carpet-price-list-blurred.webp"
+image: "https://legalfriend.ai/blog-images/w1-2-carpet-price-list-blurred.webp"
 sourceUrl: https://lease.legalfriend.ai/blog/carpet-replacement-security-deposit-california
 ---
 
@@ -57,7 +57,7 @@ Useful-life math estimates the old carpet’s remaining value. One common method
 
 The guide calls its suggested deductions consistent with the law but not necessarily the law here. Its example assumes damage beyond repair. The math follows the damage and replacement questions.
 
-![Blurred vendor price list showing carpet cleaning and repair rates for California apartment turnover](https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-2-carpet-price-list-blurred.webp)
+![Blurred vendor price list showing carpet cleaning and repair rates for California apartment turnover](/blog-images/w1-2-carpet-price-list-blurred.webp)
 
 | State guide’s illustrative input or step | Calculation | Result |
 | --- | --- | --- |
