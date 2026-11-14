@@ -5,7 +5,7 @@ slug: no-receipts-security-deposit-deductions-california
 publishedAt: 2026-07-17
 updatedAt: 2026-07-18T04:02:26.904Z
 author: "Sohyun Sophia Hong"
-image: "https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-4-gms-price-list-blurred.webp"
+image: "https://legalfriend.ai/blog-images/w1-4-gms-price-list-blurred.webp"
 sourceUrl: https://lease.legalfriend.ai/blog/no-receipts-security-deposit-deductions-california
 ---
 
@@ -49,7 +49,7 @@ For outside work, the landlord should provide the provider's bill, invoice, or r
 
 Materials generally require a bill, invoice, or receipt. For regularly bought items, a vendor price list or other vendor document can qualify. It must reasonably document cost.
 
-![Blurred vendor price list page for painting and cleaning rates](https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-4-gms-price-list-blurred.webp)
+![Blurred vendor price list page for painting and cleaning rates](/blog-images/w1-4-gms-price-list-blurred.webp)
 
 The fourth category is required photographs plus a written cost explanation. For disputes over necessary cleaning, see [California security deposit cleaning fees](/blog/landlord-cleaning-fee-security-deposit-california).
 
