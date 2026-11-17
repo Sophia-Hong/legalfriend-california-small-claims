@@ -6,6 +6,10 @@
 //                           Unset = the button is shown as not yet available.
 export const SITE_LIVE = import.meta.env.PUBLIC_SITE_LIVE === "true"
 export const KIT_CHECKOUT_URL: string | undefined = import.meta.env.PUBLIC_KIT_CHECKOUT_URL || undefined
+// PUBLIC_WAITLIST_OPEN=true: while there is no checkout URL, the kit button becomes an email waitlist
+//                           (functions/api/waitlist.ts). Unset = "Not yet available." as before. Turn it on only
+//                           after the privacy policy line for waitlist emails is live (Theo 1792395887, Yul).
+export const WAITLIST_OPEN = import.meta.env.PUBLIC_WAITLIST_OPEN === "true"
 
 // Business details used on legal pages and checkout copy.
 export const COMPANY = "PeopleShine Inc."
