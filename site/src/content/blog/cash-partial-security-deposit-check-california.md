@@ -5,7 +5,7 @@ slug: cash-partial-security-deposit-check-california
 publishedAt: 2026-07-17T14:01:10.174Z
 updatedAt: 2026-07-18T03:39:38.795Z
 author: "Sohyun Sophia Hong"
-image: "https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-1-partial-check-stock.webp"
+image: "https://legalfriend.ai/blog-images/w1-1-partial-check-stock.webp"
 sourceUrl: https://lease.legalfriend.ai/blog/cash-partial-security-deposit-check-california
 ---
 
@@ -17,7 +17,7 @@ The check is smaller than expected. You need the money and want to dispute the d
 
 Sometimes. But cashing a check offered as full settlement can close the dispute. First, read both sides of the check, the letter, and any release. The landlord generally has 21 calendar days after you vacate to account for and return the remaining security. That deadline is separate from the legal effect of cashing the check. Photograph everything before making a banking decision.
 
-![Envelope and paperwork laid out beside a partial California security deposit refund check](https://srlslvgppnyacalqxftz.supabase.co/storage/v1/object/public/blog-images/w1-1-partial-check-stock.webp)
+![Envelope and paperwork laid out beside a partial California security deposit refund check](/blog-images/w1-1-partial-check-stock.webp)
 
 ## Can you deposit the partial check and still dispute the rest?
 

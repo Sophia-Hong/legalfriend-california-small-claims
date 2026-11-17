@@ -131,3 +131,4 @@ support@legalfriend.ai
 | Vercel paused, webhook disabled | | | |
 | DNS updated | | | |
 | Supabase paused | | | |
+| F-338 closed | 2026-11-14 | On (Theo 1794629392) | Blog images moved (PR #6 3917f8be) · 외부인 데이터 0 (소현 확인 1794629370), 삭제 대상 없음 · 프로젝트 일시정지 유지 (10-10~). Restore·삭제 0 |
